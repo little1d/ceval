@@ -1,0 +1,86 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "legal_professional",
+  "dataset_name": "ceval-exam",
+  "dataset_size": 141205,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/ceval/ceval-exam@b4b16302d206b407bff6fa417a2c62da8a1ab702/legal_professional/test-00000-of-00001.parquet": {
+      "num_bytes": 93336,
+      "checksum": null
+    },
+    "hf://datasets/ceval/ceval-exam@b4b16302d206b407bff6fa417a2c62da8a1ab702/legal_professional/val-00000-of-00001.parquet": {
+      "num_bytes": 16518,
+      "checksum": null
+    },
+    "hf://datasets/ceval/ceval-exam@b4b16302d206b407bff6fa417a2c62da8a1ab702/legal_professional/dev-00000-of-00001.parquet": {
+      "num_bytes": 15227,
+      "checksum": null
+    }
+  },
+  "download_size": 125081,
+  "features": {
+    "id": {
+      "dtype": "int32",
+      "_type": "Value"
+    },
+    "question": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "A": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "B": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "C": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "D": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "answer": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "explanation": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 266286,
+  "splits": {
+    "test": {
+      "name": "test",
+      "num_bytes": 122012,
+      "num_examples": 215,
+      "dataset_name": "ceval-exam"
+    },
+    "val": {
+      "name": "val",
+      "num_bytes": 12218,
+      "num_examples": 23,
+      "dataset_name": "ceval-exam"
+    },
+    "dev": {
+      "name": "dev",
+      "num_bytes": 6975,
+      "num_examples": 5,
+      "dataset_name": "ceval-exam"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "metrology_engineer",
+  "dataset_name": "ceval-exam",
+  "dataset_size": 56117,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/ceval/ceval-exam@b4b16302d206b407bff6fa417a2c62da8a1ab702/metrology_engineer/test-00000-of-00001.parquet": {
+      "num_bytes": 36605,
+      "checksum": null
+    },
+    "hf://datasets/ceval/ceval-exam@b4b16302d206b407bff6fa417a2c62da8a1ab702/metrology_engineer/val-00000-of-00001.parquet": {
+      "num_bytes": 9648,
+      "checksum": null
+    },
+    "hf://datasets/ceval/ceval-exam@b4b16302d206b407bff6fa417a2c62da8a1ab702/metrology_engineer/dev-00000-of-00001.parquet": {
+      "num_bytes": 8780,
+      "checksum": null
+    }
+  },
+  "download_size": 55033,
+  "features": {
+    "id": {
+      "dtype": "int32",
+      "_type": "Value"
+    },
+    "question": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "A": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "B": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "C": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "D": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "answer": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "explanation": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 111150,
+  "splits": {
+    "test": {
+      "name": "test",
+      "num_bytes": 47512,
+      "num_examples": 219,
+      "dataset_name": "ceval-exam"
+    },
+    "val": {
+      "name": "val",
+      "num_bytes": 6119,
+      "num_examples": 24,
+      "dataset_name": "ceval-exam"
+    },
+    "dev": {
+      "name": "dev",
+      "num_bytes": 2486,
+      "num_examples": 5,
+      "dataset_name": "ceval-exam"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

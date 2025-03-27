@@ -1,0 +1,86 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "veterinary_medicine",
+  "dataset_name": "ceval-exam",
+  "dataset_size": 46417,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/ceval/ceval-exam@b4b16302d206b407bff6fa417a2c62da8a1ab702/veterinary_medicine/test-00000-of-00001.parquet": {
+      "num_bytes": 31480,
+      "checksum": null
+    },
+    "hf://datasets/ceval/ceval-exam@b4b16302d206b407bff6fa417a2c62da8a1ab702/veterinary_medicine/val-00000-of-00001.parquet": {
+      "num_bytes": 8022,
+      "checksum": null
+    },
+    "hf://datasets/ceval/ceval-exam@b4b16302d206b407bff6fa417a2c62da8a1ab702/veterinary_medicine/dev-00000-of-00001.parquet": {
+      "num_bytes": 8896,
+      "checksum": null
+    }
+  },
+  "download_size": 48398,
+  "features": {
+    "id": {
+      "dtype": "int32",
+      "_type": "Value"
+    },
+    "question": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "A": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "B": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "C": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "D": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "answer": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "explanation": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 94815,
+  "splits": {
+    "test": {
+      "name": "test",
+      "num_bytes": 39492,
+      "num_examples": 210,
+      "dataset_name": "ceval-exam"
+    },
+    "val": {
+      "name": "val",
+      "num_bytes": 4562,
+      "num_examples": 23,
+      "dataset_name": "ceval-exam"
+    },
+    "dev": {
+      "name": "dev",
+      "num_bytes": 2363,
+      "num_examples": 5,
+      "dataset_name": "ceval-exam"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

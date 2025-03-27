@@ -1,0 +1,86 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "middle_school_chemistry",
+  "dataset_name": "ceval-exam",
+  "dataset_size": 57123,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/ceval/ceval-exam@b4b16302d206b407bff6fa417a2c62da8a1ab702/middle_school_chemistry/test-00000-of-00001.parquet": {
+      "num_bytes": 39349,
+      "checksum": null
+    },
+    "hf://datasets/ceval/ceval-exam@b4b16302d206b407bff6fa417a2c62da8a1ab702/middle_school_chemistry/val-00000-of-00001.parquet": {
+      "num_bytes": 9195,
+      "checksum": null
+    },
+    "hf://datasets/ceval/ceval-exam@b4b16302d206b407bff6fa417a2c62da8a1ab702/middle_school_chemistry/dev-00000-of-00001.parquet": {
+      "num_bytes": 10461,
+      "checksum": null
+    }
+  },
+  "download_size": 59005,
+  "features": {
+    "id": {
+      "dtype": "int32",
+      "_type": "Value"
+    },
+    "question": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "A": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "B": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "C": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "D": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "answer": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "explanation": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 116128,
+  "splits": {
+    "test": {
+      "name": "test",
+      "num_bytes": 47599,
+      "num_examples": 185,
+      "dataset_name": "ceval-exam"
+    },
+    "val": {
+      "name": "val",
+      "num_bytes": 5657,
+      "num_examples": 20,
+      "dataset_name": "ceval-exam"
+    },
+    "dev": {
+      "name": "dev",
+      "num_bytes": 3867,
+      "num_examples": 5,
+      "dataset_name": "ceval-exam"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

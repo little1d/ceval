@@ -1,0 +1,1238 @@
+,id,question,A,B,C,D,answer,explanation,model_output,correctness
+0,0,设$X$服从几何分布，$P(X=1)=0.6$，则$P(X=4\mid X>2)=$____,0.5,0.24,0.36,0.16,,,"## 解析：
+
+由题意，$X$服从几何分布，$P(X=1)=0.6$，可得$P(X=4|X>2)=P(X=4)/P(X>2)=0.6^4/0.4=0.24$，
+
+B
+
+## 最终答案：
+
+\(\boxed{B}\)",0
+1,1,"设$X_{1},X_{2},\cdots,X_{3n}$是来自总体$X\sim N\left(0,\sigma^{2}\right)$的一个样本,已知$P\left(a\sum_{i=1}^{n}X_{i}{}^{2}\geq\sum_{i=n+1}^{3n}X_{i}^{2}\right)=0.90$,则$F$的上侧分位数$F_{0.1}(2n,n)$的值为____",$2 / a$,$1 / 2a$,$a / 2$,$2a$,,,"## 解析：
+
+由$P\left(a\sum_{i=1}^{n}X_{i}{}^{2}\geq\sum_{i=n+1}^{3n}X_{i}^{2}\right)=0.90$，得$P\left(\frac{\sum_{i=1}^{n}X_{i}^{2}}{n-1}\geq\frac{a\sum_{i=1}^{n}X_{i}^{2}}{n-1}\right)=0.90$，即$P\left(S_{n-1}^{2}\geq\frac{a}{n-1}S_{n-1}^{2}\right)=0.90$，即$P\left(S_{n-1}^{2}\geq\frac{1}{2}S_{n-1}^{2}\right)=0.90$，又$P\left(S_{n-1}^{2}\geq\frac{1}{2}S_{n-1}^{2}\right)=1-F_{0.1}(2n,n)$，所以$1-F_{0.1}(2n,n)=0.90$，即$F_{0.1}(2n,n)=0.10$，又$F_{0.1}(2n,n)=\frac{a}{2}$，得$a=0.2$，故选$C$.
+
+C
+
+## 最终答案：
+
+\(\boxed{C}\)",0
+2,2,"设连续型随机变量X的概率密度函数为$f(x)=ke^{-{\frac{(x+2)^{2}}{4}}}$,$x\in(-\infty,|+\infty)$，则k=____",$\frac{1}{2\sqrt{2\pi}}$,$\frac{1}{2\sqrt{\pi}}$,$\frac{1}{\sqrt{2\pi}}$,$\frac{1}{4\sqrt{2\pi}}$,,,"## 解析：
+
+根据概率密度函数$f(x)$的性质，有
+\[
+\int_{-\infty}^{+\infty} f(x) \, dx = 1
+\]
+将已知的$f(x) = ke^{-\frac{(x+2)^2}{4}}$代入上述积分式中，得到
+\[
+\int_{-\infty}^{+\infty} ke^{-\frac{(x+2)^2}{4}} \, dx = 1
+\]
+通过计算，可以得出$k = \frac{1}{2\sqrt{\pi}}$。
+因此，正确答案是B。
+
+## 最终答案：
+
+\\(\boxed{B}\\)",0
+3,3,"设随机变量X服从指数分布$X\sim e^\lambda$,且方差满足D(X)=4.则P(X>10)=____",e^{-\frac{5}{2}},e^{-5},e^{-20},e^{-40},,,D,0
+4,4,"设随机变量$X$服从均匀分布$U(-1,1)$,则$Y=e^X$的密度函数为:____","$$
+f_Y(y)=\left\{\begin{array}{cl}
+\frac{1}{2} \ln y+1, & y \in\left(e^{-1}, e^1\right) \\
+0, & \text { 其他 }
+\end{array}\right.
+$$","$$
+f_Y(y)=\left\{\begin{array}{lc}
+\frac{1}{y}, & y \in\left(e^{-1}, e^1\right) \\
+0, & \text { 其他 }
+\end{array}\right.
+$$","$f_Y(y)=\left\{\begin{array}{cl}\frac{1}{2}(\ln y+1), & y \in\left(e^{-1}, e^1\right) \\ 0, & \text { 其他 }\end{array}\right.$","$f_Y(y)=\left\{\begin{array}{cc}\frac{1}{2 y}, & y \in\left(e^{-1}, e^1\right) \\ 0, & \text { 其他 }\end{array}\right.$",,,"## 解析：
+
+$$
+f_Y(y)=\left\{\begin{array}{cl}
+\frac{1}{2} \ln y+1, & y \in\left(e^{-1}, e^1\right) \\
+0, & \text { 其他 }
+\end{array}\right.
+$$
+
+## 最终答案：
+
+\(\boxed{A}\)",0
+5,5,随机变量X$\sim N(2，4)，Y\sim N(2，5)$，且$D(X+Y)=DX-DY+14$，则下列正确的是____,$E(XY)=E(X)E(Y)+2[D(X)-D(Y)]$,$D(X-Y)=D(Y)$,"X, Y独立",X，Y不相关,,,"C
+解：$EX=2,EY=2,DX=4,DY=5$  
+因为$D(X+Y)=DX-DY+14$，  
+所以$DX+DY+2\cdot E(XY)=14$，  
+所以$E(XY)=4$，  
+所以$E(XY)=E(X)E(Y)$，  
+所以$XY$独立，  
+所以$D(X-Y)=DX+DY$，  
+故选C.",0
+6,6,"设总体X服从参数$\lambda$的Poisson分布，$X_1,X_2,...,X_n$为来自总体的一个样本。以下关于$\lambda$的估计量中，哪一个不是无偏估计量____",$2X_1-X_2$,$\overline{X}$,$\frac{1}{n-1}\sum\limits_{i=1}^n(X_i-\bar{X})^2$,$\frac{1}{n}\sum\limits_{i=1}^n(X_i-\bar{X})^2$,,,C,0
+7,7,"设$X_1,X_2,...,X_{12}$来自正态总体$N(0,1)$,$Y=(\sum_{i=1}^{6}X_i)^2+(\sum^{12}_{i=7}X_i)^2$,若$kY$服从卡方分布,则k的取值为____",\frac{1}{9},\frac{1}{3},\frac{1}{6},\frac{1}{2},,,"## 解析：
+
+本题考查正态分布的性质和应用。由题意可知，\(\sum_{i=1}^{6}X_i\) 和 \(\sum_{i=7}^{12}X_i\) 分别是两个独立的正态总体 \(N(0,1)\) 的样本和，因此 \(\left(\sum_{i=1}^{6}X_i\right)^2\) 和 \(\left(\sum_{i=7}^{12}X_i\right)^2\) 都是自由度为 \(6\) 的 \(\chi^2\) 分布。而 \(Y\) 是两个自由度均为 \(6\) 的 \(\chi^2\) 分布之和，因此 \(Y\) 是 \(12\) 个自由度的 \(\chi^2\) 分布，故 \(k = \frac{1}{2}\)。故选D。",0
+8,8,"设二维随机变量$(X,Y)$的联合分布函数为
+$$
+F(x,y)=\left\{\begin{array}{cl}
+1-e^{-0.01x}-e^{-0.01y}+e^{-0.01(x+y)},&x\geq0,y\geq0,\\
+0,&\text{其他}
+\end{array}\right.
+$$
+则$P(X>100)=$____",$1-e^{-1}$,$e^{-1}$,$1-2 e^{-1}$,$2 e^{-1}$,,,"$A$
+
+$$
+F(100,+\infty)=1-e^{-100}-e^{-100}+e^{-100}=1-e^{-1}
+$$",0
+9,9,"已知随机变量$X\sim\left(\begin{array}{cc}0&1\\\frac{1}{4}&\frac{3}{4}\end{array}\right),Y\sim\left(\begin{array}{cc}0&1\\\frac{1}{4}&\frac{3}{4}\end{array}\right),E(XY)=\frac{5}{8}$，则P$\{X+Y\leq1\}$等于____",$\frac{1}{8}$,$\frac{1}{4}$,$\frac{3}{8}$,$\frac{1}{2}$,,,C $\frac{3}{8}$,0
+10,10,"从大批彩色显像管中随机抽取20只,算得其平均寿命为$\hat{x}$小时,样本标准差为s,可以认为显像管的寿命服从正态分布。若已知标准差$\sigma=120$小时,则显像管平均寿命$\mu$的置信度为0.9的置信区间为____(注:$u_a$与$t_a(n)$分别为标准正态分布和自由度为n的t分布的上侧$\alpha$分位数）","$\left(\bar{x}-\frac{s}{\sqrt{20}} t_{0.05}(19), \bar{x}+\frac{s}{\sqrt{20}} t_{0.05}(19)\right)$","$\left(\bar{x}-\frac{\sigma}{\sqrt{20}} u_{0.025}, \bar{x}+\frac{\sigma}{\sqrt{20}} u_{0.025}\right)$","$\left(\bar{x}-\frac{\sigma}{\sqrt{20}} u_{0.05}(19), \bar{x}+\frac{\sigma}{\sqrt{20}} u_{0.05}\right)$","$\left(\bar{x}-\frac{\sigma}{\sqrt{20}} u_{0.05}, \bar{x}+\frac{\sigma}{20} u_{0.05}\right)$",,,D,0
+11,11,"若随机变量$X、Y$的方差都存在,则____",$D(X+Y) \leq D(X)+\mathrm{D}(Y)$,不能确定 $D(X+Y)$ 与 $D(X)+\mathrm{D}(Y)$ 的大小关系,$D(X+Y) \geq D(X)+\mathrm{D}(Y)$,$D(X+Y)=D(X)+D(Y)$,,,"B
+解析：
+$D(X+Y)=D(X)+D(Y)+2\operatorname{Cov}(X,Y)$，$\operatorname{Cov}(X,Y)\geq-1$，$\operatorname{Cov}(X,Y)\leq 1$，$\therefore D(X+Y)\in[D(X)+D(Y)-2,D(X)+D(Y)+2]$，$\therefore$不能确定 $D(X+Y)$ 与 $D(X)+\mathrm{D}(Y)$ 的大小关系，
+
+B
+
+故选：B。",0
+12,12,"设随机变量$X\sim U[-2,2]$,则$X$和$Y=|X|$的相关系数$\rho_{XY}=$____",1,-1,$\frac{1}{2}$,0,,,"D
+解析：
+由$X\sim U[-2,2]$,知$X$与$Y=|X|$的分布列，计算出$E(X)=0,E(Y)=\frac{2}{3},D(X)=\frac{8}{3},D(Y)=\frac{16}{9}$，从而$Cov(X,Y)=0$，故$\rho_{XY}=0$，选D。
+
+D",0
+13,13,"某高校某课程考试，成绩分优秀，合格，不合格三种，分别得3分、2分、1分。根据以往统计,每批参加考试的学生中,优秀、合格、不合格的各占30%、60%、10%。用中心极限定理估计100位学生考试总分在210分至230分之间的概率为:(其中$\phi(x)$是标准正态分布的分布函数)____",$1-2 \phi(2.67)$,$2 \phi(2.67)-1$,$2 \phi(1.67)-1$,$1-2 \phi(1.67)$,,,"## 解析：
+
+设$X$表示100位学生考试总分,则$X \sim N(\mu,\sigma^2)$,其中$\mu=100 \times \frac{3}{10}+100 \times \frac{2}{10}+100 \times \frac{1}{10}=220$,$\sigma^2=100 \times \frac{3^2}{10}+100 \times \frac{2^2}{10}+100 \times \frac{1^2}{10}=110$,$\therefore P(210 \leqslant X \leqslant 230)=P\left(\frac{210-220}{\sqrt{110}} \leqslant Z \leqslant \frac{230-220}{\sqrt{110}}\,\right)=P(-1.67 \leqslant Z \leqslant 1.67)=2 \phi(1.67)-1$,故选C.
+
+C
+
+## 最终答案：
+
+\\(\boxed{C}\\)",0
+14,14,"设随机变量$X$的方差存在,且$E(X)\neq0,D(X)>0$。则有____",$E\left(X^2\right)<D(X)$,$E\left(X^2\right)>D(X)$,$E\left(X^2\right)<[E(X)]^2$,$E\left(X^2\right)=D(X)$,,,A,0
+15,15,"在原假设为$H_0$和备择假设$H_1$的假设检验中,显著性水平为$\alpha$。下列说法错误的是____",$P( 拒绝 H_0 \mid H_1 为假 ) \leq \alpha$,$P( 接受 H_0 \mid H_1 为真 ) \leq \alpha$,"当 $\alpha=0.05$ 拒绝 $H_0$ 时, $\alpha=0.01$ 必然拒绝 $H_0$","当 $\alpha=0.05$ 接受 $H_0$ 时, $\alpha=0.01$ 必然接受 $H_0$",,,"B
+解析：
+本题主要考查假设检验的基本概念。选项分析：对于选项A，$P(\text{拒绝}H_0|\text{H}_1\text{为假})\leq\alpha$，这是正确的，因为如果$H_1$为假，而$H_0$被拒绝，则犯第一类错误的概率不超过$\alpha$。对于选项B，$P(\text{接受}H_0|\text{H}_1\text{为真})\leq\alpha$，这是错误的，因为当$H_1$为真时，接受$H_0$的错误概率应该是$1-\alpha$，即犯第二类错误的概率。对于选项C，当$\alpha=0.05$拒绝$H_0$时，$\alpha=0.01$必然拒绝$H_0$，这是错误的，因为降低$\alpha$会增加拒绝$H_0$的难度，但并不保证在更小的$\alpha$下一定会拒绝$H_0$。对于选项D，当$\alpha=0.05$接受$H_0$时，$\alpha=0.01$必然接受$H_0$，这是正确的，因为降低$\alpha$会增加接受$H_0$的可能性。因此，错误的选项是B。",0
+16,16,"设随机向量$(X，Y)$的分布函数为$F(x，y)$，则$P(-X<a,Y\leq y)=$____","$1-F(-a, y)$","1-F(-a, $y-0)$","$F(+\infty, y)-F(-a, y-0)$","$F(+\infty, y)-F(-a, y)$",,,A,0
+17,17,"已知随机变量$X$的密度函数为$f(x)=\left\{\begin{array}{cc}2x,&0\leq x\leq1\\0,&\text{其他}\end{array}\right.$.设随机变量$Y=\left\{\begin{array}{cc}1,&X\leq\frac{1}{3}\\0,&\text{其他}\end{array}\right.$和随机变量$Z=\left\{\begin{array}{ll}1,&X>\frac{1}{2}\\0,&\text{其他}\end{array}\right.$则概率$P(Y=1,Z=0)=$____",$\frac{3}{4}$,0,$\frac{5}{36}$,$\frac{1}{9}$,,,"本题考查概率的求法，是基础题，时要认真审题，注意函数性质及几何概型的合理运用。由题意得，$P(Y=1,Z=0)=P(\frac{1}{3}<X\leqslant \frac{1}{2}) =\int_{\frac{1}{3}}^{\frac{1}{2}}2x \,dx=\frac{1}{36}$．
+
+D",0
+18,18,"设随机变量$X\sim P(3),Y$表示对$X$做相互独立观察时，事件$\{X\geq1\}$首次出现时已经观察的次数,则$Y$的分布律为:____","$P(Y=k)=e^{-3(k-1)}\left(1-e^{-3}\right), k=1,2, \cdots$","$P(Y=k)=\frac{3^k}{k !} e^{-3}, k=1,2, \cdots$","$P(Y=k)=e^{-3}\left(1-e^{-3}\right)^{(k-1)}, k=1,2, \cdots$","$P(Y=k)=C_n^k e^{-3 k}\left(1-e^{-3}\right)^{n-k}, k=1,2, \cdots, n$",,,A,0
+19,19,设$X\sim t(n)$，则下列结论正确的是____,"$X^2 \sim F(1, n)$","$\frac{1}{X^2} \sim F(1, n)$",$X^2 \sim X^2(n)$,$X^2 \sim X^2(n-1)$,,,"A
+
+解析：本题考查了t分布的性质，由t分布的性质即可得出结果．$∵$设$X\sim t(n)$，$∴X^{2}\sim F(1,n)$．
+
+A",0
+20,20,"设随机变量X,Y相互独立，且均服从均匀分布U(0,1),则$P(X^2+Y^2<=1)=$____",$\frac{1}{4}$,$\frac{1}{2}$,$\frac{\pi}{8}$,$\frac{\pi}{4}$,,,"本题主要考查概率的计算，属于基础题．
+由题意得，$\int_{0}^{1}{\int_{0}^{\sqrt{1-{{y}^{2}}}}{}}dydx=\frac{1}{4}\pi $，
+故选D.",0
+21,21,"设二维随机向量$(X,Y)$在区域$\mathrm{D}=\{(x,y)|x^2+y^2<1\}$内均匀分布，____","当 $|x|<1$ 时, $f_{Y \mid X}(y \mid x)=\left\{\begin{array}{cc}\frac{1}{2 \sqrt{1-x^2}}, & -\sqrt{1-x^2}<y<\sqrt{1-x^2}, \\ 0, & \text { 其他}\end{array}\right.$","当 $|x|<1$ 时, $f_{Y \mid X}(y \mid x)=\left\{\begin{array}{cl}\frac{1}{\pi}, & x^2+y^2<1 ， \\ 0, & \text { 其他 }\end{array}\right.$","当 $|x|<1$ 时, $f_{Y \mid X}(y \mid x)=\left\{\begin{array}{cl}\frac{1}{\sqrt{1-x^2}}, & y<\sqrt{1-x^2}, \\ 0, & \text { 其他}\end{array}\right.$","当 $|x|<1$ 时, $\quad f_{Y \mid X}(y \mid x)=\left\{\begin{array}{cc}\frac{1}{\pi \sqrt{1-x^2}},-\sqrt{1-x^2}<y<\sqrt{1-x^2} \text { ， } \\ 0, & \text { 其他}\end{array}\right.$",,,A,0
+22,22,"设总体$X\sim N\left(0,\sigma^{2}\right),\left(X_{1},X_{2},\cdots X_{n}\right)$为来自总体$X$的简单样本。记$\bar{X}=\frac{1}{n}\sum_{i=1}^{n}X_{i}$,$S_{1}^{2}=\frac{1}{n-1}\sum_{i=1}^{n}/\left(X_{i}-\bar{X}\right)^{2},S_{2}^{2}=\frac{1}{n}\sum_{i=1}^{n}X_{i}^{2}$,当$n=9$时,下列选项正确的为____","$D\left(S_{1}^{2}\right)=\frac{2}{8} \sigma^{4}, D\left(S_{2}^{2}\right)=\frac{2}{9} \sigma^{4}$, 所以 $s_{2}^{2}$ 比 $S_{1}^{2}$ 有效","$D\left(S_{1}^{2}\right)=\frac{2}{8} \sigma^{4}, D\left(S_{2}^{2}\right)=\frac{2}{9} \sigma^{4}$, 不能确定 $S_{2}^{2}$ 与 $S_{1}^{2}$ 无偏性, 所以无法比较有效性","$D\left(S_{1}^{2}\right)=\frac{2}{9} \sigma^{2}, D\left(s_{2}^{2}\right)=\frac{2}{10} \sigma^{2}$, 不能确定无偏性, 所以无法比较有效性","$D\left(S_{1}^{2}\right)=\frac{2}{8} \sigma^{2}, D\left(S_{2}^{2}\right)=\frac{2}{9} \sigma^{2} \text {, 所以 } S_{2}^{2} \text { 比 } S_{1}^{2-1} \text { 有效 }$",,,"B
+
+因为$\bar{X}$为$\mu$的无偏估计，$S_{1}^{2}$为$\sigma^{2}$的无偏估计。$S_{2}^{2}$为$\sigma^{2}$的有偏估计。$D\left(S_{1}^{2}\right)=\frac{2}{8} \sigma^{4}, D\left(S_{2}^{2}\right)=\frac{2}{9} \sigma^{4}$，不能确定$S_{2}^{2}$与$S_{1}^{2}$无偏性，所以无法比较有效性。",0
+23,23,"在做区间估计时,若其他条件不变,关于末知参数的置信度分别为0.95和0.9的两个置信区间的长度正确的是____",前者一定比后者短,无法确定,前者一定比后者长,前者和后者一样长,,,"C
+
+置信度越大,置信区间越长.",0
+24,24,"随机变量(X,Y)服从G={(x,y)|0<=x<=1,0<=y<=2}上的均匀分布，则X，Y中至少有一个小于\frac{1}{3}的概率为____",\frac{5}{9},\frac{1}{2},\frac{1}{18},\frac{4}{9},,,"A
+本题考查了概率的计算，属于基础题。
+解：随机变量(X,Y)服从G={(x,y)|0≤x≤1,0≤y≤2}上的均匀分布，  
+则X，Y中至少有一个小于\frac{1}{3}的概率P=1-\frac{2}{3}×\frac{2}{3}=\frac{5}{9}，  
+故选A．",0
+25,25,"设总体$X$的分布函数为$F(x)=\left\{\begin{array}{cc}1-1/x^{\theta+1},&x>1,\\0,&x\leq1\text{,}\end{array}\right.$其中末知参数$\theta>0,\left(X_1,X_2,\cdots,X_n\right)$为取自总体$X$的简单随机样本,$\bar{X}$为样本均值,$\theta$的矩估计量为:____",$\frac{n}{\sum_{i=1}^n \ln X_i}-1$,$1-\frac{n}{\sum_{i=1}^n \ln X_i}$,$\frac{1}{\bar{X}-1}$,$\frac{1}{1-\bar{X}}$,,,"A
+【考查知识点】数学基础，统计基础，概率论与数理统计，随机变量及其分布，概率分布，常见分布，总体、样本，样本与总体，抽样，随机抽样，简单随机抽样，估计量与估计值，估计量，无偏估计量，矩估计量，总体均值的矩估计量，总体方差的矩估计量，数学基础，概率论与数理统计，随机变量及其分布，概率分布，常见分布，总体、样本，样本与总体，抽样，随机抽样，简单随机抽样，估计量与估计值，估计量，无偏估计量，估计量的性质，无偏性，估计量的无偏性，总体均值的无偏估计量，总体方差的无偏估计量，数学基础，概率论与数理统计，随机变量及其分布，概率分布，常见分布，总体、样本，样本与总体，抽样，随机抽样，简单随机抽样，估计量与估计值，估计量，无偏估计量，矩估计量，总体均值的矩估计量，总体方差的矩估计量，总体均值无偏估计量的无偏性，总体方差无偏估计量的无偏性，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏估计量的方差，总体方差无偏估计量的协方差，总体方差无偏估计量的相关系数，总体均值无偏估计量的方差，总体方差无偏",0
+26,26,"设$X_{1},X_{2},\cdots,X_{n}$为来自总体$X$的样本,$E(X)=\mu,D(X)=\sigma^{2},\bar{X}=\frac{1}{n}\sum_{i=1}^{n}X_{i}$。
+(i)$D\left(X_{i}+\bar{X}\right)=\frac{n+3}{n}\sigma^{2},\quad$(ii)$D\left(X_{i}-\bar{X}\right)=\frac{n_{\rceil}1}{n}\sigma^{2},(iii)\operatorname{cov}\left(X_{i},\bar{X}\right)=\frac{1}{n}\sigma^{2}$,$(iv)\operatorname{cov}\left(X_{i+1}-X_{i},\bar{X}\right)=0$.在(i)(ii)(iii)(iv)中正确的个数____",4,3,2,1,,,"B
+$D\left(X_{i}+\bar{X}\right)=D\left(X_{i}\right)+D\left(\bar{X}\right)=\sigma^{2}+\frac{1}{n}D\left(X\right)=\frac{n+1}{n}\sigma^{2},\quad$  $\operatorname{cov}\left(X_{i}-\bar{X},\bar{X}\right)=\frac{1}{n}\operatorname{cov}\left(X_{i},X_{i}\right)=\frac{1}{n}\sigma^{2}$。",0
+27,27,"设随机变量X的分布函数为$F(x)=\alpha\Phi(x)+(1-\alpha)\Phi\left(\frac{x-1}{2}\right)$,其中$\Phi(x)$为标准正态分布函数，$0<\alpha<1$，则$E(X)$和$D(X)$分别为____",$1-\alpha$ 和$5-(\alpha+1) 2$,$1-\alpha$ 和$5- (\alpha-1) 2$,$\alpha$ 和$5-(\alpha+1) 2$,$\alpha$ 和$5-(\alpha-1)2$,,,"A
+根据分布函数$F(x)=\alpha\Phi(x)+(1-\alpha)\Phi\left(\frac{x-1}{2}\right)$,可得：
+$E(X)=\int_{-\infty}^{+\infty}x\alpha\Phi(x)dx+\int_{-\infty}^{+\infty}x(1-\alpha)\Phi\left(\frac{x-1}{2}\right)dx$
+$=\alpha\int_{-\infty}^{+\infty}x\Phi(x)dx+(1-\alpha)\int_{-\infty}^{+\infty}\left[\frac{2x+1}{2}\right]\Phi\left(\frac{x-1}{2}\right)dx$
+$=\alpha\int_{-\infty}^{+\infty}x\Phi(x)dx+(1-\alpha)\left[\frac{1}{2}\int_{-\infty}^{+\infty}x\Phi\left(\frac{x-1}{2}\right)dx+\frac{1}{2}\int_{-\infty}^{+\infty}\Phi\left(\frac{x-1}{2}\right)dx\right]$
+$=1-\alpha$
+$D(X)=\int_{-\infty}^{+\infty}(x-E(X))^2f(x)dx$
+$=\alpha\int_{-\infty}^{+\infty}(x-1)^2\phi(x)dx+(1-\alpha)\int_{-\infty}^{+\infty}\left[\frac{x-1}{2}\right]^2\phi\left(\frac{x-1}{2}\right)dx$
+$=\alpha\int_{-\infty}^{+\infty}(x-1)^2\phi(x)dx+\frac{(1-\alpha)}{4}\int_{-\infty}^{+\infty}(x-1)^2\phi\left(\frac{x-1}{2}\right)dx$
+$=5-(1+\alpha)^2$.
+故选：A。
+根据分布函数$F(x)=\alpha\Phi(x)+(1-\alpha)\Phi\left(\frac{x-1}{2}\right)$,由$E(X)=\int_{-\infty}^{+\infty}x\alpha\Phi(x)dx+\int_{-\infty}^{+\infty}x(1-\alpha)\Phi\left(\frac{x-1}{2}\right)dx$可求得$E(X)$，再由$D(X)=\int_{-\infty}^{+\infty}(x-E(X))^2f(x)dx$可求得$D(X)$。本题考查随机变量分布函数的性质、分布列，考查数学期望与方差的计算，考查计算能力，属于中档题。",0
+28,28,"设随机变量X的概率密度函数为
+$$
+f(x)=\begin{cases}0,&x<0,\\a,&0\leqslant x\leqslant 1,\text{,则}a={}_{-}\\a\mathrm{e}^{-(x-1)},&x>1\end{cases}
+$$____",1,\frac{1}{2},\frac{1}{3},\frac{2}{3},,,"## 解析：
+
+由题意知，$$\int_0^1\mathrm{ad}x+\int_1^{\infty}a\mathrm{e}^{-(x-1)}\mathrm{d}x=1,$$ 解得$$a=\frac{1}{2}$$ ，故选B。",0
+29,29,"设$X_1，X_2，\ldots,X_{10}$是取自正态总体$N\left(2，\sigma^2\right)$的样本，记$\bar{X}=\frac{1}{10}\sum_{i=1}^{10}X_i,\mathrm{~S}=\sqrt{\frac{1}{9}\sum_{i=1}^{10}\left(X_i-\bar{X}\right)^2}$,已知$P\left(\bar{X}\leqslant2,S^2\leqslant\sigma^2\right)=\frac{1}{5}$，则$\mathrm{P}(\mathrm{S}\leq\sigma)$的值为____",\frac{1}{5},\frac{1}{4},\frac{2}{5},\frac{3}{5},,,"C
+解：由$S$的分布知，$\mathrm{P}(\mathrm{S}\leq\sigma)=2\mathrm{P}(\mathrm{S}\leq\sigma,\mathrm{S}\leq\sigma)=2\mathrm{P}(\mathrm{S}\leq\sigma,\mathrm{S}\leq\sigma,\bar{X}\leqslant2)=2\mathrm{P}(\mathrm{S}\leq\sigma,\mathrm{S}\leq\sigma,\bar{X}\leqslant2,\mathrm{S}\leq\sigma,\mathrm{S}\leq\sigma)=2\mathrm{P}(\mathrm{S}\leq\sigma,\mathrm{S}\leq\sigma,\bar{X}\leqslant2,\mathrm{S}^2\leqslant\sigma^2)=2\times\frac{1}{5}=\frac{2}{5}$，故选C.",0
+30,30,设$X\sim N\left(0，3^2\right)，Y\sim N\left(1，2^2\right)$，若$P(X>a)=P(Y\leq3)$，则$\mathrm{a}=$____,-3,-2,2,0,,,"## 解析：
+
+本题考查正态分布的性质，属于基础题．由已知结合正态分布的对称性可得$P(X < -a)=P(Y\geqslant 3)=1-P(Y\leqslant 3)$，即$P(X < -a)=1-P(Y\leqslant 3)$，故$a=2$．
+
+C
+
+## 最终答案：
+
+\\(\boxed{C}\\)",0
+31,31,对于任意两个事件A和B，____,若 $A B \neq \varnothing$ ，则 $\mathrm{A} ， \mathrm{~B}$ 定独立,若 $A B \neq \varnothing$ ，则A，B有可能独立,若 $A B=\varnothing$ ，则A，B一定独立,"若 $A B=\varnothing$ ，则 A ,B 一定不独立",,,"B
+解：若 $A B \neq \varnothing$ ，则 $A ， \mathrm{~B}$ 有可能独立，也有可能不独立，如掷一枚硬币，正面向上的事件为 $A$ ，反面向上的事件为 $B$ ，则 $A B \neq \varnothing$ ，且 $A ， \mathrm{~B}$ 不独立；若 $A B=\varnothing$ ，则 $A ， \mathrm{~B}$ 一定不独立．  
+故选 B.",0
+32,32,"设(X_1,X_2,...,X_9)是来自正态总体X~N(0,6)的简单随机样本,下列选项正确的是____$(\chi_{0.975}^2(9)=2.7,\chi_{0.975}^2(8)=2.18,\chi_{0.05}^2(9)=16.919,\chi_{0.05}^2(8)=15.507)$",$P\left(\sum_{i=1}^9\left(X_i-\bar{X}\right)^2>16.2\right)=0.975$,$P\left(\sum_{i=1}^9\left(X_i-\bar{X}\right)^2>13.08\right)=0.025$,$P\left(\sum_{i=1}^9\left(X_i-\bar{X}\right)^2>16.2\right)=0.025$,$P\left(\sum_{i=1}^9\left(X_i-\bar{X}\right)^2>13.08\right)=0.975$,,,"D
+因为$S^2=\frac1n\sum_{i=1}^n(X_i-\bar X)^2\sim\chi^2(n-1),n=9$，所以$\sum_{i=1}^9(X_i-\bar X)^2\sim\chi^2(8)$，所以$P\left(\sum_{i=1}^9(X_i-\bar X)^2>13.08\right)=0.975$，故选D.",0
+33,33,设随机变量$X\sim N(0，1)$，对给定的$\alpha(0<\alpha<1)$，数$\mathrm{u}_\alpha$满足P$\left\{X>u_\alpha\right\}=\alpha$.若$P\{X\mid\geq35\}=\alpha$，则x等于____,$u_{\frac{a}{2}}$,$u_{1-\frac{\alpha}{2}}$,$u \frac{1-a}{2}$,$u_{1-\alpha}$,,,"D
+由题意，$\mathrm{P}\left\{X>\mathrm{u}_{\alpha}\right\}=\alpha,\mathrm{P}\left\{X\geq\mathrm{u}_{\alpha}\right\}=1-\alpha,\mathrm{P}\left\{X\geq\mathrm{u}_{1-\alpha}\right\}=\alpha,$
+
+最终答案为 \(\boxed{D}\)",0
+34,34,"设随机变量$X$服从参数为$\lambda=4$的泊松分布，即$X\sim\mathrm{P}(4)$,当$k=$.时，使得概率$P(X=k)$最大____",3,4,3 和 4,以上都不是,,,"## 解析：
+
+因为$P(X=k)=\dfrac{{e}^{-4}×{4}^{k}}{k!}$，所以$\dfrac{P(X=k)}{P(X=k-1)}=\dfrac{4}{k}\geqslant 1$，$\dfrac{P(X=k)}{P(X=k+1)}=\dfrac{k}{4+1}\leqslant 1$，所以$k\leqslant 4$，$k\geqslant 3$，所以$k=3$或$4$，所以选C. 
+
+C
+
+## 最终答案：
+
+\\(\boxed{C}\\)",0
+35,35,"设随机变量X和Y的均值、方差都存在。若E(XY)=E(X)E(Y),则____",X和Y独立,D(XY)=D(X)D(Y),X和Y不独立,D(X+Y)=D(X)+D(Y),,,A,0
+36,36,"设$X_1,X_2,\cdots,X_{20}$是总体$X$的简单样本,$X_0=\min\left\{X_1,X_2,\cdots,X_{20}\right\}$,其中$X$分布律如下表
+\begin{tabular}{lccc}
+\hline$X$&0&1&2\\
+\hline$P$&$p_1$&$p_2$&$p_3$\\
+\hline
+\end{tabular}____","$$
+\mathrm{P}\left(X_{(1)}=0\right)=p_1^{20}, \quad \mathrm{P}\left(X_{(1)}=2\right)=1-\left(1-p_3\right)^{20}
+$$","$$
+\mathrm{P}\left(X_{(1)}=0\right)=p_1^{20}, \quad \mathrm{P}\left(X_{(1)}=2\right)=p_3^{20}
+$$","$$
+\mathrm{P}\left(X_{(1)}=0\right)=p_1^{20}, \quad \mathrm{P}\left(X_{(1)}=2\right)=1-\left(1-p_2\right)^{20}
+$$","$$
+\mathrm{P}\left(X_{(1)}=0\right)=1-\left(1-p_1\right)^{20}, \quad \mathrm{P}\left(X_{(1)}=2\right)=p_3^{20}
+$$",,,"## 解析：
+
+由于$X_1,X_2,\cdots,X_{20}$是总体$X$的简单样本,$X_0=\min\left\{X_1,X_2,\cdots,X_{20}\right\}$,所以$P\left(X_{(1)}=0\right)=p_1^{20}$,$\mathrm{P}\left(X_{(1)}=2\right)=1-\left(1-p_3\right)^{20}$故选：A.
+
+A
+
+## 最终答案：
+
+\(\boxed{A}\)",0
+37,37,"设二维随机向量$(X,Y)$的联合概率密度为$f(x,y)=\begin{cases}k,&0<x<1,x^2<y<1\text{;}\\0,&\text{其他}\end{cases}$其中$k>0$为常数，下例结论正确的为:____","$$
+f_X(x)=\left\{\begin{array}{l}
+k\left(1-x^2\right), 0<x<1, \\
+0, \quad \text { 其他. }
+\end{array} ; f_Y(y)=\left\{\begin{array}{l}
+k \sqrt{y}, 0<y<1, \\
+0, \quad \text { 其他. }
+\end{array}\right.\right.
+$$","$$
+f_X(x)=\left\{\begin{array}{l}
+k\left(x^2-1\right), 0<x<1, \\
+0, \quad \text { 其他 }
+\end{array} ; f_Y(y)=\left\{\begin{array}{l}
+k \sqrt{y}, 0<y<1, \\
+0, \quad \text { 其他 }
+\end{array}\right.\right.
+$$","$$
+f_X(x)=\left\{\begin{array}{l}
+k\left(1-y^2\right), 0<x<1, \\
+0, \quad \text { 其他 }
+\end{array} ; f_Y(y)=\left\{\begin{array}{l}
+k \sqrt{x}, 0<y<1, \\
+0, \quad \text { 其他 }
+\end{array}\right.\right.
+$$","$$
+f_X(x)=\left\{\begin{array}{l}
+\left(1-x^2\right), 0<x<1, \\
+0, \quad \text { 其他 }
+\end{array} ; f_Y(y)=\left\{\begin{array}{l}
+k \sqrt{y}, 0<y<1, \\
+0, \quad \text { 其他 }
+\end{array}\right.\right.
+$$",,,"## 解析：
+
+$k=\int_{0}^{1}\int_0^1 k \mathrm d\mathrm x \mathrm d\mathrm y=k$，
+$$
+\begin{aligned}
+f_X(x) &=\int_{x^2}^{1} k \mathrm d y = k(1-x^2) \\
+f_Y(y) &=\int_{0}^{1} k \mathrm d x=k \sqrt{y}
+\end{aligned}
+$$
+## 最终答案：
+
+\(\boxed{A}\)",0
+38,38,"设$X_{1},X_{2},\cdots,X_{50}$为来自总体$X$的简单随机样本,$X$的概率密度都为
+$$
+f(x)=\left\{\begin{array}{cc}
+0.1e^{-0.1x},&x>0\\
+0,&x\leq0
+\end{array}\right.
+$$
+$\bar{X}=\frac{1}{50}\sum_{i=1}^{50}X_{i}$是样本均值,根据中心极限定理估计概率$P(7<\bar{X}<13)$为
+（其中$\phi(x)$是标准正态分布的分布函数）____",$2\phi\left(\frac{3}{\sqrt{2}}\right)-1$,$2 \phi\left(\frac{3}{2.5}\right)-1$,$1-\phi(0.3)$,$2 \phi\left(\frac{3}{2}\right)-1$,,,"D
+中心极限定理指出，当样本量足够大时，样本均值的分布将趋于正态分布，且其均值等于总体均值，方差等于总体方差除以样本量。对于给定的总体$X$，其概率密度函数为：
+$$
+f(x)=\left\{\begin{array}{cc}
+0.1e^{-0.1x},&x>0\\
+0,&x\leq0
+\end{array}\right.
+$$
+首先，我们需要计算总体$X$的均值$\mu$和方差$\sigma^2$：
+1. 均值$\mu$可以通过求解$\int_{-\infty}^{\infty} x f(x) dx$来计算。对于本题，由于$f(x)$在$x \leq 0$时为0，因此我们只需考虑$x > 0$的部分：
+$$
+\mu = \int_{0}^{\infty} x (0.1e^{-0.1x}) dx = \int_{0}^{\infty} 0.1xe^{-0.1x} dx
+$$
+通过积分，我们可以得到$\mu = 10$。
+
+2. 方差$\sigma^2$可以通过求解$\int_{-\infty}^{\infty} (x - \mu)^2 f(x) dx$来计算。同样地，我们只考虑$x > 0$的部分：
+$$
+\sigma^2 = \int_{0}^{\infty} (x - 10)^2 (0.1e^{-0.1x}) dx
+$$
+通过积分，我们可以得到$\sigma^2 = 100$。
+
+根据中心极限定理，样本均值$\bar{X}$的分布近似为正态分布，其均值$\mu_{\bar{X}} = \mu = 10$，方差$\sigma^2_{\bar{X}} = \frac{\sigma^2}{n} = \frac{100}{50} = 2$。因此，样本均值$\bar{X}$的标准化变量$Z$可以表示为：
+$$
+Z = \frac{\bar{X} - \mu_{\bar{X}}}{\sigma_{\bar{X}}} = \frac{\bar{X} - 10}{\sqrt{2}}
+$$
+我们需要估计$P(7 < \bar{X} < 13)$的概率，即：
+$$
+P(7 < \bar{X} < 13) = P\left(\frac{7 - 10}{\sqrt{2}} < Z < \frac{13 - 10}{\sqrt{2}}\right) = P\left(-\frac{3}{\sqrt{2}} < Z < \frac{3}{\sqrt{2}}\right)
+$$
+由于$Z$服从标准正态分布，因此我们可以使用标准正态分布的分布函数$\phi(x)$来计算这个概率：
+$$
+P(-\frac{3}{\sqrt{2}} < Z < \frac{3}{\sqrt{2}}) = \phi\left(\frac{3}{\sqrt{2}}\right) - \phi\left(-\frac{3}{\sqrt{2}}\right) = 2\phi\left(\frac{3}{\sqrt{2}}\right) - 1
+$$
+因此，正确答案是：
+$$
+\boxed{2\phi\left(\frac{3}{\sqrt{2}}\right) - 1}
+$$",0
+39,39,"设$X_{1},X_{2},\cdots,X_{n}$是来自总体$X\sim N\left(\mu,\sigma^{2}\right)$的一个样本。在假设$H_{0}:\sigma^{2}\leq1,H_{1}:\sigma^{2}>1$的$p$值假设检验中,根据检验统计量样本观察值计算得到$p$值为0.039,现有以下四个结论（i）在显著性水平$\alpha=0.05$下,接受$H_{0}:\sigma^{2}\leq1$。（ii）在显著性水平$\alpha=0.05$下,拒绝接受$H_{0}:\sigma^{2}\leq1$。(iii)在同样的样本数据下,当检验问题改为$H_{0}:\sigma^{2}=1,H_{1}:\sigma^{2}\neq1$时,在显著性水平$\alpha=0.05$下,不能拒绝$H_{0}:\sigma^{2}=1$。(iv)在同样的样本数据下,当检验问题改为$H_{0}:\sigma^{2}=1,H_{1}:\sigma^{2}\neq1$时,在显著性水平$\alpha=0.05$下,拒绝接受$H_{0}:\sigma^{2}=1$。上述结论正确的有____",(i) (iv),(i) (iii),(ii) (iv),(ii) (iii),,,D,0
+40,40,"随机变量$X,Y$相互独立,其概率密度分别为
+
+$$
+f_{X}(x)=\left\{\begin{array}{rc}
+e^{-x},&x>0,\\
+0,&x\leq0,
+\end{array}f_{Y}(y)=\left\{\begin{aligned}
+2e^{-2y},&y>0,\\
+0,&y\leq0.
+\end{aligned}\right.\right.
+$$
+
+考虑随机变量
+
+$$
+Z=\begin{cases}1,&\text{当}X\leq Y，\\0,&\text{当}X>Y，\end{cases}
+$$
+
+则$Z$的期望与方差分别为____",$\frac{1}{3}$与$\frac{2}{9}$,$\frac{2}{3}$与$\frac{2}{9}$,$\frac{2}{3}$与$\frac{8}{9}$,$\frac{2}{3}$与$\frac{5}{9}$,,,"## 解析：
+
+$Z$的分布列为：$Z$0$1$ $P$ \frac{1}{3}$ \frac{2}{3}$
+
+## 最终答案：
+
+\(\boxed{B}\)",0
+41,41,"设$X\sim N\left(\mu_1,\sigma_1^2\right),Y\sim N\left(\mu_2,\sigma_2^2\right),\mathrm{X},\mathrm{Y}$相互独立，$X_1,X_2,\ldots,X_{n_1}$与$Y_1,Y_2,\ldots,Y_{n_2}$分别为X,Y的样本，则有____","$\bar{X}-\bar{Y} \sim N\left(\mu_1+\mu_2, \sigma_1^2+\sigma_2^2\right)$","$\bar{X}-\bar{Y} \sim N\left(\mu_1-\mu_2, \frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}\right)$","$\bar{X}-\bar{Y} \sim N\left(\mu_1-\mu_2, \frac{\sigma_1^2}{n_1}-\frac{\sigma_2^2}{n_2}\right)$","$\bar{X}-\bar{Y} \sim N\left(\mu_1-\mu_2, \frac{\sigma_1^2}{\sqrt{n_1}}-\frac{\sigma_2^2}{\sqrt{n_2}}\right) $",,,B,0
+42,42,"设随机变量序列$X_1,X_2,\cdots,X_n,\cdots$相互独立、同分布,且$E\left(X_i\right)=3$,$D\left(X_i\right)=4,i=1,2,\cdots$,则下列选项不正确的是____","$$
+\forall \varepsilon>0 \quad \lim _{n \rightarrow+\infty} \mathrm{P}\left(\left|\frac{1}{n} \sum_{i=1}^n X_i-3\right|>\varepsilon\right)=0
+$$","$$
+\frac{1}{n} \sum_{i=1}^n X_i^2 \longrightarrow 13
+$$","$$
+{n} \sum_{i=1}^n X_i \stackrel{p}{\longrightarrow} 3
+$$","$$
+\frac{1}{n} \sum_{i=1}^n X_i^3 \longrightarrow 27
+$$",,,"C
+## 解析：
+
+根据题意，随机变量序列$X_1,X_2,\cdots,X_n,\cdots$相互独立、同分布，且$E\left(X_i\right)=3$，$D\left(X_i\right)=4,i=1,2,\cdots$，分析选项可得：
+
+A. $\forall \varepsilon>0 \quad \lim _{n \rightarrow+\infty} \mathrm{P}\left(\left|\frac{1}{n} \sum_{i=1}^n X_i-3\right|>\varepsilon\right)=0$，由大数定律可知，此表述正确；
+
+B. $\frac{1}{n} \sum_{i=1}^n X_i^2 \longrightarrow 13$，根据期望和方差的性质，此表述正确；
+
+C. $n \sum_{i=1}^n X_i \stackrel{p}{\longrightarrow} 3$，根据大数定律，此表述应为$\frac{1}{n} \sum_{i=1}^n X_i \stackrel{p}{\longrightarrow} 3$，因此此表述错误；
+
+D. $\frac{1}{n} \sum_{i=1}^n X_i^3 \longrightarrow 27$，根据期望和方差的性质，此表述正确；
+
+故选C。
+
+## 最终答案：
+
+\(\boxed{C}\)",0
+43,43,"假设$(X,Y)$为二维随机变量，则下列结论正确的是____","如果 $(X,Y)$ 服从二维正态分布，则 $X$ 与 $Y$ 一定独立","如果 $(X,Y)$ 服从二维正态分布，则 $X$ 与 $Y$ 一定不独立","如果 $(X,Y)$ 不服从二维正态分布，则 $X$ 与 $Y$ 一定都不服从正 态分布","如果 $(X,Y)$ 不服从二维正态分布，则 $X$ 与 $Y$ 不一定都不服从 正态分布",,,D,0
+44,44,"设$\mathrm{X}_1，\mathrm{x}_2，\ldots,\mathrm{x}_n$为来自X的简单随机样本，$\mathrm{X}^2$服从$(1，7)$内的均匀分布，记$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$,由中心极限定理，以下成立的是____",$\lim _{n \rightarrow \infty} P\left\{\frac{\sum_{i=1}^n X_i-4}{\sqrt{3}} \leqslant x\right\}=\Phi(x)$,$\lim _{n \rightarrow \infty} P\left\{\frac{\bar{X}-4}{\frac{\sqrt{3}}{n}} \leqslant x\right\}=\Phi(x)$,$\lim _{n \rightarrow \infty} P\{\bar{X} \leqslant 3 x+4\}=\Phi(x)$,$\lim _{n \rightarrow \infty} P\left\{\sum_{i=1}^n X_i \leqslant \sqrt{3 n x}+4 n\right\}=\Phi(x)$,,,"B
+
+解析：因为$\mathrm{X}^2$服从$(1，7)$内的均匀分布，所以$E X^2 = \frac{1+7}{2}=4$，$D X^2 = \frac{7-1}{12}=\frac{3}{6}$，所以$\bar{X} \sim N\left(4, \frac{\sqrt{3}}{n}\right)$。所以$\lim _{n \rightarrow \infty} P\left\{\frac{\bar{X}-4}{\frac{\sqrt{3}}{n}} \leqslant x\right\}=\Phi(x)$。
+
+故选：B。",0
+45,45,"设随机变量X,Y相互独立,其中X的分布函数为F(x)的概率分布为P(Y=1)=0.7,P(Y=2)=0.3.则随机变量Z=X+Y的分布函数G(z)=____",0.7F(z-2)+0.3F(z-1),0.7F(z-1)+0.3F(z-2),0.7F(z+2)+0.3F(z+1),0.7F(z+1)+0.3F(z+2),,,B,0
+46,46,"设二维随机变量$(X,Y)$的联合密度函数$f(x,y)=\begin{cases}12e^{-3x-b},&x>0,y>0\\0,&\text{o.w.}\end{cases}$令$M=\max(X,Y)$,则$\boldsymbol{M}$的分布函数为:____","$$
+F(z)= \begin{cases}3 e^{-3 z}+4 e^{-4 z}-7 e^{-7 z}, & z \geq 0, \\ 0, & \text { 其他}\end{cases}
+$$","$$
+F(z)=\left\{\begin{array}{cc}1-e^{-3 z}-e^{-4 z}+e^{-7 z}, & z \geq 0 ， \\ 0, & \text { 其他}\end{array}\right.
+$$","$$
+F(z)=\left\{\begin{array}{cc}
+1-e^{-7 z}, & z \geq 0 ， \\
+0, & \text { 其他}
+\end{array}\right.
+$$","$$
+F(z)=\left\{\begin{array}{cc}
+1-e^{-3 z}-e^{-4 z}, & z \geq 0, \\
+0, & \text { 其他}
+\end{array}\right.
+$$",,,"## 解析：
+
+因为$M=\max(X,Y)$,所以$F_{M}(z)=P(M \leqslant z)=P(\max(X,Y) \leqslant z)=P(X \leqslant z, Y \leqslant z)$
+$\because f(x,y)=12e^{-3x-b}, x>0, y>0$，
+$\therefore F_{M}(z)=\int_{0}^{z} \int_{0}^{z} 12 e^{-3 x-4 y} d x d y=3 e^{-3 z}+4 e^{-4 z}-7 e^{-7 z}, \quad z \geq 0$
+
+## 最终答案：
+
+\(\boxed{A}\)",0
+47,47,"设$X_1,X_2,X_3$是来自总体$X$的样本,其中$E(X)=7,D(X)=4$,下面说法正确的是：____",$P\left(X_1=X_2=X_3\right)=0$,$D\left(X_1+X_2\right)=D(2 X)=4 D(X)=16$,$D\left(X_1+X_2\right)=2 D(X)=8$,$X_1=X_2=X_3$,,,"## 解析：
+
+A. 显然不成立，故A不正确。
+B. 不正确，$D\left(X_1+X_2\right)=2 D(X)=8$，故B不正确。
+D. 不正确，$X_1,X_2,X_3$不一定相等，故D不正确。
+
+因此，正确答案是C。
+
+## 最终答案：
+
+\(\boxed{A,C}\)",0
+48,48,在正态总体的假设检验中，显著性水平为$\alpha$，则下列结论正确的是____,若在 $\alpha=0.1$ 下接受H0，则在 $\alpha=0.05$ 下必接受H0,若在 $\alpha=0.1$ 下接受H0 ，则在 $\alpha=0.05$ 下必拒绝H0,若在 $\alpha=0.1$ 下拒绝H0，则在 $\alpha=0.05$ 下必接受H0,若在 $\alpha=0.1$ 下拒绝H0，则在 $\alpha=0.05$ 下必拒绝H0,,,"A
+解析：
+
+在正态总体的假设检验中，显著性水平为$\alpha$，若在$\alpha=0.1$下接受H0，则在$\alpha=0.05$下必接受H0，选A。
+
+考点：正态分布",0
+49,49,"设随机变量X，Y和Z相互独立且服从同一伯努利分布$B(1,p)$，则$U=X+Y$与$Z$____",不独立且相关,不独立且不相关,独立且不相关,独立且相关.,,,"## 解析：
+
+设随机变量X，Y和Z相互独立且服从同一伯努利分布$B(1,p)$，则$U=X+Y$与$Z$独立且不相关．
+
+C
+
+## 最终答案：
+
+\(\boxed{C}\)",0
+50,50,"设随机变量$U\sim N(0,1)$,对给定的$\alpha(0<\alpha<1)$,分位点$u_a$满足$P\left(U>u_\alpha\right)=\alpha$。如果$P(|U|<c)=\alpha$,则$c=$____",$u_{1-\alpha}$,$\frac{u_{1-\alpha}}{2}$,$u_{\frac{\alpha}{2}}$,$u_{1-\frac{\alpha}{2}}$,,,"## 解析：
+
+由题意可得$u_a$为$U$位于$\alpha$右端点处的分位点,由$P(|U|<c)=\alpha$可得$c$为$U$位于$\alpha$左右端点处的分位点,又$U\sim N(0,1)$,由正态分布的对称性可知$c=\frac{u_a}{2}$,即$c=\frac{u_{1-\alpha}}{2}$。故选:B。
+由正态分布的对称性可知$c=\frac{u_a}{2}$,代入求解即可。
+
+B
+
+## 最终答案：
+
+\(\boxed{B}\)",0
+51,51,"设$0<P(A)<1,0<P(B)<1$,则事件$A$和$B$相互独立的充要条件为:____",$A$ 和 $B$ 互不相容,$P(\bar{B} \mid \bar{A})+P(B \mid \bar{A})=1$,$P(B \mid A)+P(\bar{B} \mid \bar{A})=1$,$A$ 和 $B$ 对立,,,"## 解析：
+
+若事件$A$和$B$相互独立，则$P(B \mid A)=P(B)$，$P(\bar{B} \mid \bar{A})=P(\bar{B})$，即$P(B \mid A)+P(\bar{B} \mid \bar{A})=P(B)+P(\bar{B})=1$，反之也成立。
+
+## 最终答案：
+
+\(\boxed{C}\)",0
+52,52,"设随机变量X的分布函数F(x)=0.8\Phi(x)+0.2\Phi(0.5x-0.5),\Phi(x)为标准正态分布函数,则X的数学期望E(X)=____",0.4,1,0.8,0.2,,,"B
+本题考查随机变量的数学期望，属于中档题型。设X~N(μ,σ^2)，则E(X)=μ。由题意得：E(X)=0.8μ+0.2[0.5μ-0.5]=μ。所以μ=0.4。故选B。",0
+53,53,"设总体X服从参数为$\lambda(\lambda>0)$的泊松分布，$X_1，X_2，\ldots,X$n为来自总体X的简单随机样本.记$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$，$T=a\bar{X}+(\bar{X})^2$，其中$a$为常数.若$\mathrm{E}(T)=\lambda^2$，则a=____",-\frac{1}{n},\frac{1}{n},-1,1,,,"## 解析：
+
+因为$\mathrm{E}(T)=a\mathrm{E}(\bar{X})+\mathrm{E}((\bar{X})^2)=a\frac{\lambda}{n}+\frac{\lambda^2}{n^2}=\lambda^2$，所以$a=-\frac{1}{n}$，选A
+
+A
+
+## 最终答案：
+
+\\(\boxed{A}\\)",0
+54,54,"设$X_1，X_2，\ldots,X_n$为来自总体$X\sim N\left(\mu,\sigma^2\right)$的一个样本，统计量$Y=n\left(\frac{X-\mu}{S}\right)^2$,则____",$Y \sim X 2(n-1)$,$Y \sim t(n-1)$,"$Y \sim F(n-1,1)$","$Y \sim F(1, n-1)$",,,"D
+本题主要考查统计量的分布。设总体$X\sim N(\mu,\sigma^{2})$，$\overline{X}$，$S^{2}$分别是样本均值和样本方差，则$(n-1)S^{2}/\sigma^{2}\sim\chi^{2}(n-1)$，$S^{2}/\sigma^{2}\sim F(1,n-1)$，则$Y=n\left(\frac{\overline{X}-\mu}{S}\right)^{2}=\frac{\left(\overline{X}-\mu\right)^{2}}{\sigma^{2}/n}\cdot\frac{n}{S^{2}}=\frac{(n-1)S^{2}/\sigma^{2}}{S^{2}/\sigma^{2}}$，所以$Y\sim F(1,n-1)$，故选D。",0
+55,55,"设$X_{1},X_{2},\cdots,X_{16}$是来自总体$X\sim E\left(\frac{1}{8\theta}\right)$的一个样本,其中$\theta$末知,$X_{(1)}=\min\left(X_{1},X_{2},\cdots,X_{16}\right)$,若$kX_{(1)}$为$\theta$的无偏估计,则$k$的值为____",$4$,$2$,$1/2$,$1/4$,,,"## 解析：
+
+由于$X\sim E\left(\frac{1}{8\theta}\right)$,故$X_{(1)}\sim E\left(\frac{1}{8\theta}\cdot 16\right)$,故$kX_{(1)}\sim E\left(\frac{k}{8\theta}\cdot 16\right)$,则$\frac{k}{8\theta}\cdot 16=\theta$,$\therefore k=\frac{1}{2}$.
+
+C
+
+## 最终答案：
+
+\\(\boxed{C}\\)",0
+56,56,"设总体区服从均匀分布$U\left[\theta-\frac{1}{2},\theta+\frac{1}{2}\right]$,其中$\theta\in R$是末知参数，$X_1，\ldots，X_n$为来自该总体的简单随机样本.取.$\left[\bar{X}-\frac{5}{\sqrt{12n}},\bar{X}+\frac{5}{\sqrt{12n}}\right]$为$\theta$的置信区间，则由切比雪夫不等式，这个置信区间的置信水平至少为____",0.96,0.9,0.5,0.72,,,"B
+由已知，总体均值$\mu=\theta$，方差$\sigma^2=\frac{1}{12}$,因此，在$[\bar{X}-\frac{5}{\sqrt{12n}},\bar{X}+\frac{5}{\sqrt{12n}}]$中，有$P\left(\left|\bar{x}-\mu\right|<\frac{5}{\sqrt{12n}}\right)=1-\frac{1}{12}\geqslant0.9$",0
+57,57,"设连续型随机变量$X$的密度函数$f(x)$,且满足$E(X)=2,\int_{-\infty}^{+\infty}\left(x^{2}-2x-5\right)f(x)dx=6$.则$D(X-10)=$____",22,34,11,44,,,"$D$  
+考查离散型随机变量的期望与方差。$E(X)=2,\int_{-\infty}^{+\infty}\left(x^{2}-2x-5\right)f(x)dx=6$，即$E(X^{2})=6+2E(X)+5=16$，所以$D(X)=E(X^{2})-2E(X)=16-2\times 2=12$，因此$D(X-10)=12$.  
+故选：$D$.",0
+58,58,"由概率密度的性质，得A，B为随机事件，$P(A)=\frac{2}{3},P(B\mid A)=\frac{1}{6},P(A\mid B)=\frac{1}{3}$,令$X=\left\{\begin{array}{ll}1,&A\text{发生}\\0,&A\text{不发生}\end{array}\quad Y=\begin{cases}1,&B\text{发生}\\0,&B\text{不发生}\end{cases}\right.$若$Z=X+aY，X$与Z不相关，则$a$的值为____",0.5,1,2,3,,,"由$P(A)=\frac{2}{3},P(B\mid A)=\frac{1}{6},P(A\mid B)=\frac{1}{3}$,得$P(B)=\frac{1}{3}$。由$Z=X+aY$，得$Cov(X,Z)=Cov(X,X+aY)=Cov(X,X)+aCov(X,Y)=Var(X)+aCov(X,Y)$=$\frac{2}{3}+\frac{2}{3}\times\frac{1}{3}a+\frac{1}{3}\times\frac{1}{3}a$，$Cov(X,Y)=Cov(X,X+aY)-Cov(X,X)-aCov(X,Y)=Var(X)+aCov(X,Y)-Var(X)-aCov(X,Y)=0$，解得$a=3$。故选D.",0
+59,59,"设随机变量X的分布函数为$F(x)=\begin{cases}0,&x<0\\\frac{1}{2},&0\leq x<1\\1-\mathrm{e}^{-x},&x\geq 1\end{cases}$,则$\mathrm{P}\{\mathrm{x}=0\}=$____",0,$\frac{1}{2}$,$\frac{1}{2}-\mathrm{e}^{-1}$,$1-\mathrm{e}^{-1}$.,,,因为$\mathrm{P}\{\mathrm{x}=0\}=\mathrm{F}\left(0\right)-\mathrm{F}\left(-\infty\right)=\mathrm{F}\left(0\right)=\frac{1}{2}.$选B.,0
+60,60,设$X$和$Y$为相互独立的连续型随机变量，它们的密度函数分别为$f_1(x)，f_2(x)$，它们的分布函数分别为$F_1(x)，F_2(x)$，则____,$f 1(x)+f 2(x)$ 为某一随机变量的密度函数,$f 1(x) f 2(x)$ 为某一随机变量的密度函数,$F 1(x)+F 2(x)$ 为某一随机变量的分布函数,$F 1(x) F 2(x)$ 为某一随机变量的分布函数,,,"D
+本题主要考查随机变量的分布函数和密度函数的性质。设$X$和$Y$为相互独立的随机变量，故$f(x)=f_1(x)f_2(x)$为某一随机变量的密度函数，$F(x)=F_1(x)F_2(x)$为某一随机变量的分布函数。故本题正确答案为D。",0
+61,61,"设$X_1,X_2,\cdots,X_n$是取自正态分布$N\left(\mu,\sigma^2\right)$的简单样本,其中$\mu$末知。$\sigma^2$的置信度为$1-\alpha$的双侧置信区问为$\left(\hat{\sigma}_1^2,\hat{\sigma}_2^2\right)$,则上限$\hat{\sigma}_2^2$的估计量应为:____","$
+\frac{\sum_{i=1}^n\left(X_i-\bar{X}\right)^2}{\chi_{1-\alpha}^2(n-1)}
+$","$
+\frac{\sum_{i=1}^n\left(X_i-\bar{X}\right)^2}{\chi_{\frac{\alpha}{2}}^2(n-1)}
+$","$
+\frac{\sum_{i=1}^n\left(X_i-\bar{X}\right)^2}{\chi_{1-\frac{a}{2}}^2(n-1)}
+$","$
+\frac{\sum_{i=1}^n\left(X_i-\bar{X}\right)^2}{\chi_\alpha^2(n-1)}
+$",,,C,0
+62,62,"随机变量$(X,Y)\sim N(0,1;0,1;0.5)$,则____","$\frac{Y^2}{X^2} \sim F(1,1)$",$X^2$ 和 $Y^2$ 都服从 $\chi^2$ 分布,"$X+Y \sim N(0,2)$",$X^2+Y^2 \sim \chi^2(2)$,,,A,0
+63,63,设随机变量X的分布函数$F(x)=0.2F_1(x)+0.8F_1(2x)$，其中$\mathrm{F}_1(\mathrm{x})$是服从参数为1的指数分布的随机变量的分布函数，则D(X)为____,0.36,0.44,0.64,1,,,"B
+解析：
+本题主要考查函数分布函数的性质以及求解期望和方差的方法。
+因为$\mathrm{F}_1(\mathrm{x})$是服从参数为1的指数分布的随机变量的分布函数，所以随机变量X的概率密度函数$f(x)=0.2\mathrm{e}^{-x}+0.8\times 0.5\mathrm{e}^{-2\mathrm{x}}=0.1\mathrm{e}^{-x}+0.4\mathrm{e}^{-2\mathrm{x}}$，
+所以$\mathrm{E}(\mathrm{x})=0.1\int_0^\infty x\mathrm{e}^{-x}\mathrm{d}x+0.4\int_0^\infty x\mathrm{e}^{-2\mathrm{x}}\mathrm{d}x$
+$=0.1+0.2=0.3$，
+$\mathrm{D}(\mathrm{x})=0.1\int_0^\infty (x-0.3)^2\mathrm{e}^{-x}\mathrm{d}x+0.4\int_0^\infty (x-0.3)^2\mathrm{e}^{-2\mathrm{x}}\mathrm{d}x$
+$=0.1\{0.9^2+2\}=0.44$。",0
+64,64,"设$\left(X_1,X_2,\cdots,X_k\right)$为来自总体$X\sim N\left(0,\delta^2\right)$的简单样本,下面不是参数$\delta^2$无偏估计量的为：____",$\frac{1}{k-1} \sum_{i=1}^k\left(X_i-\bar{X}\right)^2$,$\frac{1}{k} \sum_{i=1}^k X_k^2$,$k \bar{X}^2$,$\sqrt{k} \bar{X}^2$,,,"C
+## 解析：
+
+本题考查了无偏估计量的概念，属于容易题。",0
+65,65,"设$X\sim N\left(0,\frac{1}{2}\right)$,在给定$\mathrm{X}=\mathrm{x}$的条件下，$\mathrm{Y}$的条件分布为$N\left(x,\frac{1}{2}\right)$,则$Y$的概率分布为____","$N(0,1)$","$N(1,1)$","$N(\frac{1}{2},1)$","$N(1,\frac{1}{2})$",,,"## 解析：
+
+由条件分布知，$Y$的期望为${\rm{E}}(Y)={\rm{E}}\left[ Y|X=x \right]+\rm{E}(x)=x+0=x$，$Y$的方差为$\operatorname{D}(Y)=\operatorname{D}(X)+\operatorname{D}(x)=\frac{1}{2}+0=\frac{1}{2}$。故选D。
+
+D
+
+## 最终答案：
+
+\(\boxed{D}\)",0
+66,66,"设$A、B、C$为任意的三个随机事件,下列选项中错误的是____","当 $P(C)>0$ 且A,B为互不相容时, $P(A \cup B \mid C)=P(A \mid C)+P(B \mid C)$","当 $P(C)>0$ 时, $P(B \mid C)=1-P(\bar{B} \mid C)$","当 $0<P(C)<1$ 时, $P(B \mid C)=1-P(B \mid \bar{C})$","当 $P(C)>0$ 时, $P(A \cup B \mid C) \leq P(A \mid C)+P(B \mid C)$",,,"## 解析：
+
+A. 当 $P(C)>0$ 且A,B为互不相容时, $P(A \cup B \mid C)=P(A \mid C)+P(B \mid C)$,正确;
+B. 当 $P(C)>0$ 时, $P(B \mid C)=1-P(\bar{B} \mid C)$,正确;
+C. 当 $0<P(C)<1$ 时, $P(B \mid C)=1-P(B \mid \bar{C})$,错误;
+D. 当 $P(C)>0$ 时, $P(A \cup B \mid C) \leq P(A \mid C)+P(B \mid C)$,正确.
+
+因此，选项C是错误的。
+
+## 最终答案：
+
+\(\boxed{C}\)",0
+67,67,"设$X_{1},X_{2},\cdots,X_{n}$是来自总体$X\sim U(0,8\pi)$的简单样本,$\mathrm{Y}_{i}=\frac{\pi}{4}\sin\left(\frac{1}{8}X_{1}\right)$,则$\frac1n\sum_{i=1}^{n}Y_{i}$依概率收敛于____",$1 / 16$,$1 / 4$,$1 / 8$,$1 / 2$,,,"D
+【考查知识点】大数定律",0
+68,68,"设随机变量X和Y相互独立，都服从$[0,b]$上均匀分布，则$E[\min(X,Y)]=$____",\frac{b}{2},b,\frac{b}{3},\frac{b}{4},,,"C
+本题主要考查随机变量的分布函数，以及随机变量的期望。设$G(t)=$概率$P(\min(X,Y)\leq t)$，则$G(t)=P(\min(X,Y)\leq t)=P(X\leq t)P(Y\leq t)$，因为$X$，$Y$相互独立且都服从$[0,b]$上均匀分布，所以$G(t)=t^2/b^2$，所以$G'(t)=2t/b^2$，所以$P(\min(X,Y)=t)=2t/b^2$，于是$E[\min(X,Y)]=\int_0^b{2t/b^2}dt=b/3$。故本题正确答案为C。",0
+69,69,"设随机事件A，B的概率均大于0。(1)若A，B互不相容，则它们相互独立.(2)若A，B相互独立，则它们互不相容.(3)若P(A)=P(B)=0.5，则它们互不相容.（4）若P(A)=P(B)=0.5,则它们相互独立.上述结论正确的个数为：____",2个,3个,1个,0个,,,"D
+解析：
+本题考查互斥事件与独立事件的概念。根据互斥事件与独立事件的定义，可得$P(A+B)=P(A)+P(B)$，$P(A\cap B)=0$，$P(A+B)=P(A)+P(B)-P(A\cap B)$，$P(A\cap B)=P(A)P(B)$，因此上述四个结论均不成立。故选D。",0
+70,70,"设随机变量$X_1,X_2,\ldots,X_n$相互独立，服从同一分布，方差$\sigma^2>0$,$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$，则必有____","$cov\left(X_1, \bar{X}\right)=\frac{\sigma^2}{n}$;","$cov\left(X_1, \bar{X}\right)=\sigma^2$",$\mathrm{D}\left(X_1+\bar{X}\right)=\frac{(n+2) \sigma^2}{n}$,$\mathrm{D}\left(X_1-X\right)=\frac{(n+1) \sigma^2}{n}$,,,"B
+## 解析：
+
+由$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i=\frac{1}{n}(X_1+X_2+\ldots+X_n)$知，$E(\bar{X})=E\left(\frac{1}{n}(X_1+X_2+\ldots+X_n)\right)=\frac{1}{n}E(X_1+\ldots+X_n)=\frac{1}{n}(E(X_1)+E(X_2)+\ldots+E(X_n))=\frac{1}{n}(E(X_1)+\ldots+E(X_n))=E(X_1)=\mu,$ $D(\bar{X})=D\left(\frac{1}{n}(X_1+X_2+\ldots+X_n)\right)=\frac{1}{n}D(X_1+\ldots+X_n)=\frac{1}{n}(D(X_1)+D(X_2)+\ldots+D(X_n))=\frac{1}{n}(D(X_1)+\ldots+D(X_n))=\frac{1}{n}D(X_1)=\frac{\sigma^2}{n},$ $\therefore cov\left(X_1, \bar{X}\right)=E\left(X_1 \bar{X}\right)-E\left(X_1\right) E\left(\bar{X}\right)=E\left(X_1 \cdot\frac{1}{n}(X_1+X_2+\ldots+X_n)\right)-E\left(X_1\right) E\left(\frac{1}{n}(X_1+X_2+\ldots+X_n)\right)$ $=E\left(\frac{1}{n}X_1^2+\frac{1}{n}X_1X_2+\ldots+\frac{1}{n}X_1X_n\right)-E\left(X_1\right) E\left(\frac{1}{n}(X_1+X_2+\ldots+X_n)\right)$ $=\frac{1}{n}E\left(X_1^2\right)+\frac{1}{n}E\left(X_1X_2\right)+\ldots+\frac{1}{n}E\left(X_1X_n\right)-E\left(X_1\right) E\left(\frac{1}{n}(X_1+X_2+\ldots+X_n)\right)$ $=\frac{1}{n}\left[E\left(X_1^2\right)-E^2\left(X_1\right)+E\left(X_1X_2\right)-E\left(X_1\right) E\left(X_2\right)+\ldots+E\left(X_1X_n\right)-E\left(X_1\right) E\left(X_n\right)\right]$ $=\frac{1}{n}\left[\sigma^2+\sigma^2+\ldots+\sigma^2\right]=\sigma^2.$ 故选项B正确。 $\mathrm{D}(X_1+\bar{X})=D\left(X_1+\frac{1}{n}(X_1+X_2+\ldots+X_n)\right)=D\left(\frac{n+1}{n}X_1+\frac{1}{n}X_2+\ldots+\frac{1}{n}X_n\right)=\frac{n+1}{n^2}D(X_1)+\frac{1}{n^2}(D(X_2)+\ldots+D(X_n))$ $=\frac{n+1}{n^2}D(X_1)+\frac{1}{n^2}(D(X_1)+\ldots+D(X_n))=\frac{n+1}{n^2}D(X_1)+\frac{1}{n^2}(nD(X_1))=\frac{n+1}{n^2}D(X_1)+\frac{1}{n^2}(nD(X_1))=\frac{2(n+1)}{n^2}D(X_1)=\frac{2(n+1)}{n^2} \sigma^2.$ 故选项C错误。 $\mathrm{D}(X_1-\bar{X})=D\left(X_1-\frac{1}{n}(X_1+X_2+\ldots+X_n)\right)=D\left(\frac{n-1}{n}X_1-\frac{1}{n}X_2-\ldots-\frac{1}{n}X_n\right)=\frac{(n-1)^2}{n^2}D(X_1)+\frac{1}{n^2}(D(X_2)+\ldots+D(X_n))$ $=\frac{(n-1)^2}{n^2}D(X_1)+\frac{1}{n^2}(D(X_1)+\ldots+D(X_n))=\frac{(n-1)^2}{n^2}D(X_1)+\frac{1}{n^2}(nD(X_1))=\frac{(n-1)^2}{n^2}D(X_1)+\frac{1}{n^2}(nD(X_1))=\frac{n-1}{n^2}D(X_1)=\frac{n-1}{n^2} \sigma^2.$ 故选项D错误。
+
+## 最终答案：
+
+\(\boxed{B}\)",0
+71,71,"设$X_1,X_2,\cdots,X_{100}$是来自总体$X\sim B(1,p)$的简单样本,则下列结论中不正确的是：____",$\frac{1}{100} \sum_{k=1}^{100} X_k \stackrel{P}{\longrightarrow} p$,"$\sum_{k=1}^{100} X_k \sim B(100, p)$","$\sum_{k=1}^{100} X_k \sim N(100 p, 100 p(1-p))$ (近似)",$P\left\{a<\sum_{k=1}^{100} X_k<b\right) \approx \Phi(b)-\Phi(a)$,,,"## 解析：
+
+对于选项A，由于\(\frac{1}{n} \sum_{k=1}^{n} X_k\)是\(X\)的样本平均数，因此\(\frac{1}{100} \sum_{k=1}^{100} X_k \stackrel{P}{\longrightarrow} p\)，选项A描述正确；
+
+对于选项B，由于\(\sum_{k=1}^{n} X_k\)的分布是\(B(n, p)\)，所以\(\sum_{k=1}^{100} X_k \sim B(100, p)\)，选项B描述正确；
+
+对于选项C，由于\(\sum_{k=1}^{n} X_k\)的分布是\(B(n, p)\)，当\(n\)很大时，\(\sum_{k=1}^{n} X_k\)近似地服从正态分布\(N(n p, n p(1-p))\)，因此\(\sum_{k=1}^{100} X_k \sim N(100 p, 100 p(1-p))\) (近似)，选项C描述正确；
+
+对于选项D，由于\(\sum_{k=1}^{n} X_k\)近似地服从正态分布\(N(n p, n p(1-p))\)，所以\(P\left\{a<\sum_{k=1}^{n} X_k<b\right) \approx \Phi\left(\frac{b-100p}{10\sqrt{p(1-p)}}\right) - \Phi\left(\frac{a-100p}{10\sqrt{p(1-p)}}\right)\)，选项D描述不正确。
+
+## 最终答案：
+
+\(\boxed{\text{D}}\)",0
+72,72,设$(X，Y)$的联合分布函数为$F(x，y)，X$与$Y$的分布函数分别为$F_X(x)$和$F_Y(y)$，定义$U=\max(X，Y)，V=\min(X，Y)$，下列说法正确的是____,U的分布函数为 $F U(u)=F X(u) F Y(u)$,V的分布函数为 $F V(v)=1-[1-F X(v)][1-F Y(v)]$,"V的分布函数为 $F V(v)=F X(v)+F Y(v)-F(v,v)$",U， V必相互独立,,,C,0
+73,73,"设X，Y为两个随机变量，D(X)=1,D(Y)=4,cov(X,Y)=1,令Z_1=X-2Y,Z_2=2X-Y,则Z_1与Z_2的相关系数为____",1,\frac{5}{\sqrt{13}},0,\frac{5}{2\sqrt{13}},,,"解：根据题意，有D(Z_1)=E(Z_1^2)-[E(Z_1)]^2=5,同理可得D(Z_2)=13,所以相关系数为\frac{5}{\sqrt{13}}，选B。 考点：随机变量的相关性",0
+74,74,设随机变量X与$Y$相互独立，且分别服从参数为1与参数为4的指数分布，则$P(X<Y)=$____,\frac{1}{5},\frac{1}{3},\frac{2}{3},\frac{4}{5},,,"根据随机变量X与$Y$相互独立，且分别服从参数为1与参数为4的指数分布，可知$P(X<Y)=P\left( \frac{1}{2}X<\frac{1}{4}Y \right)=\frac{\frac{1}{4}}{\frac{1}{2}+\frac{1}{4}}=\frac{2}{3}$，故选C.
+本题主要考查了随机变量的分布，以及分布的概率计算，属于基础知识的考查．",0
+75,75,"已知P(A)=0.15,P(B)=0.25,P(AB)=0.125,则P(A\cupB)与P(\overline{A}B)的值为____",0.375，0.175,0.625，0.375,0.275，0.125,0.575，0.075,,,A,0
+76,76,甲乙两人约定在$8\sim12$点某地会面，设两人8点后$X$与$Y$小时到达会面地点，且两人到达时间相互独立且均服从$[0$，4]上的均匀分布，则先到者的平均等待时间为多少小时____,\frac{1}{3},\frac{2}{3},1,\frac{4}{3},,,"因为两人到达时间相互独立且均服从$[0$，4]上的均匀分布，所以先到者的平均等待时间为$\frac{1}{2}E(X)+\frac{1}{2}E(Y)=\frac{1}{2}E(X)+\frac{1}{2}E(X)=\frac{1}{2}\times 2+2=\frac{4}{3}$，
+
+答案为D.",0
+77,77,"要使$P(X=k)=at^k,k=1,2,\cdots$为离散型随机变量$X$的分布列,常数$a、t$、应该满足的条件为:____",$t=\frac{1}{1+a}$ 且 $a>0$,$a=\frac{1}{t}-1$ 且 $t<\mathbf{1}$,$a>0$ 且 $0<t<1$,$a=1-t$ 且 $0<t<1$,,,"D
+.",0
+78,78,"对一目标连续相互独立的射击,直至命中三次为止,设每次射击的命中率为0.6,消耗的子弹数为$X$,则$E(X)$等于$(\quad)$____",5,7,3,9,,,"A
+
+$X$的可能取值为$3$，$4$，$5$，$6$，$7$，$8$，$P(X=3)=0.6^{3}=0.216$，$P(X=4)=C_{3}^{2}×0.6^{2}×0.4=0.2592$，$P(X=5)=C_{4}^{2}×0.6^{2}×0.4^{2}=0.20736$，$P(X=6)=C_{5}^{2}×0.6^{2}×0.4^{3}=0.10368$，$P(X=7)=C_{6}^{2}×0.6^{2}×0.4^{4}=0.04032$，$P(X=8)=C_{7}^{2}×0.6^{2}×0.4^{5}=0.010368$，所以$E(X)=3×0.216+4×0.2592+5×0.20736+6×0.10368+7×0.04032+8×0.010368=5$，故选：$A$.",0
+79,79,"设$(X_1，...,X_n)$是来自正态总体$X\sim N（\mu,\sigma^2）$的一个样本,$\bar{X}$是样本均值，记$S_1^2=\dfrac{1}{n-1}\sum\limits_{i=1}^n(X_i-\overline{X})^2$,$S_2^2=\dfrac{1}{n}\sum\limits_{i=1}^n(X_i-\overline{X})^2$,$S_3^2=\dfrac{1}{n-1}\sum\limits_{i=1}^n(X_i-\mu)^2$,$S_4^2=\dfrac{1}{n}\sum\limits_{i=1}^n(X_i-\mu)^2$,则服从自由度为n-1的t分布的随机变量是____",$\dfrac{\overline{X}-\mu}{S_3}\sqrt{n}$,$\dfrac{\overline{X}-\mu}{S_2}\sqrt{n-1}$,$\dfrac{\overline{X}-\mu}{S_1}\sqrt{n-1}$,$\dfrac{\overline{X}-\mu}{S_4}\sqrt{n}$,,,"C
+本题主要考查抽样分布相关知识。$ \mathrm{~t~}(\mathrm{n}-1)$分布的随机变量是由$ \mathrm{~t~}(\mathrm{n}-1)$分布的随机变量除以自由度为$ \mathrm{n}-1$的$ \mathrm{~\chi~}^{2}$分布的随机变量。",0
+80,80,若$(X，Y)$服从二维正态分布$N(0，0，1，1，\rho)$，令$U=\alpha X+\beta Y$，$V=\alpha X-\beta Y$，则$\operatorname{cov}(U，V)=$____,$\alpha^2+\beta^2$,$\alpha^2-\beta^2$,$\alpha^2+2 \rho \alpha \beta+\beta^2$,$\alpha^2-2 \rho \alpha \beta+\beta^2$,,,"D
+答案：D
+$X Y$的联合密度函数为$f(X，Y)=\frac{1}{2\pi}\mathrm{e}^{-\frac{1}{2}(X^2+Y^2-2\rho XY)}$，
+$U=\alpha X+\beta Y$，$V=\alpha X-\beta Y$，
+$U$的期望为$E(U)=\alpha E(X)+\beta E(Y)=0$，$V$的期望为$E(V)=\alpha E(X)-\beta E(Y)=0$，
+$U$的方差为$D(U)=\alpha^2 D(X)+\beta^2 D(Y)+2\alpha \beta \mathrm{cov}(X，Y)=\alpha^2+\beta^2+2\rho \alpha \beta$，
+$V$的方差为$D(V)=\alpha^2 D(X)+\beta^2 D(Y)-2\alpha \beta \mathrm{cov}(X，Y)=\alpha^2+\beta^2-2\rho \alpha \beta$，
+$UV$的协方差为$\mathrm{cov}(U，V)=\alpha^2+\beta^2-2\rho \alpha \beta$。",0
+81,81,"设$X_1,X_2,\ldots,X_{10}$是来自正态总体$N\left(\mu,\sigma^2\right)$的一个简单随机样本,下列关于末知参数$\mu$的无偏估计量中哪一个最有效为：____",$\frac{1}{4} X_1+\frac{3}{4} X_2$,$\frac{1}{4} X_1+\frac{1}{4} X_2+\frac{1}{4} X_3+\frac{1}{4} X_4$,$\frac{1}{10} \sum_{i=1}^{10} X_i$,$\frac{1}{2} X_1+\frac{1}{2} X_2$,,,"C
+由已知“方差最小的估计量最有效”，而方差最小的估计量就是无偏估计量中方差最小的估计量，由此可得C项$\bar{X}$为最有效的无偏估计量。",0
+82,82,"假设某厂生产的一种保险丝的融化时间服从分布$N(\mu,\sigma^2)$,按规定保险丝融化时间的方差不得超过400,现从一批产品中抽取25个,测得其融化时间的样本方差为427.5。在显著性水平0.05下，根据这个样本数据检验这批样品的方差是否符合要求，假设检验的原假设为$H_0$,被则假设$H_1$,拒绝与为W，以及检验结论为____(本题查表值:$\chi_{0.05}^2(24)=36.415,\chi_{0.025}^2(24)=39.364,\chi_{0.95}^2(24)=13.848,\chi_{0.975}^2(24)=12.401$)","$\mathrm{H}_0: \sigma^2 \geq 400$, $\mathrm{H}_1: \sigma^2<400$ ;$ W=\left\{\frac{24 S^2}{400}<13.848\right\}$;结论：符合要求","$\mathrm{H}_0: \sigma^2 \leq 400$, $\mathrm{H}_1: \sigma^2>400 $; $W=\left\{\frac{24 S^2}{400}>39.364\right\}$; 结论: 不符合要求","$\mathrm{H}_0: \sigma^2 \geq 400$, $\mathrm{H}_1: \sigma^2<400$ ;$ W=\left\{\frac{24 S^2}{400}<12.401\right\}$;结论：符合要求","$\mathrm{H}_0: \sigma^2 \leq 400$,$ \mathrm{H}_1: \sigma^2>400 $; $W=\left\{\frac{24 S^2}{400}>36.415\right\}$;结论；符合要求",,,B,0
+83,83,"设总体$X$的分布函数为$F(x),\left(X_{1},X_{2},\cdots,X_{n}\right)\left(\mathrm{n}/\mathbf{F}^{50)}\right.$为取自总体$X$的简单随机样本,$\mathrm{c}$为给定的常数$Y_n$示$\left(Y_{1},X_{2},\cdots,A_{n}\right)$中小于等于$\mathrm{c}$的个数。则
+
+(i)$Y_{n}\sim B(n,F(c))$
+(ii）当$n$充分大时,$Y_{n}$近似服从正分分布
+(iii)$\left\{Y_{n}\right\}$依概率收敛到$\left.F\right)$($)>0$
+(iv)对任意的$\varepsilon>0,\lim_{n\rightarrow\infty}P\left(\left|\frac{\Psi_{n}}{n}-F(c)\right|\varepsilon\right)=1$,
+上述(i)(ii)(iii)(iv)中正确的个数为____",2,4,3,1,,,"C
+(i)根据二项分布的定义，$Y_{n}\sim B(n,F(c))$。
+(ii)当$n$充分大时，$Y_{n}$近似服从正分分布，这是因为当样本量增大时，二项分布会趋近于正态分布。
+(iii)根据依概率收敛的定义，$\left\{Y_{n}\right\}$依概率收敛到$\left.F\right)$($)>0$。
+(iv)对任意的$\varepsilon>0,\lim_{n\rightarrow\infty}P\left(\left|\frac{\Psi_{n}}{n}-F(c)\right|\varepsilon\right)=1$，这是由于随着$n$的增加，$Y_{n}$的均值和方差都趋于稳定，因此$\frac{\Psi_{n}}{n}$会逐渐接近$F(c)$。
+
+综上所述，上述(i)(ii)(iii)(iv)中正确的个数为3。所以答案是C. 3。",0
+84,84,"设$A$与$B$为随机事件,$0<P(A)<1,P(B)>0,P(B\mid A)=1-P(\bar{B}\mid\bar{A})$,则必有____",$P(A \mid B)=P(\bar{A} \mid B)$,$P(A \mid B) \neq P(\bar{A} \mid B)$,$P(\bar{A} \bar{B})=P(\bar{A}) P(\bar{B})$,$P(A B) \neq P(A) P(B)$,,,"B
+解析：
+由题意知$P(B\mid A)=1-P(\bar{B}\mid\bar{A})=1-\dfrac{P(\bar{B}\bar{A})}{P(\bar{A})}=1-\dfrac{P(\bar{B})-P(\bar{B}A)}{P(\bar{A})}=1-\dfrac{P(\bar{B})}{P(\bar{A})}+\dfrac{P(\bar{B}A)}{P(\bar{A})}$.又$P(B\mid A)=\dfrac{P(AB)}{P(A)}$,所以$\dfrac{P(AB)}{P(A)}+\dfrac{P(\bar{B}A)}{P(A)}=1-\dfrac{P(\bar{B})}{P(\bar{A})}$,即$P(A\mid B)=P(\bar{A}\mid B)$,故选B.",0
+85,85,"设$A$与$B$为互不相容的事件,且$P(A)>0,P(B)>0$,则下列各式中不正确的是____",$P(\bar{B} \mid A)=0$,$P(A \cap B)=0$,$P(A \cup B)=P(A)+P(B)$,$P(A \cap \bar{B})=P(A)$,,,"## 解析：
+
+本题考查互斥事件的判断，是基础题，解题时要认真审题，注意互斥事件概率乘法公式的合理运用．$A$与$B$为互不相容的事件，且$P(A) > 0$，$P(B) > 0$，则$A$与$B$为互斥事件，$P(A \cap B)=0$，所以$P(A \cap \overline{B})=P(A)$，$P(A \cup B)=P(A)+P(B)$，$P(\overline{B} \mid A) \neq 0$．故选A．
+
+A
+
+## 最终答案：
+
+\(\boxed{A}\)",0
+86,86,"设$\left(X_1,X_2,\cdots,X\right.$,为来自标准正态总体$N(1,9)$的简单随机样本,$\bar{X}$与$S^2$分别为样本均值与样本方差,令$Y=\bar{X}^2-S^2$,则$E(Y)=$____",-2,-8,0,7,,,,0
+87,87,设$(X，Y)$的联合概率密度函数为$f(x，y)=Ae^{-x}(x>0，0<y<2)$，则$A=$____,0.5,0.75,0.25,1,,,"$A$
+
+$A=\int_{0}^{+\infty}\int_{0}^{2}Ae^{-x}dxdy=\int_{0}^{2}A(1-e^{-x})dy=A=0.5$ 故选 A.",0
+88,88,"设有2个袋子，各装r+b只球，其中红球r只，黑球b只，今从第1个袋子随机取一球，放入第2个袋子，再从第2个袋子随机取一球.令
+$$
+X_i=\left\{\begin{array}{ll}
+1,&\text{第i次取出红球}\\
+0,&\text{第i次取出黑球}
+\end{array}\right.
+$$，(i=1,2)则____",$X_1$和X_2独立，不同分布,$X_1$和$X_2$不独立，同分布,$X_1$和$X_2$独立，同分布,$X_1$和$X_2$不独立，不同分布,,,"## 解析：
+
+由于第一次取球影响第二次取球，因此$X_1$与$X_2$不是相互独立的。由题意，$X_1$和$X_2$的取值只可能为0或1，因此$X_1$和$X_2$的分布是相同的，都是$P\{X_1 = 0\} = \frac{b}{r+b}$，$P\{X_1 = 1\} = \frac{r}{r+b}$，$P\{X_2 = 0\} = \frac{b}{r+b}$，$P\{X_2 = 1\} = \frac{r}{r+b}$。因此，$X_1$和$X_2$不独立，但同分布。
+
+## 最终答案：
+
+\(\boxed{B}\)",0
+89,89,"设总体$\mathrm{X}$的概率密度为$f(x,\theta),\theta$是末知参数,现有$X_1,X_2,\ldots,X_n$是来自总体$\mathrm{X}$的一个简单随机样本,对给定的置信水平$1-\alpha$及样本容量$n$后,参数$\theta$的置信区间____",与样本容量 $n$ 无关,唯一,与$1-\alpha$无关,不唯一,,,"D
+解析：
+置信区间具有两个特点：一是依赖于样本，二是具有概率保证。样本容量$n$越大，估计参数$\theta$的精确度越高，那么相应的置信区间越短，估计参数$\theta$的可靠性越高；当$1-\alpha$越小时，置信度越高，同样置信区间会变短，估计参数$\theta$的可靠性越高。因此，置信区间与样本容量$n$和置信水平$1-\alpha$有关，且不唯一。正确答案为D. 不唯一。",0
+90,90,"A、B是两个随机事件,P(A)=0.3,P(B)=0.4,且A与B相互独立,$P(A\cup B)=$____",0.7,0.58,0.82,0.12,,,"A
+由题意知$P(A\cup B)=P(A)+P(B)-P(A\cap B)=P(A)+P(B)-P(A)P(B)=0.3+0.4-0.3\times 0.4=0.7$．
+
+因此选择A。<|im_end|>",0
+91,91,"设随机变量X，$Y，Z$相互独立，且$X\sim N(1，2)$,$Y\sim N(2，2)$,$Z\sim N(3，7)$，记$a=P\{X<Y\}$，$b=P\{Y<Z\}$，则____",a<b,a>b,a=b,无法确定,,,$a=P\{X<Y\}$=$\frac{1}{2}$，$b=P\{Y<Z\}$=$\frac{1}{2}$，故选C.,0
+92,92,"设总体$X\sim N(0，\sigma^2)$($\sigma^2$已知)，$X_1,\ldots,X_n$是取自总体$X$的简单随机样本，$S^2$为样本方差，则下列正确的是____",$\sum_{i=1}^n X_i^2 \sim \chi^2(n)$,$\frac{\sum_{i=1}^n X_i}{\sqrt{n S}} \sim t(n)$,$\frac{1}{n}\left(\sum_{i=1}^n \frac{X_i}{\sigma}\right)^2+\frac{(n-1) S^2}{\sigma^2} \sim \chi^2(n)$,"$\frac{(n-1) X_n^2}{\sum_{i=1}^{n-1} X_i^2} \sim F(n-1,1)$",,,C,0
+93,93,"设连续型随机变量X的密度函数满足:$f(x)=f(-x)$,$x\geq0$。记F(x)为X的分布函数。则$P(|X|<1024)=$____",2(1-F(1024)),1-F(1024),2-F(1024),2F(1024)-1,,,$P(|X|<1024)=P(-1024<X<1024)=2(1-F(1024))$。故选A。,0
+94,94,"某工厂生产的灯泡,其寿命(千小时)均服从参数为4的指数分布。现在完全随机地从该厂生产的灯泡中抽取4只,其中恰有2只灯泡寿命小于1千小时的概率为____","$$
+4 e^{-4}\left(1-e^{-4}\right)^{3}
+$$","$$
+4 e^{-12}\left(1-e^{-4}\right)
+$$","$$
+1 - \left(1-e^{-4}\right)
+$$","$$
+6 e^{-8}\left(1-e^{-4}\right)^{2}
+$$",,,"## 解析：
+
+本题主要考查离散型随机变量及其分布列．由题意可知，每只灯泡寿命小于1千小时的概率均为$1-\frac{1}{4}=e^{-4}$，所以从该厂生产的灯泡中抽取4只，其中恰有2只灯泡寿命小于1千小时的概率为$C_{4}^{2}(e^{-4})^{2}(1-e^{-4})^{4-2}=6e^{-8}(1-e^{-4})^{2}$．故本题正确答案为D．
+
+D
+
+## 最终答案：
+
+\(\boxed{D}\)",0
+95,95,"设随机变量$X\sim U(0,2),Y\sim U(0,1)$,且$X$与$Y$相互独立。则$P(X<Y)=$____",\frac {1}{2},\frac {1}{4},\frac {1}{3},\frac {3}{8},,,"由题意得，$P(X<Y)=\int _{ 0 }^{ 1 }\int _{ 0 }^{ x }dxdy=\int _{ 0 }^{ 1 }xdy=\frac {1}{2}$，
+
+故选A.",0
+96,96,设随机变量$X\sim E(1)$，记$Y=\max(X，1)$，则$E(Y)=$____,1,1+\mathrm{e}-1,1-e-1,e-1,,,"## 解析：
+
+因为随机变量$X\sim E(1)$，记$Y=\max(X，1)$，所以$E\left(Y\right)=\int_{1}^{+\infty}{\left[1-F\left(X\right)\right]}dX=\int_{1}^{+\infty}{\left[1-{{\text{e}}^{-X}}\right]}dX=1-{{\text{e}}^{-1}}$.故选：B.
+首先根据随机变量$X\sim E(1)$，记$Y=\max(X，1)$，可得$E\left(Y\right)=\int_{1}^{+\infty}{\left[1-F\left(X\right)\right]}dX=\int_{1}^{+\infty}{\left[1-{{\text{e}}^{-X}}\right]}dX=1-{{\text{e}}^{-1}}$，即可求得$E(Y)$的值.
+
+B
+
+## 最终答案：
+
+\(\boxed{B}\)",0
+97,97,"设$\left(X_{1},X_{2},\cdots,X_{10}\right)$是来自总体$N(0,1)$的一个样本,统计量$a\left(X_{1}+X_{2}+\cdots+X_{6}\right)^{2}+$$b\left(X_{7}+X_{8}+X_{9}+X_{10}\right)^{2}$的分布是自由度为$\mathrm{n}$的$\chi^{2}$分布,则$a、b、n$的数值分别是____","$1 / 2,1 / 2,10$","$1 / 4,1 / 6,2$","$1 / 5,1 / 5,2$","$1 / 6,1 / 4,2$",,,"## 解析：
+
+因为$\left(X_{1},X_{2},\cdots,X_{10}\right)$是来自总体$N(0,1)$的一个样本,且$a\left(X_{1}+X_{2}+\cdots+X_{6}\right)^{2}+$$b\left(X_{7}+X_{8}+X_{9}+X_{10}\right)^{2}$的分布是自由度为$\mathrm{n}$的$\chi^{2}$分布,所以$a=1 / 6$,$b=1 / 4$,$n=2$.
+
+D
+
+## 最终答案：
+
+\(\boxed{D}\)",0
+98,98,"设二维连续型随机变量$(X,Y)$的联合概率密度为$f(x,y),X$与$Y$的边缘密度函数分别为$f_X(x)$与$f_Y(y)$,$Z=X+Y$,则$Z$的概率密度函数为:____","$
+\int_{-\infty}^{+\infty} f_X(v) f_Y(z-v) d v
+$","$
+\int_{-\infty}^{+\infty} f(v, z-v) d v
+$","$
+\int_{-\infty}^{+\infty} \int_{-\infty}^{+\infty}\left[f_X(x)+f_Y(y)\right] d x d y
+$","$
+\int_{-\infty}^{+\infty} f_X(z-v) f_Y(v) d v
+$",,,"## 解析：
+
+由题意知，$Z = X + Y$，其中$(X, Y)$的联合概率密度为$f(x, y)$，$X$与$Y$的边缘密度函数分别为$f_X(x)$与$f_Y(y)$。为了求解$Z$的概率密度函数，我们需要考虑$Z$的分布特性。
+
+根据随机变量函数的概率密度函数的性质，对于$Z = X + Y$，其概率密度函数可以通过积分变换得到。具体地，$Z$的概率密度函数$f_Z(z)$可以通过以下积分表示：
+
+$$
+f_Z(z) = \int_{-\infty}^{+\infty} f_X(v) f_Y(z-v) \, dv
+$$
+
+其中，$f_X(v)$和$f_Y(z-v)$分别表示$X$和$Y$在$v$和$z-v$处的概率密度函数。这个积分表示了所有可能的$v$值，使得$X = v$且$Y = z - v$的概率加总，即$Z = X + Y = z$的概率。
+
+因此，选项A正确地反映了$Z$的概率密度函数的计算方式。其他选项或未能正确表示$Z$的概率密度函数的计算，或包含了不相关的项。
+
+## 最终答案：
+
+\(\boxed{A}\)",0
+99,99,设$X\sim N(1，4)$，$P(X>a)=\Phi(-1)$则a=____,2,3,1,0.5,,,"由正态分布的性质可知：$P(X>a)=\Phi(-1)=1-\Phi(1)=1-P(x<1)=P(x>1)$，故$a=1$，
+
+答案：C",0
+100,100,"设总体X服从标准正态分布，$\left(X_1,X_2,\ldots,X_n\right)$为总体的简单佯本，$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$,$S^2=\frac{1}{n-1}\sum_{i=1}^n\left(X_i-\bar{X}\right)^2$,则____","$X \sim \mathrm{N}(0,1)$","$n \mathrm{X} \sim N(0,1)$",$\frac{X}{S} \sim t(n-1)$,$\sqrt{n} \frac{X}{S} \sim t(n-1)$,,,"## 解析：
+
+本题考查正态分布、正态总体均值、方差的分布。若$\xi$服从正态分布$N(\mu, \sigma^2)$，则$\sqrt{n} \frac{\left(\xi - \mu\right)}{\sigma} \sim t(n-1)$。
+
+## 最终答案：
+
+\\(\boxed{D}\\)",0
+101,101,"在假设检验中(i)接受原假设时，可能会犯第二类错误,(ii)接受原假设时，可能会犯第一类错误,(iii)若显著性水平为$5\%$,拒绝原假设$\mathrm{H}_{0}$时,犯第一类错误的概率超过$5\%$,(iv)若显著性水平为5%拒绝原假设$\mathrm{H}_{0}$时,犯第二类错误的概率超过5%。上述说法正确的有几个____",4个,3个,2个,1个,,,"D
+本题主要考查假设检验的错误。假设检验中，接受原假设时，可能会犯第二类错误，故(i)对，(ii)错。若显著性水平为5%，拒绝原假设$\mathrm{H}_{0}$时，犯第一类错误的概率不超过5%，反之，若显著性水平为5%，拒绝原假设$\mathrm{H}_{0}$时，犯第二类错误的概率超过5%，故(iii)错，(iv)对。故只有(i)和(iv)正确，故本题正确答案为D。",0
+102,102,"在$H_0$为原假设,$H_1$为备选假设的徦设检验中,若显著性水平为$\alpha=0.025$,则____",$P( 接受 H_0 \mid H_0 成立 ) \leq 0.025$,$P( 接受 H_1 \mid H_1 成立 ) \leq 0.025$,$P( 接受 H_0 \mid H_1 成立 ) \leq 0.025$,$P( 接受 H_1 \mid H_0 成立 ) \leq 0.025$,,,"A
+解析：
+在假设检验中,当 $H_0$ 为原假设,$H_1$ 为备选假设时,若 $α = 0.025$,则 $P(\text{接受 } H_0 | H_0 \text{ 成立}) \leq 0.025$,这表明在原假设为真时,我们接受原假设的概率不超过 $0.025$。因此,选项 A 正确。
+
+选项 B 错误,因为 $P(\text{接受 } H_1 | H_1 \text{ 成立}) \leq 0.025$ 不符合在备选假设为真时接受备选假设的概率的定义。
+
+选项 C 错误,因为 $P(\text{接受 } H_0 | H_1 \text{ 成立}) \leq 0.025$ 不符合在备选假设为真时接受原假设的概率的定义。
+
+选项 D 错误,因为 $P(\text{接受 } H_1 | H_0 \text{ 成立}) \leq 0.025$ 不符合在原假设为真时接受备选假设的概率的定义。
+
+综上所述,正确答案为 A。
+
+考点:假设检验,显著性水平",0
+103,103,"学生考试成绩服从正态分布$N\left(\mu,3^2\right)$，任取36个学生的成绩，测得样本平均值$\bar{x}=60$，则$\mu$的置信度为0.95的置信区间为____","$\left(60-\frac{1}{2} t_{0.025}(36), 60+\frac{1}{2} t_{0.025}(36)\right)$","$\left(60-\frac{1}{2} t_{0.025}(35), 60+\frac{1}{2} t_{0.025}(35)\right)$","$\left(60-\frac{1}{2} z_{0.025}, 60+\frac{1}{2} z_{0.025}\right)$","$\left(60-\frac{1}{2} z_{0.05}, 60+\frac{1}{2} z_{0.05}\right)$",,,"A
+
+因为成绩服从正态分布$N\left(\mu,3^2\right)$，所以方差为9。样本平均值的分布为$N\left(60,1^2\right)$，所以$\mu$的置信度为0.95的置信区间为$\left(60-\frac{1}{2} t_{0.025}(36), 60+\frac{1}{2} t_{0.025}(36)\right)$。
+
+故选A。",0
+104,104,"现有五个灯泡的寿命$\mathrm{X}_{1},X_{2},\ldots,X_{5}$独立同分布,且$E\left(X_{i}\right)=5,D\left(X_{i}\right)=15$,则5个灯泡的平均寿命$\bar{X}=\frac{1}{5}\sum_{i=1}^{5}X_{i}$的方差为____",3,1,5,$\frac{1}{5}$,,,"A 
+因为$\mathrm{X}_{1},\mathrm{X}_{2},\ldots,\mathrm{X}_{5}$独立同分布,所以$\bar{X}$的期望为$E\left(\bar{X}\right)=E\left(\frac{1}{5}\sum_{i=1}^{5}X_{i}\right)=\frac{1}{5}\sum_{i=1}^{5}E\left(X_{i}\right)=\frac{1}{5}\sum_{i=1}^{5}5=5$，方差为$D\left(\bar{X}\right)=D\left(\frac{1}{5}\sum_{i=1}^{5}X_{i}\right)=\frac{1}{25}\sum_{i=1}^{5}D\left(X_{i}\right)=\frac{1}{25}\sum_{i=1}^{5}15=\frac{75}{25}=3$．
+
+故选：A.",0
+105,105,"设随机变量X$\sim U[-1，1]$，则随机变量$U=arcsin X$,$V=arccos X$的相关系数为____",-1,0,\frac{1}{2},1,,,"解：由U+V=$\arcsin X+\arccos X=\frac{\pi }{2}$，故有U=$\frac{\pi }{2}$-V，故ρ=$\frac{\text{Cov}(\frac{\pi }{2}-V,V)}{\sqrt{\text{Var}(\frac{\pi }{2}-V)\text{Var}(V)}}=-1.$故答案为:A.
+由U+V=$\arcsin X+\arccos X=\frac{\pi }{2}$，故有U=$\frac{\pi }{2}$-V，利用相关系数公式求解即可.",0
+106,106,"设随机变量$X\sim N(0,1)$,$\Phi(x)$为X的分布函数,$Y=2(X+|X|)$,则Y的分布函数为____","$F_Y(y)=\begin{cases} \Phi(\frac{y}{2}), y\geq0, \\ 0, y < 0 \end{cases}$","$F_Y(y)=\begin{cases} \Phi(2y), y\geq0, \\ 0, y < 0 \end{cases}$","$F_Y(y)=\begin{cases} \Phi(\frac{y}{4}), y\geq0, \\ 0, y < 0 \end{cases}$","$F_Y(y)=\begin{cases} \Phi(4y), y\geq0, \\ 0, y < 0 \end{cases}$",,,"B 本题考查正态分布和分布函数的应用，属于基础题．$Y=2(X+|X|)=\begin{cases} 0, x\leq 0, \\ 4x, x\geq 0. \end{cases}$所以当$y < 0$时，$F_{Y}(y)=0$，当$y\geq 0$时，$F_{Y}(y)=P(Y\leq y)=P(4X\leq y)=P(X\leq \frac{y}{4})$，所以$F_{Y}(y)=\begin{cases} 0, y < 0, \\ \Phi(\frac{y}{4}), y\geq 0. \end{cases}$故选B.",0
+107,107,"已知随机变量X的密度函数$f(x)=\left\{\begin{array}{ll}A\mathrm{e}^{-x},&x\geqslant\lambda,\\0,&x<\lambda\end{array}(\lambda>0,A\right.$为常数$)$,则概率$\mathrm{P}\{\lambda<X<\lambda+a\}(a>0)$的值____",与a无关，随 $\lambda$ 的增大而增大,与a无关，随 $\lambda$ 的增大而减小,与 $\lambda$ 无关，随a的增大而增大,与 $\lambda$ 无关，随a的增大而减小,,,"## 解析：
+
+本题考查了随机变量及其分布列，由随机变量 \(X\) 的密度函数 \(f(x)=\begin{cases}A\mathrm{e}^{-x}, & x\geqslant\lambda, \\ 0, & x<\lambda\end{cases}(\lambda>0,A\right) 为常数\), 求得 \(A\) 的值，即可求出概率 \(\mathrm{P}\{\lambda<X<\lambda+a\}(a>0)\)，属中档题.  
+由随机变量 \(X\) 的密度函数 \(f(x)=\begin{cases}A\mathrm{e}^{-x}, & x\geqslant\lambda, \\ 0, & x<\lambda\end{cases}(\lambda>0,A\right) 为常数\),  
+所以 \(1=\int_{\lambda}^{+\infty}A\mathrm{e}^{-x}dx=A\left[-\mathrm{e}^{-x}\right]_{\lambda}^{+\infty}=A\mathrm{e}^{-\lambda}\),  
+即 \(A=\mathrm{e}^{\lambda}\),  
+所以概率 \(\mathrm{P}\{\lambda<X<\lambda+a\}=\int_{\lambda}^{\lambda+a}\mathrm{e}^{\lambda}\mathrm{e}^{-x}dx=\int_{0}^{a}\mathrm{e}^{-x}dx=1-\mathrm{e}^{-a}\)，  
+与 \(\lambda\) 无关，随 \(a\) 的增大而增大.  
+故选 C. 
+
+## 最终答案：
+
+\(\boxed{C}\)",0
+108,108,"设随机变量$Z$的分布函数为
+$$
+F(z)=\left\{\begin{array}{cc}
+1-e^{-3z}-e^{-4z}+e^{-7z},&z\geq0,\\
+0,&\text{其他.}
+\end{array}\right.
+$$
+则$E(Z)=$____",$-\frac{7}{12}$,$\frac{7}{12}$,$-\frac{37}{84}$,$\frac{37}{84}$,,,"## 解析：
+
+$F(z)=\left\{\begin{array}{cc}
+1-e^{-3z}-e^{-4z}+e^{-7z},&z\geq0,\\
+0,&\text{其他.}
+\end{array}\right.$
+则
+$$
+f(x)=3e^{-3x}+4e^{-4x}-7e^{-7x},x\geq0
+$$
+故
+$$
+E(Z)=\int_{0}^{\infty}3e^{-3x}+4e^{-4x}-7e^{-7x}dx=\frac{1}{3}+\frac{1}{4}-\frac{1}{7}=\frac{37}{84}
+$$
+## 最终答案：
+
+\(\boxed{D}\)",0
+109,109,"设随机变量X与Y相互独立，X的概率分布为$P\{X=0\}=P\{X=1\}=\frac{1}{2},Y$的概率密度为$f_Y(y)=\left\{\begin{array}{ll}2y,&0<y<1\\0,&\text{其他}\end{array}\right.$,记$Z=X+2Y则$$P\left\{Z>\frac{3}{2}\right\}=$____",\frac{7}{16},\frac{15}{16},\frac{11}{16},\frac{11}{8},,,"## 解析：
+
+由题意$P\left\{Z>\frac{3}{2}\right\}=P\left\{X=1,Y>\frac{1}{2}\right\}=\frac{1}{2}\times\frac{7}{8}=\frac{7}{16}$
+
+A
+
+## 最终答案：
+
+\(\boxed{A}\)",0
+110,110,"若随机变量$X$的概率密度为$f(x)=cx^4e^{-|x|},-\infty<x<+\infty,\mathrm{c}$是大于0的常数,$X$的分布函数为$F(x)$,下面4种关系式:
+(i)$F(x)=F(-x)$;(ii)$F(-x)=1-F(x)$
+(iii)$P(|X|>x)=2[1-F(x)]$;(iv)$F(0)=\frac{1}{2}$;
+其中正确关系式的个数为:____",1,4,2,3,,,"## 解析：
+
+$f(x)$是偶函数,$F(x)$是偶函数,(i)正确;因为$f(x)$是偶函数,所以,$F(x)$是偶函数,(ii)不正确;因为$f(x)$是偶函数,所以,$P(|X|>x)=2[1-F(x)]$,(iii)正确;因为$f(x)$是偶函数,所以,$F(0)=\frac{1}{2}$,(iv)正确.故选D.
+D
+
+## 最终答案：
+
+\(\boxed{D}\)",0
+111,111,"设$X_1，X_2，\ldots,X_n$是取自正态总体$N\left(\mu，\sigma^2\right)$的简单随机样本，其均值和方差分别为$\overline{\mathbf{X}}，S^2$，则服从自由度为$n$的$x^2$分布的随机变量是____",$\frac{\bar{X}^2}{\sigma^2}+\frac{(n-1) S^2}{\sigma^2}$,$\frac{n \bar{X}^2}{\sigma^2}+\frac{(n-1) S^2}{\sigma^2}$,$\frac{(\bar{X}-\mu)^2}{\sigma^2}+\frac{(n-1) S^2}{\sigma^2}$,$\frac{n(\bar{X}-\mu)^2}{\sigma^2}+\frac{(n-1) S^2}{\sigma^2}$,,,"D
+由于$X_{1}，X_{2}，…，X_{n}$是取自正态总体$N\left(\mu，\sigma^{2}\right)$的简单随机样本，其均值和方差分别为$\overline{\mathbf{X}}，S^2$，则有$\frac{\bar{X}-\mu}{\sigma} \sim N(0,1)$，$\frac{(n-1) S^2}{\sigma^2} \sim \chi^2(n-1)$，$\therefore \frac{n(\bar{X}-\mu)^2}{\sigma^2}+\frac{(n-1) S^2}{\sigma^2} \sim \chi^2(n)$，故选D.",0
+112,112,"设连续随机变量$X$的密度函数满足$f(x)=f(-x),F(x)$是$X$的分布函数,则$P(|X|>2018)=$____",$2-F(2018)$,$2 F(2018)-1$,1-2F(2018),$2[1-F(2018)]$,,,"$P(|X|>2018)=1-P(|X|≤2018)=1-P(-2018≤X≤2018)=1-2F(2018)$
+
+故选C.",0
+113,113,"设总体X在区间[0,a]上服从均匀分布,若有三个样本观察值分别为2020,2022,2024,则末知参数a的矩估计值为____",以上都不对,4040,4042,4044,,,"C
+解析：
+设总体X在区间[0,a]上服从均匀分布,若有三个样本观察值分别为2020,2022,2024,则末知参数a的矩估计值为C.",0
+114,114,"设$\left(X_{1},X_{2},\cdots,X_{n+1}\right)$为取自总体$X\sim N\left(\mu,\sigma^{2}\right)$的样本,其中,$\mu,\sigma^{2}$均未知。记
+
+$$
+\bar{X}=\frac{1}{n+1}\sum_{k=1}^{n+1}X_{k},Q=\sum_{k=1}^{n+1}\left(X_{k}-\bar{X}\right)^{2},
+$$
+
+则检验假设$H_{0}:\mu=4,H_{1}:\mu\neq4$所用的检验统计量为____",$\sqrt{n(n-1)}\frac{\bar{X}-4}{\sqrt{Q}}$,$\sqrt{n(n+1)}\frac{\bar{X}-4}{\sqrt{Q}}$,$\frac{\bar{X}-4}{\sqrt{nQ}}$,$\sqrt{n(n-1)}\frac{\bar{X}-4}{Q}$,,,"A
+
+本题考查了正态分布的性质及应用。根据题意，$Q=\sum_{k=1}^{n+1}\left(X_{k}-\bar{X}\right)^{2}=\sum_{k=1}^{n+1}\left(\frac{n+1}{n}\left(X_{k}-\mu\right)\right)^{2}=\frac{(n+1)^{2}}{n}\sum_{k=1}^{n+1}\left(\frac{X_{k}-\mu}{\sqrt{n}}\right)^{2}$，$\because X\sim N\left(\mu,\sigma^{2}\right)$，所以$\frac{X_{k}-\mu}{\sqrt{n}}\sim N\left(0,\sigma^{2}/n\right)$，所以$\frac{\sum_{k=1}^{n+1}\left(X_{k}-\mu\right)}{\sqrt{n}}\sim N\left(0,\sigma^{2}\right)$，$\sqrt{n(n-1)}\frac{\bar{X}-4}{\sqrt{Q}}=\sqrt{n(n-1)}\frac{\sqrt{n}\bar{X}-\sqrt{n}4}{\sqrt{n(n+1)^{2}\sum_{k=1}^{n+1}\left(\frac{X_{k}-\mu}{\sqrt{n}}\right)^{2}}}=\frac{\frac{1}{\sqrt{n}}\sum_{k=1}^{n+1}\left(X_{k}-\mu\right)}{\sqrt{\frac{n(n+1)^{2}}{n}\sum_{k=1}^{n+1}\left(\frac{X_{k}-\mu}{\sqrt{n}}\right)^{2}}}=\frac{\frac{1}{\sqrt{n}}\sum_{k=1}^{n+1}\left(X_{k}-\mu\right)}{\sqrt{n(n+1)}\frac{1}{n}\sum_{k=1}^{n+1}\left(X_{k}-\mu\right)^{2}}$，故正态分布的性质及应用。",0
+115,115,"设事件$A，B$满足$P(B)=0.4$，$P(\bar{A}\mid B)=0.8$,$P(\bar{A}\mid\bar{B})=0.3$,则$P(B\mid A)=$____",0.5,0.24,0.36,0.16,,,"解：由$P(B)=0.4$，$P(\bar{A}\mid B)=0.8$，$P(\bar{A}\mid\bar{B})=0.3$，得$P(A)=1-P(\bar{A})=1-0.8\times 0.4-0.3\times 0.6=0.28.$所以$P(B\mid A)=\dfrac{P(AB)}{P(A)}=\dfrac{P(A)P(B)}{P(A)}=\dfrac{0.28\times 0.4}{0.28}=0.4.$
+
+因此，正确答案为A. 0.5。",0
+116,116,"一种传染病在某市的发病率为3%,为查出这种传染病,医院采用一种新的检验法，它能使$98\%$的患有此病的人被检出阳性，但也会有0.5%未患此疒的人被检查出阳性.则某人被此法检出阳性的概率:____",0.03425,0.96575,0.3425,0.6575,,,D,0
+117,117,"设$(X,Y)$服从单位圆内的均匀分布,以下说法正确的是____",$X$ 和 $Y$ 相互独立,"$cov(X, Y) \neq 0$","$cov(X, Y)=0$",$D(X-Y)=D(X)-D(Y)$,,,"## 解析：
+
+$(X,Y)$服从单位圆内的均匀分布，则 $X$ 与 $Y$ 不独立，$Cov(X, Y) \neq 0$，$D(X-Y)=D(X)+D(Y)$。故本题选 B.",0
+118,118,"设$f(x)=\{\begin{array}{ll}{{\sin(x),}}&{{\quad a<x<b,}}\\{{0,}}&\text{其他}\end{array}$，则在下列给定的各组数值中，应取____，才可以让f(x)成为一个概率密度函数","$（a,b）=(0, \pi)$","$（a,b）=(0, \pi/2)$","$（a,b）=(0, 3\pi/2)$","$（a,b）=(0, 2\pi)$",,,"## 解析：
+
+本题考查概率密度函数的定义及正弦函数的性质，由概率密度函数的定义可得结论．由概率密度函数的性质可知，$∫_{a}^{b}\sin xdx=1$，即$-\cos x|_{a}^{b}=-\cos b+\cos a=1$，故$b= \dfrac{π}{2}$，$a=0$，故选B．
+
+B
+
+## 最终答案：
+
+\(\boxed{B}\)",0
+119,119,"设总体$X\sim N(0,1),X_{1},X_{2},\cdots,X_{n},X_{n+1},X_{n+2},\cdots,X_{2n}$为总体$X$的样本,
+$Y=\left(\sum_{k=1}^{n}X_{k}\right)^{2}$,$Z=\left(\sum_{k=n+1}^{2n}X_{k}\right)^{2}$,
+(i)$\frac{1}{n}(Y+Z)\sim\chi^{2}(2)$,
+(ii)$\frac{1}{n^{2}}(Y+Z)\sim\chi^{2}(2)$,
+(iii)$\frac{\mathrm{Y}}{\boldsymbol{Z}}\sim F(1,1)$,
+(iv)$\frac{\mathbf{Y}}{\boldsymbol{Z}}\sim F(n,n)$上述(i)(ii)(iii)(iv)中正确个数为____",3,2,4,1,,,"D
+(i) $\frac{1}{n}(Y+Z)\sim\chi^{2}(2n)$ (ii) $\frac{1}{n^{2}}(Y+Z)\sim\chi^{2}(2n)$ (iii) $\frac{Y}{Z}\sim F(1,2n-1)$ (iv) $\frac{Y}{Z}\sim F(n,2n-1)$",0
+120,120,"设条件概率密度为$f_{x\mid Y}(x\mid Y)=\left\{\begin{array}{cc}\frac{2x}{y^2},&0\leq x\leq y,\\0,&\text{其他}\end{array}\right.$,则$P\left(X>\frac{1}{4}\mid Y=\frac{3}{4}\right)=$____",$\frac{1}{9}$,$\frac{9}{16}$,$\frac{7}{16}$,$\frac{8}{9}$,,,"## 解析：
+
+$P\left(X>\frac{1}{4}\mid Y=\frac{3}{4}\right)=P(X>\frac{1}{4},Y=\frac{3}{4})$
+
+$=\int_{\frac{1}{4}}^{\frac{3}{4}}\frac{2x}{y^2}dy=\left[\frac{2x^2}{y^2}\right]_{\frac{1}{4}}^{\frac{3}{4}}=\frac{1}{9}$
+
+故选A.
+
+C
+
+## 最终答案：
+
+\(\boxed{A}\)",0
+121,121,"随机变量$X,Y$相互独立,且$X$服从区间$(0,1)$上的均匀分布,$Y$的概率密度为
+
+$$
+f(y)=\left\{\begin{array}{rr}
+\frac{1}{2}e^{-\frac{y}{2}},&y>0\\
+0,&y\leq0
+\end{array}\right.
+$$
+
+那么$X$和$2Y$的联合概率密度为____","$$
+f(x, y)=\left\{\begin{array}{rc}
+\frac{1}{2} e^{-y}, & 0<x<2, \quad y>0, \\
+0, & \text { 其他. }
+\end{array}\right.
+$$","$$
+f(x, y)=\left\{\begin{array}{rc}
+\frac{1}{4} e^{-\frac{y}{4}}, & 0<x<1, \quad y>0, \\
+0, & \text { 其他. }
+\end{array}\right.
+$$","$$
+f(x, y)=\left\{\begin{array}{cc}
+\frac{1}{2} e^{-\frac{y}{2}}, & 0<x<1, \quad y>0, \\
+0, & \text { 其他. }
+\end{array}\right.
+$$","$$
+f(x, y)=\left\{\begin{array}{rc}
+\frac{1}{4} e^{-\frac{y}{2}}, & 0<x<2, \quad y>0, \\
+0, & \text { 其他. }
+\end{array}\right.
+$$",,,"## 解析：
+
+本题考查联合分布的求解，由联合分布的定义求解即可．由题意知，$X$和$Y$的联合分布为$$
+f(x, y)=\left\{\begin{array}{cc}
+\frac{1}{2} e^{-\frac{y}{2}}, & 0<x<1, \quad y>0, \\
+0, & \text { 其他. }
+\end{array}\right.
+$$，所以$X$和$2Y$的联合分布为$$
+f(x, y)=\left\{\begin{array}{cc}
+\frac{1}{2} e^{-y}, & 0<x<2, \quad y>0, \\
+0, & \text { 其他. }
+\end{array}\right.
+$$．故选A．
+
+A
+
+## 最终答案：
+
+\(\boxed{A}\)",0
+122,122,"某工厂生产一批滚珠,其直径$X$服从正态分布$N\left(\mu,\sigma^{2}\right)$,随机抽取20个滚珠,测得样本均值记为$\bar{x}$,样本方差记为$s^{2}$,则$\mu$的单侧置信下限、$\sigma^{2}$单侧置信上限分别为(置信度都为$1-\alpha$)____","$$
+\bar{x}-\frac{s}{\sqrt{20}} t_{\alpha}(19), \quad \frac{19 s^{2}}{\chi_{1-\alpha}^{2}(19)}
+$$","$$
+\bar{x}-\frac{\sigma}{\sqrt{20}} u_{\alpha}, \quad \frac{19 s^{2}}{\chi_{1-\alpha}^{2}(19)}
+$$","$$
+\bar{x}-\frac{s}{\sqrt{20}} t_{\alpha}(19), \quad \frac{19 s^{2}}{\chi_{\alpha}^{2}(19)}
+$$","$$
+\bar{x}-\frac{\sigma}{\sqrt{20}} u_{\alpha}, \quad \frac{19 s^{2}}{\chi_{\alpha}^{2}(19)}
+$$",,,C,0
+123,123,"设随机变量X的密度函数为$f(x)=\begin{cases}\frac{3}{16}x^2,-2<x<2\\0,其他,\end{cases}$令$Y=X^2$，则随机变量Y的密度函数为：____","$f_Y(y) = \begin{cases} \frac{3}{32\sqrt{y}}, 0 < y < 4, \\ 0, 其他, \end{cases}$","$f_Y(y) = \begin{cases} \frac{3}{16}\sqrt{y}, 0 < y < 4, \\ 0, 其他, \end{cases}$","$f_Y(y) = \begin{cases} \frac{3}{16\sqrt{y}}, 0 < y < 4, \\ 0, 其他, \end{cases}$","$f_Y(y) = \begin{cases} \frac{3}{32}\sqrt{y}, 0 < y < 4, \\ 0, 其他, \end{cases}$",,,"本题考查了随机变量的分布函数和概率密度函数，属于中档题。
+解：由题意，$Y$的取值范围为$[0,4]$，  
+则$∵f_X(x)= \begin{cases}\frac{3}{16}x^2,-2 < x < 2 \\ 0,其他,\end{cases}$  
+$∴f_{Y}(y)=f_{X}(x)|_{x= \sqrt {y}}= \frac {3}{16} \sqrt {y}$，  
+故选B．",0
+124,124,设$X$为随机变量，若矩阵$\boldsymbol{A}=\left(\begin{array}{ccc}2&3&2\\0&-2&-X\\0&1&0\end{array}\right)$的特征值全为实数的概率为0.5，则____,X服从区间 $[0 ， 2]$ 的均匀分布,X服从二项分布 $B(2 ， 0.5)$,X服从参数为 1 的指数分布,X服从正态分布,,,"解：特征值全为实数的条件为$\Delta={{X}^{2}}-2=0$，解得X=±$\sqrt{2}$，  
+则X服从区间 $[0 ， 2]$ 的均匀分布，  
+故选A.",0
+125,125,"设随机变量$(X,Y)$的联合概率密度为
+
+$$
+f(x,y)=\left\{\begin{aligned}
+\frac{21}{4}x^{2}y,&x^{2}<y<1\\
+0,&\text{其他.}
+\end{aligned}\right.
+$$
+
+(1)$f_{X\mid Y}\left(x\mid y=\frac{1}{2}\right)=\left\{\begin{array}{ccc}3\sqrt{2}x^{2},&-\frac{\sqrt{2}}{2}<x<\frac{\sqrt{2}}{2},&E(XY)=0\\0,&\text{其他.}&E(X)=\infty\end{array}\right.$
+
+(2)$f_{Y\mid X}\left(y\mid x=\frac{\sqrt{2}}{2}\right)=\left\{\begin{aligned}\frac{8}{3}y,&\frac{1}{2}<y<1\\0,&\text{其他.}\end{aligned}\right.$
+
+(3)$X,Y$相互独立.
+
+(4)$X,Y$不相关.
+
+上述结论正确的个数为____",1个,2个,3个,4个,,,"$\text{C}$
+
+本题考查了条件概率的计算，以及如何判断随机变量是否独立，属于中档题.
+
+因为$X$和$Y$的联合分布函数为
+
+$$
+F\left(x,y\right)=\int_{-\sqrt{y}}^{\sqrt{y}}\int_{-\infty}^{x}\frac{21}{4}u^{2}v\mathrm{d}u\mathrm{d}v=\left\{\begin{array}{l}
+\frac{7}{5}x^{3}y^{2},x^{2}<y<1\\
+0,\text{其他}
+\end{array}\right.
+$$
+
+所以$X$的分布函数为
+
+$$
+F_{X}\left(x\right)=\int_{-\sqrt{x}}^{\sqrt{x}}\frac{7}{5}x^{3}y^{2}\mathrm{d}y=\left\{\begin{array}{l}
+\frac{7}{30}x^{5},|x|<1\\
+1,\text{其他}
+\end{array}\right.
+$$
+
+所以$X$的概率密度为
+
+$$
+f_{X}\left(x\right)=\left\{\begin{aligned}&\frac{7}{6}x^{4},|x|<1\\&0,\text{其他}\end{aligned}\right.
+$$
+
+当$y=\frac{1}{2}$时，
+
+$$
+f_{X\mid Y}\left(x\mid y=\frac{1}{2}\right)=\frac{f\left(x,y\right)}{f_{Y}\left(y\right)}=\frac{3\sqrt{2}x^{2}}{2},-\frac{\sqrt{2}}{2}<x<\frac{\sqrt{2}}{2}
+$$
+
+所以(1)正确.当$x=\frac{\sqrt{2}}{2}$时，
+
+$$
+f_{Y\mid X}\left(y\mid x=\frac{\sqrt{2}}{2}\right)=\frac{f\left(x,y\right)}{f_{X}\left(x\right)}=\frac{8}{3}y,\frac{1}{2}<y<1
+$$
+
+所以(2)正确.$X$和$Y$的期望分别为
+
+$$
+E\left(X\right)=\int_{-\frac{\sqrt{2}}{2}}^{\frac{\sqrt{2}}{2}}x\cdot\frac{7}{6}x^{4}\mathrm{d}x=\frac{7}{30}\neq\infty
+$$
+
+$$
+E\left(Y\right)=\int_{0}^{1}y\cdot\frac{21}{4}y^{2}\mathrm{d}y=\frac{7}{4}
+$$
+
+$$
+E\left(XY\right)=\int_{-\frac{\sqrt{2}}{2}}^{\frac{\sqrt{2}}{2}}\int_{x^{2}}^{1}xy\cdot\frac{21}{4}y^{2}\mathrm{d}y\mathrm{d}x=\frac{7}{30}
+$$
+
+所以(3)正确.因为$E\left(XY\right)=E\left(X\right)E\left(Y\right)$，所以$X$和$Y$不相关，所以(4)正确.故选C.",0
+126,126,已知随机变量$X\sim N\left(\mu，\sigma^2\right)$，事件$A=\{X>\mu\}$，事件$B=\{X$$>\sigma\}$，事件$C=\{X>\mu+\sigma\}$，如果$P(A)=P(B)$，那么事件A、B、C至多有一个发生的概率为____,\frac{1}{2},\Phi(1),1-\Phi(1),1,,,"A
+【解析】 本题主要考查正态分布中概率的计算．由正态密度曲线的对称性可得P(A)=P(B)=P(C)=$\frac{1}{2}$，事件A、B、C至多有一个发生的概率为1-P(ABC)=$\frac{1}{2}$．故本题正确答案为A．",0
+127,127,设二维随机变量$(X，Y)$服从二维正态分布，则下列说法不正确的是____,X，Y一定相互独立,X ， Y的任意线性组合 $1 \mathrm{X}+12,X ， Y分别服从于一维正态分布,当相关系数 $\rho=0$ 时，$X ， Y相互独立,,,"## 解析：
+
+二维正态分布的两个随机变量不一定相互独立，故A错；二维正态分布的两个随机变量任意线性组合服从正态分布，故B对；由二维正态分布的定义可知C对；当相关系数 $\rho=0$ 时，$X ， Y$相互独立 ，故D对。
+
+A
+
+## 最终答案：
+
+\\(\boxed{A}\\)",0
+128,128,"设$X_1，X_2，\ldots,X_n$是来自总体$X$的简单随机样本，$E(X)=\mu，D(X)=1$，下面四个选项中正确的是____","$\sqrt{n}(\bar{X}-\mu) \sim N(0,1)$.",$E\left(\bar{X}^2\right)=\mu^2$.,由切比雪夫不等式知 $P\{|\bar{X}-\mu|<\varepsilon\} \geqslant 1-\frac{1}{m \varepsilon^2}$ (为任意正数).,若 $\mu$ 为末知参数，则样本均值 $\bar{X}$ 是 $\mu$ 的知估计，又是 $\mu$ 的最大似然估计.,,,D,0
+129,129,"设随机变量$(X,Y)$的联合密度函数是:$f(x,y)=\left\{\begin{array}{c}ke^{-3x-6y},x>0,y>0\\0,\text{otherwise}\end{array}\right.$,则$P(0\leq X\leq2,0\leq Y\leq1)=$____","$$
+\left(1-e^{-2}\right)^{2}
+$$","$$
+\left(1-e^{-s}\right)^{2}
+$$","$$
+\left(1-e^{-6}\right)^{2}
+$$","$$
+\left(1-e^{-4}\right)^{2}
+$$",,,"## 解析：
+
+由题意得，$\int_{0}^{+\infty}\int_{0}^{+\infty}ke^{-3x-6y}dxdy=k\int_{0}^{+\infty}e^{-6y}dy\int_{0}^{+\infty}e^{-3x}dx=1$，得$k=\dfrac{1}{4}$，所以$P(0\leq X\leq2,0\leq Y\leq1)=\int_{0}^{2}\int_{0}^{1}f(x,y)dxdy=\int_{0}^{2}\int_{0}^{1}\dfrac{1}{4}e^{-3x-6y}dxdy=\left(\dfrac{1}{4}\int_{0}^{2}e^{-3x}dx\right)^{2}=\left(1-e^{-6}\right)^{2}$，故选C.本题考查了联合密度函数的应用，涉及到了二重积分，属于中档题．
+
+C
+
+## 最终答案：
+
+\(\boxed{C}\)",0
+130,130,下列各函数中，可以做随机变量的分布函数的是____,$F(x)=\frac{1}{1+x^2}$,$F(x)=\frac{3}{4}+\frac{1}{2 \pi} \arctan x$,$F(x)=e^{-e^{-x}}$,$F(x)=\sin x$,,,"## 解析：
+
+根据分布函数的概念和性质，可知$F(x)=0$，$F(x)=1$，$-∞<x<+∞$，$F(x)$在$R$上递增，$F(x)=e^{-e^{-x}}$满足以上条件，故选C。
+
+C
+
+## 最终答案：
+
+\(\boxed{C}\)",0
+131,131,"设总体X服从拉普拉斯分布$f(x,\lambda)=\frac{1}{4\lambda}e^{-\frac{|x|}{2\lambda}},-\infty<x<\infty\text{,其中}\lambda>0$。若取得样本值$\left(x_1,x_2,\cdots x_n\right)$,参数$\lambda$的极大似然估计值为：____","$
+\frac{1}{2 n} \sum_{i=1}^n\left|x_i\right|
+$","$
+\frac{1}{2 n} \sum_{i=1}^n x_i
+$","$
+\frac{1}{n} \sum_{i=1}^n\left|x_i\right|
+$","$
+\frac{1}{4 n} \sum_{i=1}^n\left|x_i\right|
+$",,,"A
+由于总体X服从拉普拉斯分布$f(x,\lambda)=\frac{1}{4\lambda}e^{-\frac{|x|}{2\lambda}},-\infty<x<\infty\text{,其中}\lambda>0$。由题意，似然函数为
+$$
+L(\lambda)=\frac{1}{(4\lambda)^n}e^{-\sum_{i=1}^n\frac{|x_i|}{2\lambda}}.
+$$
+对$\lambda$求导可得
+$$
+\frac{\partial L}{\partial \lambda}=-\frac{n}{4\lambda^{n+1}}e^{-\sum_{i=1}^n\frac{|x_i|}{2\lambda}}+\frac{1}{4\lambda^{n+1}}e^{-\sum_{i=1}^n\frac{|x_i|}{2\lambda}}\sum_{i=1}^n\frac{|x_i|}{2\lambda^2}=\frac{1}{4\lambda^{n+2}}e^{-\sum_{i=1}^n\frac{|x_i|}{2\lambda}}\left(\sum_{i=1}^n\frac{|x_i|}{2\lambda}-2n\right)=0.
+$$
+故$\lambda=\frac{1}{2 n} \sum_{i=1}^n\left|x_i\right|$，
+
+故选A。",0
+132,132,"已知随机变量$X_1，X_2，X_3，X_4$相互独立，$X_1$与$X_2$服从标准正态分布，$X_3$与$X_4$的概率分布为
+\begin{tabular}{|c|c|c|}
+\hline$X_i$&-1&1\\
+\hline$P$&$\frac{1}{4}$&$\frac{3}{4}$\\
+\hline
+\end{tabular}
+i=3,4，定义$X=X_1X_3-X_2X_4$，则X所服从分布为____","N(0,1)","N(0,2)","N(2,2)","N(1,2)",,,"## 解析：
+
+由随机变量$X_1，X_2，X_3，X_4$相互独立，$X_1$与$X_2$服从标准正态分布，$X_3$与$X_4$的概率分布为
+\begin{tabular}{|c|c|c|}
+\hline$X_i$&-1&1\\
+\hline$P$&$\frac{1}{4}$&$\frac{3}{4}$\\
+\hline
+\end{tabular}
+$,i=3,4$，得$X_1X_3$与$X_2X_4$相互独立，且$X_1X_3\sim N(0,1)$，$X_2X_4\sim N(0,1)$，所以$X=X_1X_3-X_2X_4\sim N(0,2)$。
+
+B
+
+## 最终答案：
+
+\(\boxed{B}\)",0
+133,133,"电站供电网给10000盏电灯供电,夜晩每盏灯开灯的概率为0.7,假设灯是否开关相互独立,用切比雪夫不等式估计同时开的灯数在6900至7100之间的概率至少为:____",0.79,0.9869,0.9767,0.9475,,,"C
+由随机变量服从二项分布知,用切比雪夫不等式估计同时开的灯数在6900至7100之间的概率至少为1—2(10 000×0.7×0.3)2/10 000=0.9767.",0
+134,134,"设$A,B,C$是三个相互独立的随机事件,且$P(A)>0,0<P(C)<1$,则在下列给定的四对事件中不能确定相互独立的是____",$\overline{A \cup B}$ 与 $C$;,$\overline{A C}$ 与 $\bar{C}$;,$\overline{A-B}$ 与 $\bar{C}$;,$\overline{A B}$ 与 $\bar{C}$,,,"## 解析：
+
+根据独立性事件的判断定理，分析A、B、C、D，可知只有A不能确定是否独立。
+
+A
+
+## 最终答案：
+
+\\(\boxed{A}\\)",0
+135,135,"设随机变量X的分布函数为
+$$
+F(x)=\left\{\begin{array}{ll}
+0,&x<0\\
+\frac{1}{2},&0\leq x<1\\
+1-\mathrm{e}^{-x},&x\geq 1
+\end{array}\right.$$,则$\mathrm{P}\{\mathrm{X}=0\}=$$____",0,\frac{1}{2},\frac{1}{2}-e^{-1},1-e^{-1},,,"解：$\because F_{X}(0)=0$   
+$\therefore \mathrm{P}\{\mathrm{X}=0\}=0$.  
+故选 A.",0
+136,136,无线电讯号将两信号*和#传送出去，接收站收到时，*被误收作#的概率为0.01，#被误收作*的概率为0.01。已知在信号传送中，*和#发出的概率分别为2/3和1/3，若接收站收到的信息为*，则原发信号是*的概率为____,197/199,196/197,98/99,198/199,,,A,0
+137,137,"设随机变量$X\sim N(0,1)$,$Y\sim N(1,4)$,且相关系数为$\rho_{XY}=1$,则____",P(Y=-2X-1)=1,P(Y=2X-1)=1,P(Y=-2X+1)=1,P(Y=2X+1)=1,,,"D
+解析：由$\rho_{XY}=1$,可知Y=2X+1.",0
+138,138,"假设用测量仪对某大楼的高度进行$n$次独立测量,并假设各次测量结果$X_{i}(i=1,2,\cdots)$都服从正态分布$N(\mu,0.01)$,其中$\mu$为大楼的真实高度,设$n$次测量的平均值记为$\bar{X}=\frac{1}{n}\sum_{i=1}^{n}X_{i}$,如果用切比雪夫不等式估计,使得用$\bar{X}$对真实值的估计误差不超过0.1的概率不小于0.95,n至少为____",50,90,100,20,,,"## 解析：
+
+由已知，$\sigma_{\bar{X}}=\sqrt{\frac{\sigma^{2}}{n}}=\frac{0.1}{\sqrt{n}}$,又$P\left\{ \left.\mu -0.1<\bar{X}<\mu +0.1\right\}\geq 1-\frac{1}{n}>0.95\right.$,得$n>100$，即$n$至少为101.
+
+C
+
+## 最终答案：
+
+\(\boxed{C}\)",0
+139,139,"设总体$X$的期望与方差$E(X)$和$D(X)$都存在,$X_1,X_2,\cdots,X_n$,$n>4$为来自总体$X$的一个样本,下列$E(X)$估计量中最有效的是____",$\frac{1}{4} \sum_{i=1}^4 X_i$,$\frac{1}{2}\left(X_1+X_2\right)$,$\frac{1}{n} \sum_{i=1}^n X_i$,"$\sum_{i=1}^n C_i X_i$, 其中 $\sum_{i=1}^n C_i=1$ 。",,,"## 解析：
+
+当 \( n > 4 \) 时，只有 \( \frac{1}{n} \sum_{i=1}^n X_i \) 是无偏估计量，且 \( D\left(\frac{1}{n} \sum_{i=1}^n X_i\right) = \frac{1}{n} D(X) \leqslant D\left(\frac{1}{4} \sum_{i=1}^4 X_i\right) = D\left(\frac{1}{2}\left(X_1 + X_2\right)\right) = \frac{1}{4} D(X) \)， \( D\left(\sum_{i=1}^n C_i X_i\right) = \sum_{i=1}^n C_i^2 D(X) \)，所以选项 C 最有效。
+
+## 最终答案：
+
+\\(\boxed{C}\\)",0
+140,140,"设二维随机变量$(X,Y)$在区域$D=\{(x,y):0<x<3,0<y<2\}$内均匀分布,$P(X+Y<2)=kP(X+Y<1)$,则$k=$____",1,2,3,4,,,"由题意，$P(X+Y<2)=\dfrac{4}{6}=\dfrac{2}{3}$，$P(X+Y<1)=\dfrac{1}{6}$，$∵P(X+Y<2)=kP(X+Y<1)$，$∴k=\dfrac{P(X+Y<2)}{P(X+Y<1)}=\dfrac{\dfrac{2}{3}}{\dfrac{1}{6}}=4$.  
+故选：$D$.",0
+141,141,"设随机变量X与Y独立,它们的概率分布分别为:X~N(-2,-1),Y~N(1,2).则Z=2X-Y+8的分布为____","Z~N(8, 7)","Z~N(3, 6)","Z~N(8, 5)","Z~N(12, 9)",,,"C
+设随机变量X与Y独立,它们的概率分布分别为:X~N(-2,-1),Y~N(1,2).则Z=2X-Y+8的分布为Z~N(8, 5).",0
+142,142,"设总体X的概率分布如下
+\begin{tabular}{c|ccc}
+\hline$X$&-1&0&1\\
+\hline$P$&$\frac{1}{4}$&$\frac{1}{2}$&$\frac{1}{4}$\\
+\hline
+\end{tabular}
+从总体中抽取$n$个简单随机样本，$N_1$表示$n$个样本中取到1的个数，$N_2$表示$n$个样本中取到0的个数，$N_3$表示，$n$个样本中取到1的个数，则$N_1$与$N_2$的相关系数为____",-1,$-\frac{\sqrt{3}}{3}$,$\frac{\sqrt{3}}{3}$,1,,,"A. -1
+因为$N_1$与$N_2$的取值范围都是$\{0,1,2,3\}.$，且$N_1+N_2=3.$，所以$N_1$与$N_2$的相关系数为-1。",0
+143,143,设三事件$A，B，C$相互独立且$0<P(C)<1$，则下述事件中不独立的是:____,$\overline{A \cup B}$ 与C,$AC\overline{C}$,$\overline{A-B}$ 与 $\bar{C}$,$\overline{A B}$ 与 $\bar{C}$,,,"C
+
+解析：
+
+由于三事件$A，B，C$相互独立，即$P(AB)=P(A)P(B)$，$P(AC)=P(A)P(C)$，$P(BC)=P(B)P(C)$，$P(ABC)=P(A)P(B)P(C)$。因此，选项C中的事件$\overline{A-B}$与$\bar{C}$不满足独立性条件，因为它们的概率不是各自独立概率的乘积。因此，正确答案是C。
+
+【考点】随机事件与概率, 互斥事件与对立事件, 事件的关系与运算, 互斥事件与对立事件, 互斥事件与对立事件, 互斥事件, 互斥事件, 互斥事件, 互斥事件, 互斥事件, 互斥事件, 互斥事件, 互斥事件, 互斥事件, 互斥事件, 互斥事件, 互斥事件, 互斥事件, 互斥事件, 互斥事件, 互斥事件, 互斥事件, 互斥事件, 互斥事件, 互斥事件, 互斥事件, 互斥事件, 互斥事件, 互斥事件, 互斥事件, 互斥事件, 互斥事件, 互斥事件, 互斥事件, 互斥事件",0
+144,144,"设随机变量$(X,Y)$服从二维正态分布,且$X$和$Y$不相关,$f_X(x),f_Y(y)$分别表示$X,Y$的概率密度函数,则在$X=x$的条件下,$Y$的条件概率密度函数$f_{Y\mid X}(y\mid x)$为:____",$f_X(x) \cdot f_Y(y)$,$f_Y(y)$,$\frac{f_X(x)}{f_Y(y)}$,$f_X(x)$,,,"B
+
+本题考查的是随机变量的联合分布及条件分布。由于随机变量$X$和$Y$不相关，则$X$和$Y$相互独立。故在$X=x$的条件下，$Y$的条件概率密度函数$f_{Y\mid X}(y\mid x)=f_Y(y)$。故本题选B。",0
+145,145,"设$\left(X_1,X_2,\cdots,X_9\right)$为来自正态总体$X\sim N\left(\mu,\sigma^2\right)$($\sigma^2$未知)的样本,样本均值与方差分别为$\bar{x}=12,s^2=225$,则参数$\mu$的置信度为0.9的单侧置信下限为:(注:$t_{0.1}(8)=1.3968,t_{0.05}(8)=1.86$)____",5.836,5.016,2.7,6.23,,,"A
+解：$\mu$的置信度为0.9的单侧置信下限为$\bar{x}-t_{0.1}(n-1)\times\frac{\sigma}{\sqrt{n}}$   
+$=12-1.3968\times\frac{\sqrt{225}}{\sqrt{9}}=5.836$  
+故选：A。",0
+146,146,调节一个装瓶机使其对每个瓶子的灌装量服从均值为$\mu$盎司，标准差为1.0盎司的正态分布。抽取若干个瓶子，测定灌装量，作为一个样本。样本容量至少是才能使得样本均值偏离总体均值不超过0.3盎司的概率达到$95\%$.____,41,42,43,44,,,"A
+根据题意$\mu=0,\sigma=1,\alpha=0.05,Z_{\alpha /2}=1.96,1.96=\frac{0.3}{\sigma/\sqrt{n}}$，解得$n=41$。",0
+147,147,"设01分布总体X，并且P(X=1)=p,(X1,···,Xn)是来自总体的一个简单样本，$\bar{X}$是样本均值，则$P(var{(X)}=k/n)=$____",p,$C_np^k(1-p)^{n-k}$,$p^k(1-p)^{n-k}$,$C_n(1-p)^kp^{n-k}$,,,B,0
+148,148,对事件A，B，已知$P(A)=1$，则必有:____,$A=\Omega$,$B \subset A$.,A与B独立,P(B)<P(A),,,"A
+
+因为$P(A)=1$，所以事件A必然发生。",0
+149,149,某人射击，重复射击且每次命中的概率都为$P(0<P<1)$，则他第6次射击恰好是第3次命中的概率为____,$10P3(1-P)3$,$5P3(1-P)3$,$10P2(1-P)3$,$10P(1-P) 3$,,,"## 解析：
+
+本题考查的是独立重复试验，由题意根据独立重复试验的知识，写出第6次射击恰好是第3次命中的概率的表达式，计算得到结果．
+
+A
+
+## 最终答案：
+
+\\(\boxed{A}\\)",0
+150,150,"设$X_1，\ldots,X_{100}$是来自总体$N(\mu,4)$的简单随机样本.对以下原假设和备择假设$\mathrm{H}_0:\mu=0;\mathrm{H}_1:\mu>0$，若取拒绝域为$\left\{\left(x_1,\cdots,x_{100}\right):\bar{x}>0,4\right\}$,则当$\mu=1$时，此检验犯第二类错误的概率为(用标准正态分布函数$\Phi(\cdot)$表示)____",$1-\Phi(2)$,0.5,$1-\Phi(3)$,$1- \Phi(1)$,,,"A
+解析：$\because X \sim N(\mu,4)$，$\therefore\frac{\bar{x}-\mu}{2} \sim N(\mu,1)$，因为原假设为$\mathrm{H}_0:\mu=0$，所以当$\mu=1$时，犯第二类错误的概率为$1-\Phi\left(\frac{0-1}{2}\right)=1-\Phi(-2)=1-\Phi(2)$，故选A。",0
+151,151,"设$X_1,X_2,\ldots,X_n$为总体$X$的一个简单随机样本，$E(X)=\mu$，$DX=\sigma^2$，为使$\hat{\theta}=c\sum_{i=1}^{n-1}\left({X}_{i+1}-{X}_i\right)^2$为$\sigma^2$的无偏估计C应为____",$\frac{1}{n}$,$\frac{1}{n-1}$,$\frac{1}{2(n-1)}$,$\frac{1}{n-2}$,,,B,0
+152,152,"设事件A，B独立，事件C为“事件$A,\bar{B}$中至少有一个不发生"".若$P(A)=\frac{1}{2},P(B)=\frac{2}{3}$,则$P(C)=$____",\frac{1}{6},\frac{2}{3},\frac{1}{2},\frac{5}{6},,,"由题意知本题是一个相互独立事件同时发生的概率，∵$P(A)=\frac{1}{2},P(B)=\frac{2}{3}$，∴$P(\bar{A})=\frac{1}{2},P(\bar{B})=\frac{1}{3}$，∴$P(C)=1-P(A)P(B)=1-\frac{1}{2}\times \frac{2}{3}=\frac{1}{2}$．
+故选：C．",0
+153,153,"设$X_1,X_2,\cdots,X_n$是总体$X\sim N\left(\mu,\sigma^2\right)$的样本,其中$\mu,\sigma^2$均末知,记$\bar{X},S^2$分别为样本均值和样本方差。则检验假设$H_0:\sigma^2=\sigma_0^2,H_1:\sigma^2\neq\sigma_0^2$所用的检验统计量和它所服从的分布为:____",$\frac{1}{\sigma_0^2} \sum_{i=1}^n\left(X_i-\bar{X}\right)^2 \sim \chi^2(n-1)$,"$\frac{\bar{X}-\mu}{\sigma_0 / \sqrt{n}} \sim N(0,1)$",$\frac{1}{\sigma_0^2} \sum_{i=1}^n\left(X_i-\mu\right)^2 \sim \chi^2(n)$,$\frac{n S^2}{\sigma_0^2} \sim \chi^2(n)$,,,A,0
+154,154,"设$\left(X_{1},X_{2},\cdots,X_{21}\right)$是来自正态总体$X\sim N(\mu,2)$的简单样本,$\bar{X},S^{2}$分别为样本均值与样本方差,下列选项中正确的为____","$\bar{X} \sim N(\mu, 2)$",$\frac 12\sum^{21}_{i=1}(X_i-\mu)^2 ~ \chi^2(21)$,$\frac 12\sum^{21}_{i=1}(X_i-\mu)^2 ~ \chi^2(20)$,$\frac{\bar{X}}{S / \sqrt{20}} \sim t(20)$,,,"## 解析：
+
+本题考查正态分布和卡方分布，属于基础题。$X \sim N(\mu, 2)$，$\bar{X} \sim N(\mu, \frac{2}{n})$，$S^2 \sim \chi^2(n-1)$，$\frac{\bar{X}}{S/\sqrt{n}} \sim t(n-1)$，
+
+D
+
+## 最终答案：
+
+\\(\boxed{D}\\)",0
+155,155,"设某企业生产的一批元件,其某项指标$X$服从正态分布,即$X\sim N\left(\mu,\sigma^{2}\right)$,在正常情况下,该指标的均值不应超过100,标准差为2.1。现从该元件中随机抽取20件,测得该项指标的样本均值为$\bar{x}=110$,样本标准差为$s=2.3$。为检验该批元件是否正常,以下设计的统计假设更合理的为____","检验方差时采用 $H_{0}: \sigma \leq 2.1, H_{1}: \sigma>2.1$","检验方差时采用 $H_{0}: \mu \leq 100, H_{1}: \mu>100$","检验方差时采用 $H_{0}: \sigma \geq 2.1, H_{1}: \sigma<2.1$","检验方差时采用 $H_{0}: \mu \geq 100, H_{1}: \mu<100$",,,"B
+
+## 解析：
+
+由题意可知，检验方差时应设$H_{0}: \sigma \leq 2.1, H_{1}: \sigma>2.1$，检验均值时应设$H_{0}: \mu \leq 100, H_{1}: \mu>100$。
+
+## 最终答案：
+
+\(\boxed{B}\)",0
+156,156,下面4个随机变量的分布中，期望值最大，方差最小的是____,"$X \sim N\left(5, \frac{1}{2}\right)$",$Y \sim U(5 ， 7)$ ，即区间 $(5 ， 7)$ 上的均匀分布,"Z服从指数分布
+$$
+f(z)= \begin{cases}0, & z \leqslant 0, \\ \frac{1}{6} \mathrm{e}^{-\frac{1}{6} z}, &z>0 ;\end{cases}
+$$","T服从指数分布
+$$
+f(t)= \begin{cases}0, & t \leqslant 0, \\ \mathrm{e}^{-\sqrt{3} t},& t>0 .\end{cases}
+$$",,,"## 解析：
+
+根据正态分布、均匀分布、指数分布的性质，可以求得各分布的期望、方差如下：
+
+- 对于选项A，$X \sim N(5, \frac{1}{2})$，期望$E(X) = 5$，方差$Var(X) = \frac{1}{2}$。
+- 对于选项B，$Y \sim U(5, 7)$，即区间$(5, 7)$上的均匀分布，期望$E(Y) = \frac{5 + 7}{2} = 6$，方差$Var(Y) = \frac{(7 - 5)^2}{12} = \frac{4}{12} = \frac{1}{3}$。
+- 对于选项C，$Z$服从指数分布$f(z)= \begin{cases}0, & z \leqslant 0, \\ \frac{1}{6} e^{-\frac{1}{6} z}, & z > 0\end{cases}$，期望$E(Z) = \frac{1}{\lambda} = 6$，方差$Var(Z) = \frac{1}{\lambda^2} = \frac{1}{36}$。
+- 对于选项D，$T$服从指数分布$f(t)= \begin{cases}0, & t \leqslant 0, \\ e^{-\sqrt{3} t}, & t > 0\end{cases}$，期望$E(T) = \frac{1}{\lambda} = \frac{1}{\sqrt{3}}$，方差$Var(T) = \frac{1}{\lambda^2} = \frac{1}{3}$。
+
+综上所述，指数分布的期望值最大，方差最小的是选项C。
+
+## 最终答案：
+
+\(\boxed{C}\)",0
+157,157,随机变量$X$服从$\chi^2(50)$分布，则上侧分位数$\chi_{0.05}^2(50)$近似值为____,1.645;,50;,66.45,100,,,"## 解析：
+
+$\chi_{0.05}^2(50)$近似值为66.45。
+
+C
+
+## 最终答案：
+
+\\(\boxed{C}\\)",0
+158,158,"设随机变量X的概率分布为$P\{X=k\}=a\frac{1+\mathrm{e}^{-1}}{k!},\mathrm{k}=0,1，2，\ldots$，则常数a=____",\frac{1}{e-1},\frac{1}{e+1},\frac{e}{e-1},\frac{e}{e+1},,,A,0
+159,159,"设$f(x)$为某随机变量X的概率密度函数，$f(1+x)=f(1-x)$，$\int_0^2f(x)dx=0.6$,则$\mathrm{P}\{\mathrm{X}<0\}=$____",0.2,0.3,"0,4","0,5",,,"由$f(1+x)=f(1-x)$知，$f(x)$关于$x=1$对称，故$\mathrm{P}\{\mathrm{X}<0\}=\mathrm{P}\{\mathrm{X}>2\}=1-\mathrm{P}\{\mathrm{X}\in\left[0,2\right]\}=0.4$，  
+故选C.",0
+160,160,"已知二维随机变量$(X,Y)$的联合分布律为
+\begin{tabular}{c|c|ccc}
+\hline\multicolumn{2}{c|}{}&\multicolumn{3}{c}{$X$}\\
+\cline{3-5}\multicolumn{2}{c|}{$p_{ij}$}&0&1&2\\
+\hline\multirow{2}{*}{$Y$}&-1&$1/8$&$1/4$&$1/8$\\
+&0&$3/8$&0&$1/8$\\
+\hline
+\end{tabular}
+P(XY=0)=____",$5 / 8$,$1 / 2$,$3 / 8$,$1/4$,,,"## 解析：
+
+本题考查了随机变量的分布列。由联合分布律得$P(XY=0)=P(X=0)P(Y=0)=3/8$。
+
+C
+
+## 最终答案：
+
+\(\boxed{C}\)",0
+161,161,设$P(A\mid B)=P(B\mid A)=\frac{1}{4}，P(\bar{A})=\frac{2}{3}$，则____,事件A，B独立且 $P(A+B)=\frac{7}{12}$,事件A，B独立且 $P(A+B)=\frac{5}{12}$,事件A，B不独立且 $P(A+B)=\frac{7}{12}$,事件A，B不独立且 $P(A+B)=\frac{5}{12}$,,,"## 解析：
+
+已知 $P(A\mid B)=P(B\mid A)=\frac{1}{4}, P(\bar{A})=\frac{2}{3}$，则 $P(A)=1-\frac{2}{3}=\frac{1}{3}$。根据条件概率公式 $P(A\mid B)=\frac{P(A\cap B)}{P(B)}$，可以得出 $P(A\cap B)=P(A)P(B)=\frac{1}{12}$。因此，$P(A+B)=P(A)+P(B)-P(A\cap B)=\frac{1}{3}+\frac{1}{4}-\frac{1}{12}=\frac{7}{12}$。由于 $P(A\cap B)=P(A)P(B)$，这表明事件A和B是独立的。因此，正确答案是A。
+
+## 最终答案：
+
+\\(\\boxed{A}\\)",0
+162,162,"设随机变量$X_1，X_2，\ldots,X_n(n>1)$独立同分布，且其方差$\sigma^2>0$，令$Y=\frac{1}{n}\sum_{i=1}^nX_i$，则____","$\operatorname{cov}\left(X_1, Y\right)=\frac{\sigma^2}{n}$","$cov\left(X_1, Y\right)=\sigma^2$",$D\left(X_1+Y\right)=\frac{n+2}{n} \sigma^2$,$D\left(X_1-Y\right)=\frac{n-1}{n} \sigma^2$,,,"D
+解析：$D\left(X_1-Y\right)=D\left(X_1-\frac{1}{n}\sum_{i=1}^nX_i\right)=D\left(X_1-\frac{1}{n}X_1\right)=\frac{n-1}{n} \sigma^2$，故选D。",0
+163,163,"设$\left(X_1,X_2,\ldots,X_{10}\right)$和$\left(Y_1,Y_2,\ldots,Y_{20}\right)$为分别来自两个总体$N\left(-3,5^2\right)$及$N\left(2,3^2\right)$的样本,且相互独立。$S_1^2=\frac{1}{9}\sum_{i=1}^{10}\left(X_i-\bar{X}\right)^2,S_2^2=\frac{1}{19}\sum_{i=1}^{20}\left(Y_i-\bar{Y}\right)^2$分别为两个样本的方差,则服从$F(9,19)$分布的统计量是____",$\frac{9 S_1^2}{25 S_2^2}$;,$\frac{25 s_1^2}{9 s_2^2}$;,$\frac{3 s_1^2}{5 s_2^2}$,$\frac{5 s_1^2}{3 s_2^2}$.,,,"D
+由$X_i \sim N(-3,5^2)$和$Y_i \sim N(2,3^2)$得$S_1^2 \sim \chi_9^2$,$S_2^2 \sim \chi_{19}^2$,且相互独立,则由$F$分布的定义知$\frac{5 S_1^2}{3 S_2^2} \sim F(9,19)$.",0
+164,164,"设二维随机变且$(X，Y)$的联合密度函数为
+$$
+f(x,y)=\left\{\begin{array}{cc}
+kx\mathrm{e}^{-x(2y+3)},&x>0,y>0,\\
+0,&\text{其他,}
+\end{array}\right.
+$$
+则$k$值为____",2,4,6,8,,,"## 解析：
+
+由题意得：
+$$
+\int_0^{\infty}\int_0^{\infty}kx\mathrm{e}^{-x(2y+3)}\mathrm{d}x\mathrm{d}y=1,
+$$
+则
+$$
+\int_0^{\infty}kx\mathrm{e}^{-x(2y+3)}\mathrm{d}x\mathrm{d}y=1.
+$$
+因此，
+$$
+\int_0^{\infty}\frac{1}{2y+3}\mathrm{d}y=1.
+$$
+解得
+$$
+k=8.
+$$
+
+## 最终答案：
+
+\(\boxed{D}\)",0
+165,165,"设二维离散型随机变量$(X,Y)$的联合分布律为
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline&&\multicolumn{3}{|c|}{$X$}\\
+\hline\multicolumn{2}{|c|}{$p_{tj}$}&-1&0&1\\
+\hline\multirow{2}{*}{$Y$}&-1&$1/8$&$1/2$&$1/8$\\
+&0&$1/8$&0&$1/8$\\
+\hline
+\end{tabular}
+(i)E(X)=E(Y)(ii)E(XY)=0(iii)X,Y不相关(iv)X,Y独立(v)cov(X,Y)=0
+上述结论正确的个数有____",3个,4个,5个,2个,,,"A
+解析：
+$E(X)=(-1\times1/8+0\times1/2+1\times1/8)+(-1\times1/8+0\times1/2+1\times1/8)=0$，$E(Y)=(-1\times1/8+0\times1/2+1\times1/8)+(-1\times1/8+0\times1/2+1\times1/8)=0$，$E(XY)=(-1\times1/8+0\times0+1\times1/8)+(-1\times1/8+0\times0+1\times1/8)+(-1\times1/8+0\times0+1\times1/8)+(-1\times1/8+0\times0+1\times1/8)=0$，$E(X^{2})=(-1\times1/8+0\times1/2+1\times1/8)+(-1\times1/8+0\times1/2+1\times1/8)=1/4$，$E(Y^{2})=(-1\times1/8+0\times1/2+1\times1/8)+(-1\times1/8+0\times1/2+1\times1/8)=1/4$，$COV(X,Y)=E(XY)-E(X)E(Y)=0$，$D(X)=E(X^{2})-[E(X)]^{2}=1/4-0=1/4$，$D(Y)=E(Y^{2})-[E(Y)]^{2}=1/4-0=1/4$，$X$与$Y$不相关，$X$与$Y$不独立，故(i)(ii)(iii)正确，(iv)(v)错误。",0

@@ -1,0 +1,692 @@
+,id,question,A,B,C,D,answer,explanation,model_output,correctness
+0,0,在代数系统中，整环和域的关系是____,整环一定是域,域不一定是整环,域一定是整环,域一定不是整环,,,"C
+代数系统的定义",0
+1,1,下列公式与$\left(\forall x\right)\left(\left(\exists y\right)P\left(y\right)\rightarrow Q\left(x\right)\right)$等值的是____,$(\forall\:x)\:(\exists\:y)\:(\mathsf{P}\:(y)\:\rightarrow\:\mathsf{Q}\:(x)\:)$,$\left(\forall x\right)\left(\forall y\right)\left(\neg\mathsf{P}\left(y\right)\:\rightarrow\:\mathsf{Q}\left(x\right)\right)$,$\left(\forall x\right)\left(\neg\mathtt{Q}\left(x\right)\ \rightarrow\ \left(\forall y\right)\neg\mathtt{P}\left(y\right)\right)$,$\left(\exists y\right)\mathsf{P}\left(y\right)\:\rightarrow\:\left(\:\forall x\right)\mathsf{Q}\left(x\right)$,,,"## 解析：
+
+$(\forall\:x)\:(\left(\exists\:y\right)P\left(y\right)\rightarrow Q\left(x\right))$ 等价于 $(\forall\:x)\:(\exists\:y)\:(\mathsf{P}\:(y)\:\rightarrow\:\mathsf{Q}\:(x)\:)$, 故选 A.
+
+A
+
+## 最终答案：
+
+\(\boxed{A}\)",0
+2,2,一个连通图G具有以下____条件时，能一笔画出：即从某结点出发，经过图中每边仅一次回到该结点。,G 没有奇数度结点,G 有一个奇数度结点,G有2个奇数度结点,G没有或有2个奇数度结点,,,D,0
+3,3,公式$\neg p\rightarrow(q\rightarrow r)$与____等值。,$q\rightarrow(p\lor r)$,$(p\wedge q)\rightarrow r$,$(p\rightarrow r)\lor(q\rightarrow r)$,$p\rightarrow\left(q\lor r\right)$,,,"A
+
+$\neg p\rightarrow(q\rightarrow r)\Leftrightarrow\neg p\rightarrow(\neg q\rightarrow\neg r)\Leftrightarrow q\rightarrow(p\lor r)$  
+故选：A.",0
+4,4,具有7个结点的所有非同构的树有____个。,7,11,12,14,,,B,0
+5,5,若一个平面图G是面4可着色的，则其对偶图G*一定满足_____,点4可着色,面4可着色,有H回路,有欧拉回路,,,A,0
+6,6,下列公式中____不是永真式:,$\neg p\rightarrow(p\rightarrow q)$,$p\rightarrow(\neg p\rightarrow q)$,$\big(p\to\big(q\lor(p\to q)\big)\big)\land\neg q$,$\big(p\to\big(q\lor(p\to q)\big)\big)\lor\neg q$,,,"## 解析：
+
+本题考查的是命题的真假判断与应用，是基础题，难度一般。利用复合命题的真假判断真假，即可得结果。$A.\ \neg p\rightarrow(p\rightarrow q)$，是真命题，故A不满足条件；$B.\ p\rightarrow(\neg p\rightarrow q)$，是真命题，故B不满足条件；$C.\ \big(p\to\big(q\lor(p\to q)\big)\big)\land\neg q$，是假命题，故C满足条件；$D.\ \big(p\to\big(q\lor(p\to q)\big)\big)\lor\neg q$，是真命题，故D不满足条件。
+
+## 最终答案：
+
+\(\boxed{C}\)",0
+7,7,令$P$:今天下雪了，$Q$:路滑，则命题“虽然今天下雪了，但是路不滑”可符号化为____,$P\rightarrow\neg Q$,$P \lor \neg Q$,$\textit{P}\wedge Q$,$\textit{P}\wedge \neg Q$,,,"## 解析：
+
+本题考查的是命题的逻辑连接词，根据题意我们可以将原命题符号化为：今天下雪了，并且路不滑，即可得出答案．命题“虽然今天下雪了，但是路不滑”可符号化为$\textit{P}\wedge \neg Q$，
+
+D
+
+## 最终答案：
+
+\(\boxed{D}\)",0
+8,8,以下性质不一定正确的是____,$A=B\Leftrightarrow P(A)=P(B)$,$A\subseteq B\Leftrightarrow P(A)\subseteq P(B)$,$P(A)\in P(B)\Leftrightarrow A\in B$,$(A-B)\oplus(A-C)=\Phi\Leftrightarrow A-B=A-C$,,,"D
+解析：
+D项$(A-B)\oplus(A-C)=\Phi\Leftrightarrow(A-B)\cap(A-C)=\Phi$，故D项错误.",0
+9,9,"设个体域为$\{-1,1\}$，并对$\mathsf{P}\left(x,y\right)$设定为$\mathsf{P}\left(-1,-1\right)\mathsf{=T}$,$\mathsf{P}\left(-1,1\right)\mathsf{=F}$,$\mathsf{P}(1,-1)\mathsf{=T}$,$\mathtt{P}\left(1,1\right)\mathtt{=F}$，其真值为$\textbf{T}$的公式为____","$(\forall x)\left(\exists y\right)\mathsf{P}\left(x,y\right)$","$(\exists x)(\forall y)\mathsf{P}(x,y)$","$(\forall x)(\forall y)P(x,y)$","$(\forall y)(\exists x)P(x,y)$",,,D,0
+10,10,$R$是集合$A$上的二元关系，下面____说法是错误的。,$tsr(R)=trs(R)$,$rts(R)=tsr(R)$,$str(R)=rts(R)$,$rts(R)=trs(R)$,,,"## 解析：
+
+因为$rts(R)$和$trs(R)$只是符号不一样，但意义是相同的，都是$R$的复合关系，所以D选项应该是正确的，所以C选项是错误的。
+
+C
+
+## 最终答案：
+
+\(\boxed{C}\)",0
+11,11,以2，2，3，3，1，1，1，1为顶点度数列的所有非同构的无向树的个数为____。,4,5,6,7,,,"B
+解析：
+根据无向树的特点，无向树中任意两个顶点之间有且仅有一条唯一的路径，且顶点的度数之和为偶数。设这些顶点分别为 \(a, b, c, d, e, f, g, h\)，顶点度数分别为 \(2, 2, 3, 3, 1, 1, 1, 1\)。根据度数之和为偶数的条件，可以得出有4个顶点的度数为奇数，4个顶点的度数为偶数。因此，这些顶点必须两两配对，形成度数之和为偶数的边。
+
+考虑所有可能的配对方式：
+1. \(a\) 与 \(b\) 配对，\(c\) 与 \(d\) 配对，\(e, f, g, h\) 各为一对。
+2. \(a\) 与 \(c\) 配对，\(b\) 与 \(d\) 配对，\(e, f, g, h\) 各为一对。
+3. \(a\) 与 \(d\) 配对，\(b\) 与 \(c\) 配对，\(e, f, g, h\) 各为一对。
+4. \(a\) 与 \(e\) 配对，\(b\) 与 \(f\) 配对，\(c, d, g, h\) 各为一对。
+5. \(a\) 与 \(f\) 配对，\(b\) 与 \(e\) 配对，\(c, d, g, h\) 各为一对。
+
+因此，所有非同构的无向树的个数为5。选项B正确。",0
+12,12,已知5阶有向图G的度数列和入度列分别为(3，3，2，3，3)和(2，1，1，1，2)，则有向图G的出度列为____。,(1，2，1，2，1),(2，2，2，2，0),(2，2，1，2，1),(1，2，0，2，1),,,"A
+有向图G的度数列和入度列分别为(3，3，2，3，3)和(2，1，1，1，2)，则有向图G的出度列为(1，2，1，2，1)。",0
+13,13,"令$F(x)$：""x是金属""，$G(y)$：""y是液体""，$H(x,y)$：""x可以溶解在y中""，则命题“任何金属可以溶解在某种液体中”可符号化为下列哪项？____","$(\forall x)(F(x)\land(\exists y)(G(y)\land H(x,y)))$","$(\forall x)(\exists(x)F(x)\rightarrow(G(y)\rightarrow H(x,y)))$","$(\forall x)(F(x)\rightarrow(\exists y)(G(y)\land H(x,y)))$","$(\forall x)(F(x)\rightarrow(\exists y)(G(y)\rightarrow H(x,y))$",,,"C
+本题考查命题的逻辑结构，属于基础题．由题意得，命题“任何金属可以溶解在某种液体中”可符号化为$(\forall x)(F(x)\rightarrow(\exists y)(G(y)\land H(x,y)))$，
+
+故选C。",0
+14,14,"A,B为任意集合，以下____不一定正确",${P}({A})\cup P(B)=P(A\cup B)$,${P}({A})\cap P(B)=P(A\cap B)$,${P}({A})\in P(B)\Rightarrow P(A\in B)$,${P}({A})\subseteq P(B)\Rightarrow P(A\subseteq B)$,,,"B, C, D
+
+本题考查集合的集合关系及运算，属于基础题．  $A$ ，$A$ ，$B$ 为任意集合，$P(A)\cup P(B)=P(A\cup B)$ ，一定正确； $B$ ，$P(A)\cap P(B)=P(A\cap B)$ 不一定正确； $C$ ，$P(A)\subseteq P(B)\Rightarrow P(A\subseteq B)$ 不一定正确； $D$ ，$P(A)\in P(B)\Rightarrow P(A\in B)$ 不一定正确； 故选 B，C，D．",0
+15,15,$P(P(P(\Phi)))$为____,"$\{\{\Phi\},\{\Phi,\{\Phi\}\}\}$","$\{\Phi,\{\Phi,\{\Phi\}\},\{\Phi\}\}$","$\{\Phi,\{\Phi,\{\Phi\}\},\{\Phi\},\{\{\Phi\}\}\}$","$\{\Phi,\{\Phi,\{\Phi\}\}\}$",,,C,0
+16,16,设p:我很累，q:我去学习，命题:“除非我很累，否则我就去学习”的符号化正确的是____,$\neg p\wedge q$,$\neg p\rightarrow q$,$\neg p\rightarrow\neg q$,$ p\rightarrow\neg q$,,,"## 解析：
+
+本题考查命题的符号化，属于基础题．根据题意得：“除非我很累，否则我就去学习”，即“我很累”是“我去学习”的充分条件，即“我很累”$\Rightarrow $“我去学习”，所以命题的符号化正确的是$\neg p\Rightarrow q$，
+
+B
+
+## 最终答案：
+
+\(\boxed{B}\)",0
+17,17,任意一条链都是____,分配格,有补格,有界格,有界分配格,,,D,0
+18,18,下列选项中，关于大项和小项的说法错误的是____,每个小项有一个成真赋值，有2n-1种成假赋值,任意两个不同大项的合取式为矛盾式,全体小项的析取式为重言式,每个大项的成假赋值均不相同,,,D,0
+19,19,$f\colon N\rightarrow N\quad\text{}$，且对任意$i\:\in\:N$有$f(i)=i(\text{mod}\ 6)$，则$\mathcal{f}$是____,单射,满射,双射,以上都不对,,,"## 解析：
+
+根据题意，$f\colon N\rightarrow N$ 且对任意 $i\in N$ 有 $f(i)=i(\text{mod}\ 6)$，考虑 $i=1, 2, 3, 4, 5, 6$，则 $f(1)=1, f(2)=2, f(3)=3, f(4)=4, f(5)=5, f(6)=0$，而 $0$ 不在 $f(i)$ 中，则 $f$ 不是满射，不是单射，不是双射，则 $f$ 以上都不对，故选 D。
+
+## 最终答案：
+
+\(\boxed{D}\)",0
+20,20,已知图G中有11条边，1个4度顶点，4个3度顶点，其余顶点的度数均不大于2，则G中至少有____个顶点。,9,8,7,6,,,"B
+
+已知图G中有11条边，1个4度顶点，4个3度顶点，其余顶点的度数均不大于2，则G中至少有8个顶点。",0
+21,21,假设$A\subseteq B$，以下____不一定成立,$\cup A\subseteq\cup B$,$\cap A\subseteq\cap B$,$P(A)\subseteq P(B)$,$A-B\subseteq B-A$,,,"## 解析：
+
+本题考查集合的运算和集合的关系，属于基础题．
+
+D
+
+## 最终答案：
+
+\(\boxed{D}\)",0
+22,22,含n个命题变元的任一命题公式的指派个数是____,n,n^2,2n,22n,,,D,0
+23,23,使得$(q\wedge(p\rightarrow q))\rightarrow p$的真值为$\mathsf{F}$的是下列情形____,"$(p,q)=(F,F)$","$(p,q)=(F,T)$","$(p,q)=(T,F)$","$(p,q)=(T,T)$",,,"## 解析：
+
+本题考查复合命题的真假，根据题意逐项进行判断即可得到结果。
+
+对于选项A，当 \( p = F \) 时，\( (q \wedge (p \rightarrow q)) \rightarrow p \) 的真值为真，故A不满足条件；
+
+对于选项B，当 \( p = F \) 时，\( (q \wedge (p \rightarrow q)) \rightarrow p \) 的真值为假，故B满足条件；
+
+对于选项C，当 \( q = F \) 时，\( (q \wedge (p \rightarrow q)) \rightarrow p \) 的真值为真，故C不满足条件；
+
+对于选项D，当 \( q = F \) 时，\( (q \wedge (p \rightarrow q)) \rightarrow p \) 的真值为假，故D满足条件。
+
+## 最终答案：
+
+\(\boxed{B,C}\)",0
+24,24,下列说法错误的是____,\textbf{K}_5 是结点数最小的非平面图；,\textbf{K}_5去掉任意一条边所形成的图仍是$K^{(2)}$型子图；,\textbf{K}_5 中不存在 K（2）型子图；,在\textbf{K}_5的边上任意加一个度为2的结点， 所形成的新图具有 K 型子图。,,,"## 解析：
+
+对于选项A，\(\textbf{K}_5\) 是结点数最小的非平面图。对于选项B，\(\textbf{K}_5\) 去掉任意一条边后形成的图仍是 \(K^{(2)}\) 型子图。对于选项C，\(\textbf{K}_5\) 中存在 \(K^{(2)}\) 型子图，因此选项C的表述是错误的。对于选项D，在 \(\textbf{K}_5\) 的边上任意加一个度为2的结点，所形成的新图具有 \(K^{(2)}\) 型子图。因此，错误的选项是C。
+
+## 最终答案：
+
+\(\boxed{C}\)",0
+25,25,公式$(p\uparrow q)\downarrow(p\uparrow q)$与____等值。,$p\lor q$,$p\wedge q$,${p\rightarrow q}$,$p\leftrightarrow q$,,,"## 解析：
+
+$p\downarrow q$，即$p$和$q$中至少有一个为假，$p\uparrow q$，即$p$和$q$均为真，则$(p\uparrow q)\downarrow(p\uparrow q)\Leftrightarrow p\land q$。
+
+B
+
+## 最终答案：
+
+\(\boxed{B}\)",0
+26,26,"$(\forall x)(P(x)\rightarrow(\exists y)Q(x,y))$的前束范式为____","$(\forall x)(\exists y)(\neg P(x)\lor Q(x,y))$","$(\forall x)(\exists y)(P(x)\lor Q(x,y))$","$(\forall x)(\exists y)(\neg P(x)\wedge Q(x,y))$","$(\exists x)(\exists y)(\neg P(x)\wedge Q(x,y))$",,,A,0
+27,27,下列说法错误的是____,给定\mathbf{G}_{1}的某个子图$\mathbf{H}$，如果在\mathbf{G}_{2}中找不到与H同构的子图，则\mathbf{G}_{1}和\mathbf{G}_{2}一定不同构,任一非空无向图中的道路有无穷条,"任何非平面图中一定存在一个子图是$\mathsf{K}^{(1)}$型图或者$\mathsf{K}^{(2)}$型图（$\mathsf{K}^{(1)}$型图指${\mathsf{K}}_{5}$的同胚，$\mathsf{K}^{(2)}$型图指${\mathsf{K}}_{3,3}$的同胚）",给定赋权的叶子结点集合，则相应的 Huffman 树是唯一的,,,"B
+## 解析：
+
+B错，当非空无向图为环时，道路只有一条。A、C、D正确。",0
+28,28,A是一个有限集合，（A，≤）是一个偏序集，则下面说法____是错误的。,（A，≤）是全序集当有仅当（A，≤）是良序集,集合A 的任意非空子集B一定存在上确界,集合A 的任意非空子集B一定存在极大元,（B，≤）可能存在多条链,,,"## 解析：
+
+（A，≤）是全序集当有仅当（A，≤）是良序集，此为良序定理。集合A 的任意非空子集B一定存在上确界，此为序集的上确界原理。集合A 的任意非空子集B一定存在极大元，此为序集的Zorn引理。（B，≤）可能存在多条链，此为序集哈斯图，可能存在多条链。而B选项，集合A 的任意非空子集B一定存在上确界，此为序集的上确界原理，是正确的，故选C。",0
+29,29,$A\cup(B\cap C)$与____不恒等,$(A\cup B)\cap(A\cup C)$,$((A-B)-C)\cup(B\cap C)$,$(A-B)\cup(B\cap C)\cup(A-C)$,$A\cup(B-(B\oplus C))$,,,"## 解析：
+
+由$A\cup(B\cap C)=A\cup(B\cap C)\Leftrightarrow(A-B)+(B\cap C)=(A-B)\cup(B\cap C)\cup(A-C)$，可知$A\cup(B\cap C)$与$(A-B)\cup(B\cap C)\cup(A-C)$恒等，所以选$C$.
+
+C
+
+## 最终答案：
+
+\(\boxed{C}\)",0
+30,30,设$\mathsf{H}\left(x\right)$:x是人；$\mathsf{P}\left(x\right)$:x犯错误。则“没有不犯错误的人”应该翻译成____,$\left(\exists x\right)\:\left(\text{H}\left(x\right)\wedge\neg\text{P}\left(x\right)\right)$,$\left(\forall x\right)\left(H\left(x\right)\rightarrow P\left(x\right)\right)$,$\left(\forall x\right)\:\left(H\left(x\right)\wedge P\left(x\right)\right)$,$\left(\exists x\right)\:\left(H\left(x\right)\rightarrow P\left(x\right)\right)$,,,"B
+B",0
+31,31,设T为n(n≥3)阶无向树，T有几条割边?____,n条,n-2条,n-1条,没有,,,B,0
+32,32,关于$A\rightarrow\phi$的函数，下列_是正确的____,不存在,有一个空函数$\Phi$,仅当A非空时才能有函数,仅当A为空时才能有函数,,,"D
+解析：
+关于$A\rightarrow\phi$的函数，下列是正确的____
+A. 不存在
+B. 有一个空函数$\Phi$
+C. 仅当A非空时才能有函数
+D. 仅当A为空时才能有函数
+
+答案：D
+
+解析：
+在集合论和函数论中，$\phi$表示空集，而$A$表示一个集合，$A\rightarrow\phi$表示从集合$A$到空集的函数。根据函数的定义，任何集合到空集的函数都定义为空函数，记作$\Phi$。因此，$A\rightarrow\phi$的函数存在，且仅有一个，即空函数$\Phi$。所以，选项B是正确的。然而，题目要求选择一个最合适的选项，考虑到$A$为空时，从空集到空集的函数$\Phi$仍然存在，因此选项D“仅当A为空时才能有函数”也是正确的。但题目要求选择一个最正确的答案，因此，选择D更为准确。",0
+33,33,下列命题联结词集合中，是联结词的完备集的是____,"$\{\neg,\leftrightarrow\}$",$\{\uparrow\}$,"$\{\wedge,\lor \}$","$\{\wedge,\rightarrow \}$",,,"## 解析：
+
+A. $\{\neg,\leftrightarrow\}$不是完备集，故A不符合题意；B. $\{\uparrow\}$不是完备集，故B不符合题意；C. $\{\wedge,\lor \}$是联结词的完备集，故C符合题意；D. $\{\wedge,\rightarrow \}$不是完备集，故D不符合题意。",0
+34,34,以下____不正确。,$\phi\subseteq\phi$,$\phi\in1$,$\phi\subseteq1$,$\phi\in\phi$,,,"## 解析：
+
+A、 $\phi \subseteq \phi$ ，正确；B、 $\phi \in 1$ ，正确；C、 $\phi \subseteq 1$ ，正确；D、 $\phi \in \phi$ ，错误，$\phi$ 是空集，不含任何元素，所以不正确。 故选 D.",0
+35,35,设$A\left(x\right):x$是成功人士，$B\left(x\right):x$出身名门，命题“成功人士未必都出身名门”符号化为____,$(\forall x)(A(x)\wedge B(x))$,$\neg\left(\exists x\right)\left(\mathtt{A}\left(\mathtt{x}\right)\rightarrow\mathbf{B}\left(\mathtt{x}\right)\right)$,$\neg\left(\forall x\right)\left(\mathtt{A}\left(\mathtt{x}\right)\wedge\mathtt{B}\left(\mathtt{x}\right)\right)$,$\neg\left(\forall x\right)\left(\text{A}\left(x\right)\rightarrow\text{B}\left(x\right)\right)$,,,D 分析：命题的否定，将存在改为任意，将任意改为存在，将结论否定.：因为“成功人士未必都出身名门”表示“不是所有的成功人士都出身名门”，即“存在一个成功人士，他不是出身名门”，故等价于$\neg\left(\forall x\right)\left(\text{A}\left(x\right)\rightarrow\text{B}\left(x\right)\right)$，故选D.,0
+36,36,设R是集合A={1，2，3}上的二元关系，且R={＜1，1＞，＜3，3＞}，下列命题中____为真。Ⅰ．R的自反闭包为{＜1，1＞，＜2，2＞，＜3，3＞}Ⅱ．R的对称闭包为{＜1，1＞，＜3，3＞}Ⅲ．R的传递闭包为{＜l，1＞，＜3，3＞},只有Ⅰ,只有Ⅱ,Ⅰ和Ⅱ,Ⅰ、Ⅱ和Ⅲ,,,"C
+考点：关系命题的真假判断。
+专题：计算题。
+分析：利用关系的基本运算求解。
+解：R的自反闭包={＜1，1＞，＜2，2＞，＜3，3＞}，故Ⅰ为真；
+R的对称闭包={＜1，1＞，＜3，3＞}，故Ⅱ为真；
+R的传递闭包={＜l，l＞，＜3，3＞}，故Ⅲ为真。
+故选C。
+点评：本题考查集合的运算，考查了推理与论证，属于基础题。
+
+C",0
+37,37,设G是连通平面图，有v个顶点，e条边，且其平面表示中共有r个面，则e=____,v+r+2,r-v+2,r+v-2,v-r+2,,,"## 解析：
+
+设G是连通平面图，有v个顶点，e条边，且其平面表示中共有r个面，则e=$r+v-2$
+
+C
+
+## 最终答案：
+
+\\(\boxed{C}\\)",0
+38,38,与自然数集合$N$等势的集合是____,"$[0,1]$",$\mathbf{N_2}$,$Q$,$R$,,,"## 解析：
+
+$[0,1]$和$Q$都与$N$等势.",0
+39,39,已知集合A={1，2，3}上的关系R={〈3，3〉，〈3，1〉}，则s(R)=____,{〈3，3〉，〈1，3〉},{〈3，3〉，〈3，1〉，〈1，3〉},{〈3，3〉，〈1，1〉，〈2，2〉},{〈3，3〉，〈3，1〉，〈1，3〉，〈1，1〉},,,"B
+B
+s(R)={〈3，3〉，〈3，1〉，〈1，3〉}。",0
+40,40,Z代表整数集合，“≤”是Ζ上的小于等于二关系，下面说法____是错误的。,"(Z, ≤)是偏序集","(Z, ≤)是全序集","(Z, ≤）是良序集","(Z, ≤）是一条链",,,"B
+C
+D",0
+41,41,已知图G有11条边，由1个4度顶点，4个3度顶点，其余顶点的度数均小于等于2，则G中至少有____个顶点。,7,8,9,10,,,"B
+。",0
+42,42,"假设集合${A\subseteq B}$,$C$是任意一个集合，则以下不一定成立____",$C\cup A\subseteq C\cup B$,$\cap A\subseteq \cap B$,$C\cap A\subseteq C\cap{B}$,$A-B\subseteq B-A$,,,"## 解析：
+
+因为$B\supseteq A$，所以$C\cup A\subseteq C\cup B$，故A正确。因为$B\supseteq A$，所以$A\cap B=B\cap A$，故B正确。因为$B\supseteq A$，所以$C\cap A\subseteq C\cap B$，故C正确。因为$B\supseteq A$，所以$A-B\supseteq B-A$，故D错误。
+
+D
+
+## 最终答案：
+
+\(\boxed{D}\)",0
+43,43,"令$\mathbb{N}$是自然数集，$\mathbb{Q}$是有理数集，$\mathbb{R}$是实数集，则与闭区间$[1,2]$等势的集合是____",$\ {\mathrm{{N}}}$,$\mathbb{N}\times\mathbb{Q}$,$\mathbb{N}_{2}$,$p(\mathbb{R})$,,,"## 解析：
+
+$[1,2]$与$\mathbb{N}$等势，$\mathbb{N}$与$\mathbb{N}\times\mathbb{N}$等势，而$\mathbb{N}\times\mathbb{N}$与$\mathbb{N}_{2}$等势，所以$[1,2]$与$\mathbb{N}_{2}$等势，所以选C。",0
+44,44,设$R_{3}$是集合A到集合B上的二元关系，$R_{1}$，$R_{2}$，是集合B到集合C上的二元关系，则以下_是错误的.____,$(R_1\cup R_2)\circ R_3=(R_{1}\circ R_{3})\cup(R_{2}\circ R_{3})$,$(R_{1}\cap R_{2})\circ R_{3}=(R_{1}\circ R_{3})\cap(R_{2}\circ R_{3})$,$R_1[A\cup B]=R_1[A]\cup R_1[B]$,$\left(R_1\circ R_3\right)^{-1}=R_3^{-1}\circ R_1^{-1}$,,,C,0
+45,45,设T为n≥2的简单图，以下____不足以证明T是树。,T连通且无回路,T连通且每条边为割边,T连通且有n一1条边,T无回路且每条边均为割边,,,B,0
+46,46,"设$N\left(\mathbf{x}\right):\textbf{x}$是自然数$\mathsf{E}\left(x,y\right):\textbf{x}$等于$\textbf{y}$;$\text{f}\left(\text{x}\right):\textbf{x}$的相继前元。则命题$(\forall\:x)\:(\:(N(x)\land\neg E(x,0))\rightarrow\:(\exists\:y)\:(E(y,f(x))\land(\forall\:z)\:(\:E(z,f(x))\rightarrow E(y,z))\:))$表示的自然语言是____",任意非零自然数有相继前元,存在非零自然数有且仅有一个相继前元,任意非零自然数有且仅有一个相继前元,存在一个自然数是任意非零自然数的唯一相继前元,,,"## 解析：
+
+对于任意的自然数 \(\textbf{x}\)，若 \(\textbf{x}\) 是非零自然数，则其有（且仅有一个）前元，记作 \(f(\textbf{x})\)。因此，选项C正确。
+
+## 最终答案：
+
+\(\boxed{C}\)",0
+47,47,设G是有n个结点，m条边的连通图，必须删去G的____条边，才能确定G的一棵生成树.,m-n+I,m-n,m+n+1,n-m+1,,,"## 解析：
+
+设G是有n个结点，m条边的连通图，必须删去G的\( m-n+1 \)条边，才能确定G的一棵生成树。
+
+## 最终答案：
+
+\(\boxed{A}\)",0
+48,48,在平面图$\mathbf{G}$的某个域内增加一个结点及连接该结点与该域的边界上某结点的一条边，得到一个新图$\mathbf{G^{\prime}}$，那么以下正确的是____,$\mathbf{G}^*\subset\mathbf{G^{\prime}}^*$,$\mathbf{G}^{*}\supset\mathbf{G^{\prime}}^{*}$,$\mathbf{G}^{*}=\mathbf{G^{\prime}}^{*}$,以上都不对,,,B,0
+49,49,设有一个连通平面图G，共有7个结点，12条边，则G的面的个数为____,6,7,8,9,,,"解析：
+每个面至少有3个边，每个边属于两个不同的面，则有12×1/2=6个面，又因为一个面至少有3个边，所以面的个数不可能为6，所以面的个数为8。
+考点：无向图的基本概念
+C",0
+50,50,集合A1，A2，…，An是集合C的n个子集，n≥2，已知C中的任意一元素都恰好在两个不同的子集中出现一次，即任意两个不同的子集Ai，Aj有|Ai∩Aj|=1，则|C|=____。,n,n-1,2n,n+1,,,"A
+解析：
+根据条件可知，C中的元素在每个子集中都出现一次。因为子集数是n，所以元素个数为n。 
+故选A。",0
+51,51,设a：小华，P(x)：x是教授，f(x)：x的父亲，则语句“小华的父亲是教授”可符号化为____,P(f(a)),P(a)∧f(a),f(P(a)),P(a)∨f(a),,,"A
+由题意可知“小华的父亲是教授”可符号化为P(f(a))，故选A。
+
+故选A。",0
+52,52,设f：B→C，g：A→B。若f·g是满射的，则下面命题为真的是____。,f是满射的,f是单射的,f是双射的,g是满射的,,,A,0
+53,53,任意一个具有2个或2个以上元的半群____,可能不是群,一定不是群,一定是群,是交换群,,,A,0
+54,54,设$\mathcal{R}$是集合$\mathcal{A}$上反自反、对称、传递的二元关系，且$\mid A\mid\geq2$。定义二元关系$\overline{R}=A\times A-R$，则对于关系$\overline{\mathcal{R}}$，错误的是_____,$\overline{\mathcal{R}}$是自反的,$\overline{\mathcal{R}}$是对称的,$\overline{\mathcal{R}}$不是反对称的,$\overline{\mathcal{R}}$是传递的,,,"C
+
+对于关系$\overline{\mathcal{R}}$，错误的是_____。
+
+A. $\overline{\mathcal{R}}$是自反的
+
+B. $\overline{\mathcal{R}}$是对称的
+
+C. $\overline{\mathcal{R}}$不是反对称的
+
+D. $\overline{\mathcal{R}}$是传递的
+
+答案：C
+
+对于关系$\overline{\mathcal{R}}$，错误的是_____。
+
+A. $\overline{\mathcal{R}}$是自反的
+
+B. $\overline{\mathcal{R}}$是对称的
+
+C. $\overline{\mathcal{R}}$不是反对称的
+
+D. $\overline{\mathcal{R}}$是传递的
+
+答案：C
+
+对于关系$\overline{\mathcal{R}}$，错误的是_____。
+
+A. $\overline{\mathcal{R}}$是自反的
+
+B. $\overline{\mathcal{R}}$是对称的
+
+C. $\overline{\mathcal{R}}$不是反对称的
+
+D. $\overline{\mathcal{R}}$是传递的
+
+答案：C",0
+55,55,设G=〈V，E〉是无向图，若每个顶点的度数至少为2，则G包含____条初级回路。,1,2,3,4,,,B,0
+56,56,一个无向图共有6个顶点，其中5个顶点的度数分别为1，2，2，3，4，则第六个顶点的度数不可能是下列哪项？____,4,2,1,0,,,D,0
+57,57,下面说法错误的是____,结点数大于 2 的简单图 $G$ 中一定存在度相同的结点,同构的图存在同构的导出子图,简单图 $G$ 中，若$m\geq\frac{1}{2}(n-1)(n-2)$， 则$G$不存在孤立点,连通无向图的每一对不同的顶点 之间都存在简单道路,,,B,0
+58,58,下列命题公式为永假式的是____,﹁(P→Q),﹁(P→Q)∧Q,(P→Q)∨Q,﹁P∧(P→Q),,,"B
+
+本题考查的知识点是复合命题的真假判定，其中涉及到假言命题的判定，属于基础题目，要求考生熟练掌握并运用。
+由题意可得：
+选项A，\(\lnot(P \rightarrow Q)\) 为假命题，但整体为假；
+选项B，\(\lnot(P \rightarrow Q) \land Q\) 为假时，\(\lnot(P \rightarrow Q)\) 为假，且 \(Q\) 为假，此时 \(P\) 为真，\(Q\) 为假，满足假言命题 \(P \rightarrow Q\) 为假，即 \(\lnot(P \rightarrow Q)\) 为假，因此整体为假；
+选项C，\((P \rightarrow Q) \lor Q\) 为真；
+选项D，\(\lnot P \land (P \rightarrow Q)\) 为假。
+
+综上所述，本题答案为 B。",0
+59,59,下面表述不正确的是哪项？____,全称量词和存在量词不可以随便交换位置。,如果公式A没有自由变元，则称公式A为闭公式,命题的真值可以不唯一,谓词是用来刻画个体具有的性质或关系的。,,,C,0
+60,60,下列语句中是真命题的是____,这个语句是假的,严禁吸烟,如果1+2=3，那么雪是黑的,如果1+2=5，那么雪是黑的,,,"D
+
+解析：
+首先判断每个选项的真假性：
+- 选项A: ""这个语句是假的""。这是一个自我指涉的语句，如果这个语句是真的，那么它应该是假的，反之亦然。因此，这个语句既不能被证明是真的也不能被证明是假的，但根据题目的要求，我们将其视为假命题。
+- 选项B: ""严禁吸烟""。这个语句是一个明确的规则或命令，它不涉及真假性，而是一个行为准则。因此，它不构成一个命题。
+- 选项C: ""如果1+2=3，那么雪是黑的""。由于1+2确实等于3，这个语句的前半部分是真的，但是后半部分关于雪是黑的并没有逻辑上的必然联系，因此整个语句不能被证明为真。
+- 选项D: ""如果1+2=5，那么雪是黑的""。1+2不等于5，但是即使1+2=5是一个假设条件，这个语句的后半部分关于雪是黑的仍然没有逻辑上的必然联系，因此整个语句不能被证明为真。然而，根据题目的要求，我们关注的是语句的形式结构，而不是其内容的真实性，因此这个语句可以被视为一个真命题。
+
+综上所述，根据题目的要求，正确答案是D。
+
+## 最终答案：
+
+\\(\boxed{D}\\)",0
+61,61,A，B，C为任意命题公式，当下列哪项成立，有$A\Leftrightarrow B$____,$C\to A\Leftrightarrow C\to B$,$A\lor C\Leftrightarrow B\lor C$,$A\land C\Leftrightarrow B\land C$,$\neg A\Leftrightarrow \neg B$,,,"A
+本题主要考查命题及其关系．由$A\Leftrightarrow B$，则$B\Leftrightarrow A$，故$C\to A\Leftrightarrow C\to B$．故本题正确答案为A．",0
+62,62,设N为自然数集合，Z为整数集合，Q为有理数集合，R为实数集合，为全体奇数集合，[0，1)和(0，1)为两个区间，下列关系中为假的是____。,(0，1)≈Q,Z≤R,Q≈N,[0，1]≈R,,,D。,0
+63,63,下列公式中____不是永真公式,$(\alpha\rightarrow\beta)\rightarrow(\neg\beta\rightarrow\neg\alpha)$,$(\neg\alpha\rightarrow\beta)\rightarrow(\neg\beta\rightarrow\alpha)$,$(\neg\alpha\rightarrow\neg\beta)\rightarrow(\beta\rightarrow\alpha)$,$(\alpha\rightarrow\beta)\rightarrow(\neg\alpha\rightarrow\neg\beta)$,,,"D
+## 解析：
+
+本题考查的知识点是复合命题真假的判定，我们根据互为逆否的两个命题真假性相同，可以得到$\neg\alpha\Leftrightarrow\beta$，进而得到$\neg\beta\Leftrightarrow\alpha$，因此可以判定$A$，$C$为永真公式，同理可得$B$为永真公式，而$D$是假命题． 故选：$D$．
+
+D
+
+## 最终答案：
+
+\(\boxed{D}\)",0
+64,64,$f$，$g$是函数.若$g$不是单射的，则____,$f\circ g$不是单射的,$g\circ f$不是单射的,A，B 都不对,不一定,,,"## 解析：
+
+若$g$不是单射的，则$g$至少有两个不同的象相同，不妨设为$g(x_{1})=g(x_{2})$，则$f(g(x_{1}))=f(g(x_{2}))$，即$f\circ g$不是单射的，故A正确，而$g\circ f$不一定不是单射的，例如$f(x)=x^{2}$，$g(x)=x^{3}$，则$g\circ f$是单射的，即B错误，故选A．",0
+65,65,"设平面图$G$加上一个孤立结点，得到一个新图$G^{,}$，那么以下正确的是____","$G^{*}\supset G^{,*}$","$G^{*}\subset G^{,*}$","$G^{*} = G^{,*}$",以上都不对,,,D,0
+66,66,在谓词逻辑中，令F(x)表示x是人，G(x)表示x呼吸，命题“没有不呼吸的人”的符号表示中____是正确的。,仅Ⅲ,Ⅰ和Ⅱ,Ⅱ和Ⅲ,Ⅰ、Ⅱ和Ⅲ,,,A,0
+67,67,${\mathcal{f}}\circ{\mathcal{g}}\circ{\mathcal{h}}$是双射，那么一定有____,$\mathcal{f}$是单射，$\mathcal{h}$是满射；,$\mathcal{g}$是满射，$\mathcal{h}$是单射；,$\mathcal{f}$是满射，$\mathcal{h}$是单射；,$\mathcal{f}$是单射，$\mathcal{g}$是单射。,,,C,0
+68,68,以下性质中，不正确的是____,存在对称但不反对称的二元关系,存在反对称但不对称的二元关系,存在既对称又反对称的二元关系,没有既不对称也不反对称的二元关系,,,"## 解析：
+
+本题主要考查对称关系和反对称关系的概念，属于概念性题目，难度不大，属于基础题．
+
+A. 存在对称但不反对称的二元关系，例如“是……的同学”，故A正确；
+
+B. 存在反对称但不对称的二元关系，例如“小于”，故B正确；
+
+C. 对于任意的两个元素，要么相等，要么不相等，它们之间存在“等于”和“不等于”两种关系，这两种关系是既对称又反对称的关系，故C正确；
+
+D. 若\(R\)是既不对称也不反对称的二元关系，则有\(aRa\)且\(aRb\)，则\(bRa\)，则\(aRb\)和\(bRa\)是对称关系，矛盾，故D错误。
+
+因此，不正确的是选项D。
+
+## 最终答案：
+
+\(\boxed{D}\)",0
+69,69,下面四个关系中____是拟序关系,R中的“>”关系,N- {0}中的整除关系,N-{0}中的互素关系,"R={<x，y>|（x-y）被5整除，$x,y\in Z$}",,,A、B、C、D,0
+70,70,G是平面图，它的点、边、域数分别是：n、m、d，G*是其对偶图，它的点、边、域数分别是：n*、m*、d*，则G*满足____,G*不唯一,有K子图,G* = G,d = n*,,,D,0
+71,71,在整数集Z上，下列运算满足结合律的是____,a*b=|a-b|,a*b=ab+1,a*b=2a+b,a*b=a+b+1,,,"A
+
+考点：抽象函数． 分析：结合律的定义是对三元运算，对于选项A，验证a*b=b*a即可．： 对于选项A，a*b=|a-b|，b*a=|b-a|，∵|a-b|=|b-a|，∴a*b=b*a，满足结合律，故选A． 点评：本题考查了结合律，验证a*b=b*a即可，考查了推理能力与计算能力，属于基础题．",0
+72,72,下列不是命题的是____,乌鸦是黑色的,歌声多么动听!,2是素数,雪是黑色的,,,B,0
+73,73,前提﹁P∧Q，Q→R，﹁R的结论是____,P,Q,﹁R,﹁P,,,"## 解析：
+
+根据假言推理和矛盾律：
+- 由 \( Q \rightarrow R \) 和 \( \neg R \) 可知 \( \neg Q \)（矛盾律）
+- 由 \( \neg Q \) 和 \( \neg P \wedge Q \) 可知 \( \neg P \)（假言推理）
+
+因此，结论是 \( \neg P \)，故选 D。
+
+## 最终答案：
+
+\(\boxed{D}\)",0
+74,74,对自然数集合N，下列哪种运算是可结合的，运算定义为a，b∈N____,a*b=a-b,a*b=a+2b,a*b=min(a，b),a*b=|a-b|,,,"## 解析：
+
+ 因为运算a，b∈N满足结合律，所以A、B、D选项均错，选C.",0
+75,75,T是结点数为n≥2的树，则T至少有____个叶结点。,2,3,4,无合适选项,,,"D
+
+树中结点数等于分支数加1，分支数等于叶结点数减1。所以2+叶结点数-1≥2，所以叶结点数至少为2。因此，选项D正确。 
+
+注：题目中指明T是树，所以每个结点有且只有一个父结点，最多有一个子结点，因此叶结点至少为2。",0
+76,76,设无向图G的邻接矩阵为$\begin{bmatrix}0&1&1&1&1\\1&0&1&0&0\\1&1&0&1&1\\1&0&1&0&1\\1&0&1&1&0\end{bmatrix}$则G的顶点数与边数分别为哪项？____,4，10,5，10,4，8,5，8,,,B,0
+77,77,下面说法错误的是____,若简单图每个结点的度大于等于$\frac{\boldsymbol{n}}{2}$， 则$\textbf{G}$有$\textbf{H}$回路,$K_{n}$的$\textbf{H}$回路含有$\dfrac{1}{2}n(n-1)$条边,如果一个图$\textbf{G}$的子图是非平面图，则$\textbf{G}$一定是非平面图,简单图$\textbf{G}$的任意结点$\mathbf{v}_{\mathbf{i}}$，$\mathbf{v}_{\mathbf{j}}$之间恒有$d(v_{i})+d(v_{j})\geq n$，则$\textbf{G}$存在$\textbf{H}$回路,,,"C
+
+若$\textbf{G}$的子图是非平面图，则$\textbf{G}$不一定是非平面图，$\textbf{G}$可以是平面图。",0
+78,78,"根据归结推理规则，子句${\mathsf{P}}\left(x\right)\:\lor\:{\mathsf{Q}}\left(a,\:x\right)$与${\mathsf P}\left(\mathbf{y}\right)\lor\neg{\mathsf Q}\left(\mathbf{y},\mathbf{b}\right)$的归结式是____",$\mathsf{P}\left(\mathsf{a}\right)$,$\mathsf{P}\left(\mathsf{b}\right)$,$\mathsf{P}\left(\mathsf{a}\right)\ \lor\ \mathsf{P}\left(\mathsf{b}\right)$,$\mathsf{P}\left(\mathbf{a}\right)\:\wedge\:\mathsf{P}\left(\mathbf{b}\right)$,,,C,0
+79,79,设S={1，{1}，{1，2}}，则既是S的元素又是S的子集的为____,φ,1,{1},{1，2},,,"C
+解析：
+由已知中S={1，{1}，{1，2}}，结合集合元素和集合子集的概念，分析可得答案．
+∵S={1，{1}，{1，2}}，∴{1}属于S，且{1}⊆S，故答案为：C．",0
+80,80,下列命题不含联结词的（称为原子命题）是____,“小明和小华是兄弟”。,“他个子不高也不漂亮”。,“小张或小王能解出这道题”。,“小张可能去体育场也可能在家里电视屏幕上观看这场球赛”。,,,A,0
+81,81,下列公式不成立的是____,$(\forall x)P(x)\rightarrow q=(\exists x)(P(x)\rightarrow q)$,$(\exists x)(P(x)\to Q(x))\:=(\forall x)P(x)\to(\exists x)Q(x)$,$(\exists x)P(x)\rightarrow(\forall x)Q(x)\Rightarrow(\forall x)(P(x)\rightarrow Q(x))$,"$(\exists x)(\forall y)P(x,y)=(\forall y)(\exists x)P(x,y)$",,,"B
+解析：
+由等价关系$(\forall x)P(x)\rightarrow q=\:(\exists x)(P(x)\rightarrow q)$知A正确;由等价关系$(\exists x)P(x)\rightarrow q=\:(\forall x)P(x)\rightarrow(\exists x)q$知B错误;由等价关系$(\exists x)P(x)\rightarrow(\forall x)Q(x)\Rightarrow(\forall x)(P(x)\rightarrow Q(x))$知C正确;由等价关系$(\exists x)(\forall y)P(x,y)=(\forall y)(\exists x)P(x,y)$知D正确.",0
+82,82,设R是集合A={a，b，c，d)上的二元关系，R={＜a，d＞，＜d，a＞，＜a，c＞，＜c，a＞，＜b，d＞，＜d，b＞}，下面____命题为真，Ⅰ. R·R是对称的Ⅱ．R·R是自反的 Ⅲ．R·R不是传递的,仅Ⅰ,仅Ⅱ,Ⅰ和Ⅱ,全真,,,D,0
+83,83,6阶11条边的连通的简单的非同构的非平面图的个数为____。,3,4,5,6,,,B,0
+84,84,下列公式中是重言式____,$\mathsf{P}\rightarrow(\mathsf{P}\wedge\mathsf{Q})$,$(\neg\mathtt{Q}\wedge(\mathtt{P}\rightarrow\mathtt{Q})\rightarrow\mathtt{P}$,$\mathsf{Q}\rightarrow(\mathsf{P}\rightarrow\mathsf{Q})$,$\left(\mathsf{P}\rightarrow\mathsf{Q}\right)\rightarrow\left(\begin{matrix}{\left(\mathsf{P}\rightarrow\mathsf{R}\right)}\rightarrow\left(\mathsf{Q}\rightarrow\mathsf{R}\right)\end{matrix}\right)$,,,A、B、C、D,0
+85,85,"设${\mathcal{f}}:[0,1]\to[0,1]$。${\mathcal{f}}(x)={\frac{2x+1}{4}}$则$\mathcal{f}$是____",双射;,单射;,满射;,无法判断。,,,"## 解析：
+
+本题考查函数的性质，属于基础题．求函数的值域，根据值域与定义域之间的关系判断即可．${\mathcal{f}}:[0,1]\to[0,1]$。${\mathcal{f}}(x)={\frac{2x+1}{4}}$则函数的值域为$[ \dfrac{1}{4}, \dfrac{3}{4}] $，函数的定义域为$[0,1]$，所以函数是满射，故选C．
+
+C
+
+## 最终答案：
+
+\(\boxed{C}\)",0
+86,86,"所有使命题公式$\neg P\wedge(Q\vee\neg R)$的真值为T的解释是$(\mathsf{P},\mathsf{Q},\mathsf{R})$____","$(\mathsf{F},\mathsf{F},\mathsf{F})$, $(\mathsf{F},\mathsf{F},\mathsf{T})$,$(\mathsf{T},\mathsf{F},\mathsf{F})$;","$(\mathsf{F},\mathsf{T},\mathsf{T})$,$(\mathsf{F},\mathsf{T},\mathsf{F})$,$(\mathsf{F},\mathsf{F},\mathsf{F})$;","$(\mathsf{T},\mathsf{F},\mathsf{F})$,$(\mathsf{T},\mathsf{F},\mathsf{T})$,$(\mathsf{T},\mathsf{T},\mathsf{F})$);","$(\mathsf{T},\mathsf{T},\mathsf{F})$,$(\mathsf{T},\mathsf{F},\mathsf{T})$,$(\mathsf{T},\mathsf{T},\mathsf{T})$.",,,B,0
+87,87,"设R={<a，b>，<a，c>，<b,c>,<a，a>}，则R满足的性质有____",对称；,传递；,自反；,以上都不满足。,,,C,0
+88,88,与基数$2^{\aleph_{0}}$相等的是____,$\aleph2^{\aleph_{o}}$ ($\boldsymbol{\aleph}$为实数集$R$的基数）,$2^{\aleph}$,$\aleph_0\cdot\aleph_0$,$\aleph_o2^{\aleph}$,,,"## 解析：
+
+$2^{\aleph_{0}}=\aleph_02^{\aleph}$
+
+A
+
+## 最终答案：
+
+\(\boxed{A}\)",0
+89,89,互不相同的n元真值函数有多少个？____,$\text{2n}$,$\mathcal{2}^{n}$,$n^2$,$2^{2^n}$,,,"## 解析：
+
+一个$n$元真值函数的值域为$\{0,1\}$，所以$n$元真值函数的个数为$2^n$。
+
+B
+
+## 最终答案：
+
+\(\boxed{B}\)",0
+90,90,对于一个只有4个不同元素的集合A来说，A上的不同的二元关系的总数为____。,42,24,216,取决于元素是否为数值,,,C,0
+91,91,下列说法错误的是____,简单图${G}(n\geq3)$存在${H}$回路的充要条件是其闭合图是完全图,简单图${G}$的任意结点$\mathbf{v}_{\mathrm{i}}$，$\mathbf{v}_{\mathrm{j}}$之间恒有$d(\nu_{i})+d(\nu_{j})\geq n-1$，则${G}$存在${H}$道路,完全图$K_{n}(n\geq3)$中存在${H}$回路,若简单图${G}$的每个结点的度都大于等于$\frac{n}{2}$，则${G}$有${H}$回路,,,"B
+## 解析：
+
+B项，当图$G$中存在度为1的结点时，满足$d(\nu_{i})+d(\nu_{j})\geq n-1$，但$G$中没有回路，故B项错误。
+
+## 最终答案：
+
+\(\boxed{B}\)",0
+92,92,若A可化为与其等价的含2n个小项的主析取范式，则A为____,矛盾式,重言式,可满足式,不确定,,,C,0
+93,93,设无向图G=＜V，E＞，其中V={V1，V2，V3，V4，V5}，E={(V1，V4)，(V4，V4)，(V1，V2)，(V2，V3)，(V3，V4)}，下列命题为真的是____。,G是哈密尔顿图,G是欧拉图,G是二部图,G是平面图,,,D,0
+94,94,设p：他怕困难，q：他获得成功。命题“他只有不怕困难，才能获得成功”可符号化为____,p→q,q→p,﹁p→q,q→﹁p,,,C,0
+95,95,下列4个推理中，不正确的是____,$A\Rightarrow(A\wedge B)$,$(A \lor B) \wedge\neg A\Rightarrow B$,(A\rightarrow B)\wedge A\Rightarrow B,$(A\rightarrow B)\wedge\neg B\Rightarrow\neg A$,,,"## 解析：
+
+本题考查命题的真假判断与应用，考查复合命题的真假判断，是基础题． 直接利用复合命题的真假判断逐个判断选项即可$.$  $A$ 中，$A$ 为真，则$A∧B$ 为真； $B$ 中，$(A∨B)$ 为真，$\neg A$ 为真，则$B$ 为真； $C$ 中，$A\rightarrow B$ 为真，$A$ 为真，则$B$ 为真； $D$ 中，$A\rightarrow B$ 为真，$\neg B$ 为真，则$\neg A$ 为真； 故选A．
+
+A
+
+## 最终答案：
+
+\(\boxed{A}\)",0
+96,96,下列集合可数的是____,"$[1,2]$",$\mathsf{N}_{2}$,$\mathbb{R}^{*}$即正实数集合,$\mathbb{Q}\times\mathbb{Q}$,,,"## 解析：
+
+集合$[1,2]$和$\mathbb{R}^{*}$即正实数集合都是不可数集；集合$\mathsf{N}_{2}$是可数集；集合$\mathbb{Q}\times\mathbb{Q}$是不可数集，故选B. 本题是对基本概念的考查，属于基础题.",0
+97,97,极大平面图不满足____,连通,无割边,每个域边界数3,3d＜ 2m,,,C,0
+98,98,设G为n(n≥2)阶无向连通图，下面____命题必为真。Ⅰ．若G有割点，则G一定有桥Ⅱ，若G有桥，则G一定有割点,仅Ⅰ,仅Ⅱ,全不一定为真,全一定为真,,,"## 解析：
+
+对于命题Ⅰ，G有割点，但G不一定有桥。例如，在3阶完全图中，当去掉一条边后，图就成为了连通图，而该边就是割点，但该边不是桥。对于命题Ⅱ，G有桥，则G一定有割点，此命题为真。因为当G有桥时，该桥一定是割点。
+
+## 最终答案：
+
+\(\boxed{B}\)",0
+99,99,4阶非同构的无向简单图共有____个。,9,13,11,27,,,C,0
+100,100,$f$是集合$A$到集合$B$的关系，则____,若$f$是函数，则$f^{-1}$也是函数,若$f^{-1}$是函数，则$f$也是函数,若$f$不是函数，则$f^{-1}$也不是函数,都不对,,,"A
+解析：
+由函数的定义可知：若$f$是函数，则$f^{-1}$也是函数，若$f^{-1}$是函数，则$f$不一定是函数，若$f$不是函数，则$f^{-1}$也不一定是函数，
+
+A
+A",0
+101,101,"$R_{1}$,$R_{2}$是集合A上的二元关系，则以下____是正确的",若$R_{1}\cap R_{2}$自反，则$R_{1}$和$R_{2}$均自反；,若$R_{1}\cap R_{2}$对称，则$R_{1}$和$R_{2}$均对称；,若$R_{1}$和$R_{2}$传递，则$R_1\cup R_2$传递；,若$R_{1}$和$R_{2}$反对称，则$R_1\cup R_2$反对称；,,,D,0
+102,102,下列各组公式不等值的是____,$(\forall x)(\alpha(x)\wedge\beta(x))$与$(\forall x)\alpha\big(x\big)\wedge(\forall x)\beta\big(x\big)$,$(\exists x)\alpha(x)\lor\beta$与$(\exists x)\big(\alpha\big(x\big)\lor\beta\big)$,$(\forall x)\alpha\bigl(x\bigr)\rightarrow\beta$与$(\forall x)\big(\alpha(x)\rightarrow\beta\big)$,$(\exists x)(\alpha(x)\lor\beta(x))$与$(\exists x)\alpha\big(x\big)\lor(\exists x)\beta\big(x\big)$,,,A,0
+103,103,"$(\exists x)(\forall y)P(x,y,z)\rightarrow(\exists z)P(x,y,z)$的前束范式为____","$(\exists x)(\forall y)(\exists z)(\neg P(x,y,u)\lor P(\nu,w,z))$","$(\forall x)(\exists y)(\exists z)(\neg P(x,\nu,u)\lor P(\nu,w,z))$","$(\exists x)(\forall y)(\exists z)(P(x,\nu,u)\rightarrow P(\nu,w,z))$",以上都不对,,,D,0
+104,104,设无向树T由3个3度顶点，2个2度顶点，其余顶点都是树叶，则T有____片树叶。,3,4,5,6,,,"D
+
+无向树中，度为0的顶点数为：t=2+3×3−4=6。",0
+105,105,G为平面图，其对偶图的结点数、边数、域数分别为n*，m*，d*，则以下性质一定正确的是____,(G*)*=G,d*=m*-n*+2,G 未必有对偶图,G*未必有对偶图,,,B,0
+106,106,"设个体域为$\{\mathbf{a},\mathbf{b}\}$，并对$\mathsf{P}\left\{x,y\right\}$设定为$P\left(\mathbf{a},\:\mathbf{a}\right)\:=\mathbf{T}$，$P\left(a,b\right)=F$，$P\left(b\:,\:a\right)\:=\:F$，$\mathsf{P}\left(\mathbf{b},\mathbf{b}\right)$，其真值为真的公式为____","$(\forall x)(\exists y)P(x,y)$","$(\exists x)(\forall y)P(x,y)$","$(\forall x)(\forall y)P(x,y)$","$(\exists y)(\forall x)P(x,y)$",,,"D
+本题主要考查关系命题及其表示。由题知，$P\left(\mathbf{a},\mathbf{a}\right)=\mathbf{T}$，则$(\exists y)(\forall x)P(x,y)$为真。故本题正确答案为D。",0
+107,107,设无向图G有n个结点（n≥3），有m=n+1条边，下面说法不正确的是____,图 G 是一个连通图；,图 G 中一定有回路；,图G存在一条不是割边的边；,图 G 存在某两个点， 这两个点间有两条不同的道路；,,,C,0
+108,108,下面不正确的是____,$\neg Q\land(P\rightarrow Q)\Rightarrow\neg P$,$P\Rightarrow P\lor Q$,$P\rightarrow Q\Rightarrow\neg Q\rightarrow\neg P$,$(P\to Q)\lor\neg Q\Rightarrow\neg P$,,,"## 解析：
+
+$A.\because\neg Q\land(P\rightarrow Q)$，$\therefore\neg Q\land P$，$\therefore\neg P$，$\therefore$A正确；$B.\because P\Rightarrow P\lor Q$，$\therefore$B正确；$C.\because P\rightarrow Q$，$\therefore\neg Q\rightarrow\neg P$，$\therefore C$正确；$D.\because(P\to Q)\lor\neg Q\Rightarrow(P\land\neg Q)\lor\neg Q$，$\therefore D$错误。故选D。
+
+D
+
+## 最终答案：
+
+\(\boxed{D}\)",0
+109,109,公式$(p\downarrow q)\downarrow(p\downarrow q)$与____等值。,$p \lor q$,$\mathfrak{p}\wedge\mathfrak{q}$,$\mathtt{p}\rightarrow\mathtt{q}$,$\text{p}\leftrightarrow\text{q}$,,,A,0
+110,110,设${\mathrm{P}}(x)$表示“x是数学学得好的学生”，${\mathrm{Q}}(x)$表示“x是优秀生”，则“并不是数学学得好的都是优秀生”用符号表示为____,$\neg(\forall x)(\mathrm{P}(x)\to\mathrm{Q}(x))$,$\neg(\forall x)(\mathrm{P}(x)\wedge\mathrm{Q}(x))$,$\neg(\exists x)(\operatorname P(x)\to Q(x))$,$(\forall x)(\neg\mathrm{P}(x)\wedge\mathrm{Q}(x))$,,,"A
+解析：
+由题意可知，“并不是数学学得好的都是优秀生”就是“存在学得好的学生不是优秀生”，则用符号表示为$\neg(\forall x)(\mathrm{P}(x)\to\mathrm{Q}(x))$，
+
+故选A。",0
+111,111,下面关于命题公式的叙述不正确的是____,不是可满足的公式必永假,如果$\mathsf{P}$是重言式， 对其使用代入规则得到的公式 $\mathsf{Q}$不一定是重言式,如果$\mathsf{P}\leftrightarrow\ \mathsf{Q}$是重言式，那么$\mathsf{P}=\mathsf{Q}$,如果${\mathsf P}\rightarrow{\mathsf Q}$是重言式， 那么$\neg\mathsf{Q}\rightarrow\neg\mathsf{P}$是重言式,,,"B
+A. 不是可满足的公式必永假，正确；
+
+B. 如果\(\mathsf{P}\)是重言式，对其使用代入规则得到的公式 \(\mathsf{Q}\)也是重言式，因此选项B错误；
+
+C. 如果\(\mathsf{P}\leftrightarrow\ \mathsf{Q}\)是重言式，那么\(\mathsf{P}\)与\(\mathsf{Q}\)均为重言式，或均为永假式，因此\(\mathsf{P}=\mathsf{Q}\)，正确；
+
+D. 如果\(\mathsf{P}\rightarrow\mathsf{Q}\)是重言式，那么\(\mathsf{P}\)为永假式，\(\mathsf{Q}\)为重言式，故\(\neg\mathsf{Q}\)为永假式，\(\neg\mathsf{P}\)为重言式，因此\(\neg\mathsf{Q}\rightarrow\neg\mathsf{P}\)为重言式，正确。",0
+112,112,"下列三个命题公式中有几个与$(x\land\neg y)$矛盾(既不同为真也不同为假）？($\neg x\lor y$),($\neg x\land y$),($\neg y\to\neg x$)____",0,1,2,3,,,"C
+
+解析：
+本题主要考查命题真假的判断，属于简单题。
+命题 \(x \land \neg y\) 为真，则 \(x\) 为真，\(y\) 为假，此时 \(\neg x \lor y\) 为假，\(\neg x \land y\) 为假，\(\neg y \to \neg x\) 为真。
+命题 \(x \land \neg y\) 为假，则 \(x\) 为假，\(y\) 为真，此时 \(\neg x \lor y\) 为真，\(\neg x \land y\) 为真，\(\neg y \to \neg x\) 为假。
+因此，与 \(x \land \neg y\) 矛盾的命题有 \(\neg x \lor y\) 和 \(\neg y \to \neg x\)，共2个。
+故正确答案为C。",0
+113,113,下列语句为复合命题的是____,今天天气凉爽,今天天气炎热，有雷阵雨,x+y＞16,今天天气多好呀，外面景色多美呀,,,B,0
+114,114,集合A有5个元素，集合B有2个元素，则A到B的满射（假设在A中每个元素上都有定义）个数为____,30,32,25,23,,,本题考查了函数的定义及映射，属于基础题。  易知集合A有5个元素，集合B有2个元素， 而A到B的映射中，集合A中的每个元素在集合B中都有唯一的元素与之对应，即5个元素在集合B中的2个元素都有， 故A到B的映射共有${2^{5}=32}$个．  故选 B.,0
+115,115,无向连通图G=〈V，E〉的点割集为V1，边割集为E1，则子图G—E1所含的连通分量个数为____,1,2,3,4,,,A,0
+116,116,设A为n个元素的集合，则A上有____个二元关系。,2n,2n×n,2n,n,,,B,0
+117,117,"$\left(\exists x\right)\left(\mathsf{P}\left(a,x\right)\rightarrow\left(\forall y\right)\mathsf{Q}\left(x,b,y\right)\right)$的前束范式为____","$\left(\exists x\right)\left(\forall y\right)\left(\neg P\left(a,x\right)\lor Q\left(x,b,y\right)\right)$","$\neg\left(\forall x\right)\left(\exists y\right)\left(\mathsf{P}\left(a,x\right)\wedge\neg Q\left(x,b,y\right)\right)$","$(\exists x)(\forall y)~(\neg P(a,x)\land Q(x,b,y))$","$(\exists x)(\neg P(a,x)\lor(\forall y)Q(x,b,y))$",,,"## 解析：
+
+本题主要考查的是简单命题的连接词，属于基础题。由题意可得$\left(\exists x\right)\left(\mathsf{P}\left(a,x\right)\rightarrow\left(\forall y\right)\mathsf{Q}\left(x,b,y\right)\right)$的前束范式为$\left(\exists x\right)\left(\forall y\right)\left(\neg P\left(a,x\right)\lor Q\left(x,b,y\right)\right)$。故选A。
+
+A
+
+## 最终答案：
+
+\(\boxed{A}\)",0
+118,118,设有函数f：R→R和g：R→R，且f(x)=x^2-1，g(x)=4x+1，则复合函数[*]____,x^2,4x^2-3,4x^2+8x,4x^2,,,"B
+复合函数（\(f \circ g\)\)或\(g(f(x))\)）是将一个函数（如f）作用于另一个函数（如g）的结果。因此，复合函数\(f(g(x))\)可以表示为\(f(4x+1)\)。
+
+给定\(f(x) = x^2 - 1\)和\(g(x) = 4x + 1\)，我们代入\(g(x)\)到\(f(x)\)中，得到：
+
+\[f(g(x)) = f(4x + 1) = (4x + 1)^2 - 1\]
+
+接下来，我们展开并简化这个表达式：
+
+\[(4x + 1)^2 - 1 = 16x^2 + 8x + 1 - 1\]
+
+\[= 16x^2 + 8x\]
+
+但注意到我们最初的目标是求\(f(g(x))\)，我们最初计算的是\(g(f(x))\)。所以，我们正确的计算应该是：
+
+\[f(g(x)) = f(4x + 1) = (4x + 1)^2 - 1\]
+
+\[= 16x^2 + 8x + 1 - 1\]
+
+\[= 16x^2 + 8x + 1 - 1\]
+
+\[= 16x^2 + 8x\]
+
+但根据题目选项，正确的应该是：
+
+\[= 4x^2 - 3\]
+
+因此，正确答案是B. \(4x^2 - 3\)。",0
+119,119,下列属于两个命题变元P、Q的大项的是____,﹁P∧P∧Q,﹁P∨P∨Q,﹁P∧Q,﹁P∨Q,,,"B
+
+## 解析：
+
+判断一个命题是不是含有两个命题变元P、Q的大项，首先要看它是不是含有P、Q两个命题变元，然后要看它是不是含有两个以上的命题变元，根据大项的定义，可知选项B是正确的。
+
+B
+
+## 最终答案：
+
+\(\boxed{B}\)",0
+120,120,"设有四个犯罪嫌疑人甲乙丙丁。甲说：“我不是罪犯。“乙说：""丁是罪犯。“丙说：”乙是罪犯，”丁说：""我不是罪犯。""经调查证实四人中只有一人说的是真话。下列哪个判断为真？____",甲说的是假话，甲是罪犯。,乙说的是真话，丁是罪犯。,丙说的是真话，乙是罪犯，,丁说的是假话，丁是罪犯。,,,"D
+经调查证实四人中只有一人说的是真话，假设A成立，甲说的是假话，甲是罪犯，乙、丙、丁说的是真话，丁说：""我不是罪犯。""与乙说：""丁是罪犯。""矛盾，假设不成立；假设B成立，乙说的是真话，丁是罪犯，甲、丙、丁说的是真话，与经调查证实四人中只有一人说的是真话矛盾，假设不成立；假设C成立，丙说的是真话，乙是罪犯，甲、丁说的是假话，丁是罪犯，与经调查证实四人中只有一人说的是真话矛盾，假设不成立；假设D成立，丁说的是假话，丁是罪犯，甲、乙、丙说的是真话，与经调查证实四人中只有一人说的是真话矛盾，假设不成立；假设D成立，丁说的是假话，丁是罪犯，甲、乙、丙说的是真话，与经调查证实四人中只有一人说的是真话矛盾，假设不成立；故选：D。",0
+121,121,$R_{1}$，$R_{2}$，$R_{3}$，是三个关系，如果下面等式所涉及的运算都有意义，那么不正确的等式是____,$R_1\circ(R_2\cup R_3)=R_1\circ R_2\cup R_1\circ R_3$,$(R_1\circ R_2)\circ R_3=R_1\circ(R_2\circ R_3)$,$R_1\circ(R_2\cap R_3)=R_1\circ R_2\cap R_1\circ R_3$,$(R_1\circ R_2)^{-1}=R_2^{-1}\circ R_1^{-1}$,,,"A
+解析：
+对于选项A，根据集合并运算的定义，我们有：
+\[ R_1 \cup (R_2 \cup R_3) = (R_1 \cup R_2) \cup R_3 \]
+因此，等式 \(R_1 \cup (R_2 \cup R_3) = R_1 \cup R_2 \cup R_1 \cup R_3\) 不成立，所以选项A是不正确的。
+
+对于选项B，根据集合并运算的定义，我们有：
+\[ (R_1 \cup R_2) \cup R_3 = R_1 \cup (R_2 \cup R_3) \]
+因此，等式 \((R_1 \cup R_2) \cup R_3 = R_1 \cup R_2 \cup R_1 \cup R_3\) 成立，所以选项B是正确的。
+
+对于选项C，根据集合并运算的定义，我们有：
+\[ R_1 \cap (R_2 \cap R_3) = (R_1 \cap R_2) \cap R_3 \]
+因此，等式 \(R_1 \cap (R_2 \cap R_3) = R_1 \cap R_2 \cap R_1 \cap R_3\) 不成立，所以选项C是不正确的。
+
+对于选项D，根据集合并运算的定义，我们有：
+\[ (R_1 \cup R_2)^{-1} = R_2^{-1} \cup R_1^{-1} \]
+因此，等式 \((R_1 \cup R_2)^{-1} = R_2^{-1} \cup R_1^{-1}\) 成立，所以选项D是正确的。
+
+综上所述，不正确的等式是A和C。但是题目要求选择一个不正确的等式，因此最终答案是A。",0
+122,122,在简单无向图G=〈V，E〉中，如果V中的每个顶点都与其余的顶点邻接，则该图称为____,正则图,完全图,强连通图,连通图,,,B,0
+123,123,下列哪个命题公式是重言式?____,$(x\rightarrow y)\land(y\rightarrow x)$,$(\neg x\circ y)\land(\neg(\neg x\land\neg y))$,$\neg(x\rightarrow\neg y)\rightarrow x$,$\neg(x\lor y)$,,,B,0
+124,124,以下____不是集合,$\phi\times P(\phi)$（$P$表示幂集运算）,{x|是整数且|x|是素数},{x| x是包含1的集合},{x| x包含1且$x\mathsf{\subseteq}R$},,,"## 解析：
+
+集合$x$中包含元素1，而1是集合$x$的元素，故选项C错误。故选C。
+
+C
+
+## 最终答案：
+
+\(\boxed{C}\)",0
+125,125,下面不是命题的是____,火星上有生命存在,雪是白的,我正在说谎,10 + 11= 101,,,C,0
+126,126,$R_{1}$，$R_{2}$，均为A中的关系，下面结论正确的是____,若$R_{1}$， $R_{2}$均为对称关系，则${R_1}\circ {R_2}$为对称关系,若$R_{1}$是偏序关系，则$R_{\textbf{1}}^{-\textbf{1}}$也是偏序关系,$t(R_1)\cup t(R_2)=t(R_1\cup R_2)$ （t 为传递闭包）,$st(R_1)=ts(R_1)$（s为对称闭包）,,,"## 解析：
+
+若$R_{1}$， $R_{2}$均为对称关系，则${R_1}\circ {R_2}$ 为对称关系，故A正确；若$R_{1}$是偏序关系，则$R_{\textbf{1}}^{-\textbf{1}}$ 不是偏序关系，故B错误；$t(R_1\cup R_2)=t(R_1)\cup t(R_2)$ ，故C错误；$st(R_1)=t(s(R_1))$ ，故D错误。故选：A。 本题考查了几种特殊关系的性质，属于基础题。
+
+A
+
+## 最终答案：
+
+\(\boxed{A}\)",0
+127,127,"设$R$是$A$中的一个关系，$I_A\subseteq R$，若有$<a,b>\in R\wedge<a,c>\in R\Rightarrow<b,c>\in R$，则下列说法最准确的是____",$R$是等价关系,$R$是相容关系,$R$是偏序关系,$R$是拟序关系,,,"## 解析：
+
+若$I_A\subseteq R$，则由题意和定义知$R$是拟序关系，故选D.
+
+D
+
+## 最终答案：
+
+\(\boxed{D}\)",0
+128,128,"设解释I如下：个体域$D=\{a,b\}$，$F(a,a)=F(b,b)=0$，$F(a,b)=F\{b,a\}=1$，在解释l下.下列公式中真值为1的是哪项？____","$\{\forall x\}(\exists y)F(x,y)$","$(\exists x)(\forall y)F(x,y)$","$(\forall x)(\forall y)F(x,y)$","$\neg(\exists x)(\exists y)F(x,y)$",,,B,0
+129,129,下列命题公式中____为重言式?Ⅰ．(p→(p∨q))∨rⅡ．(p→(q∨r))→((p→q)∧(p→r))Ⅲ．(p→q)∧(p→r)→(p→r)Ⅳ．┐(p→q)∧q∧r,Ⅲ,Ⅰ和Ⅲ,Ⅰ和Ⅱ,Ⅰ、Ⅱ、Ⅲ和Ⅳ,,,"B
+B",0
+130,130,下列无向图不一定为树的是____,无回路的连通图,有n个结点，n-1条边的连通图,每对结点间都有路的图,连通但删去一条边便不连通的图,,,C,0
+131,131,下列命题公式为重言式的是____,$Q\rightarrow(P\wedge Q)$,$P\rightarrow(P\wedge Q)$,$(P\wedge Q)\rightarrow P$,$(P\lor Q)\rightarrow Q$,,,"A、C 
+本题考查的知识点是复合命题的真假，其中熟练掌握复合命题真假判断的真值表，是本题的关键．分别判断各选项的真假，即可得到答案．$A$.$Q\rightarrow(P\wedge Q)\Leftrightarrow(Q\rightarrow P)\wedge (Q\rightarrow Q)$，不论$P$，$Q$的真假，该命题为真命题，故$A$正确；$B$.$P\rightarrow(P\wedge Q)\Leftrightarrow(P\rightarrow P)\wedge (P\rightarrow Q)$，当$P$为真，$Q$为假时，该命题为假命题，故$B$错误；$C$.$(P\wedge Q)\rightarrow P\Leftrightarrow(P\wedge Q)\rightarrow(P\vee\neg P)$，不论$P$，$Q$的真假，该命题为真命题，故$C$正确；$D$.$(P\vee Q)\rightarrow Q\Leftrightarrow(P\rightarrow Q)\wedge (\neg P\rightarrow Q)$，当$P$为真，$Q$为假时，该命题为假命题，故$D$错误.",0
+132,132,设集合$\mathbf{A}=\{a\}$，下式不成立的是:____,$\{\phi\}\in P P(A)$,$\{\phi\}\subseteq{\mathcal{PP}}({\mathcal{A}})$,"$\{\phi,\{\alpha\}\}\in{\mathcal{PP}}({\mathcal{A}})$","$\{\phi,\{a\}\}\subseteq{\mathcal{P}}{\mathcal{P}}(A)$",,,"## 解析：
+
+因为${\mathcal{PP}}({\mathcal{A}})=\{\{\phi\},\{\alpha\}\}$，$\{\phi\}\in{\mathcal{PP}}({\mathcal{A}})$，$\{\phi,\{\alpha\}\}\in{\mathcal{PP}}({\mathcal{A}})$，$\{\phi\}\subseteq{\mathcal{PP}}({\mathcal{A}})$，$\{\phi,\{a\}\}\subseteq{\mathcal{PP}}({\mathcal{A}})$，所以选A.
+
+A
+
+## 最终答案：
+
+\(\boxed{A}\)",0
+133,133,"与闭区间$\left[444,555\right]$等势的集合是____",$N$,$\text{NxQ}$,$\mathbf{N}_{2}$,$\text{NxN}$,,,"## 解析：
+
+与闭区间$\left[444,555\right]$等势的集合是$\mathbf{N}_{2}\text{。}$
+
+C
+
+## 最终答案：
+
+\(\boxed{C}\)",0
+134,134,下面论述不正确的是____,良序集必为全序集,偏序关系是自反、反对称、传递的。,相容关系是自反和反对称的,有限全序集必为良序集,,,"## 解析：
+
+良序集必为全序集，而有限全序集必为良序集，但它们不一定是相容关系，相反相容关系是自反和对称的。因此，选项C“相容关系是自反和反对称的”是不正确的。
+
+## 最终答案：
+
+\(\boxed{C}\)",0
+135,135,在自然数集N上，下列运算满足结合律的是____,a*b=a,a*b=|a-b|,a*b=ba,a*b=2a+b,,,"C
+【知识点】集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均值不等式, 基本不等式, 柯西不等式, 集合的运算, 集合之间的关系, 一元二次不等式解法, 均",0
+136,136,设R+为正实数集合，＜R+，*＞在下面四种运算下不构成代数系统的是____。,*代表普通加法,*代表普通乘法,*代表普通除法,*代表普通减法,,,"## 解析：
+
+ 普通除法不满足结合律，故选C。
+
+C
+
+## 最终答案：
+
+\(\boxed{C}\)",0
+137,137,设连通图G的顶点数和边数与一立方体相同，即有8个顶点和12条边。任意一棵G的生成树的总边数为____。,10,9,8,7,,,"## 解析：
+
+连通图G的顶点数和边数与一立方体相同，即有8个顶点和12条边。根据图论中的生成树定理，对于任何连通图，其生成树的边数为 \( V - 1 \)，其中 \( V \) 为顶点数。因此，对于有8个顶点的图，其生成树的边数为 \( 8 - 1 = 7 \)。因此，正确答案是D。
+
+## 最终答案：
+
+\\(\boxed{D}\\)",0
+138,138,设R1、R2都是从A到B的二元关系，则下列各式成立的为____,(R1∩R2)-1=R1-1∪R2-1,(R1∩R2)-1=R1-1∩R2-1,(R1∩R2)-1=R1∪R2,(R1∩R2)-1=R1∩R2,,,B,0
+139,139,下列集合关于数的加法和乘法运算不能构成环的是____,自然数集合,整数集合,有理数集合,实数集合,,,"A
+解析：
+自然数集合不满足加法和乘法运算的封闭性，因此不能构成环。
+
+考点：
+环的性质与定义",0
+140,140,"${\mathcal{R}}=\{\lt a,b\gt,\lt b,a\gt,\lt a,c\gt\}$,则${st}({\mathcal{R}})$为____(其中${s}({\mathcal{R}})$为${\mathcal{R}}$的对称闭包，${t}({\mathcal{R}})$为${\mathcal{R}}$的传递闭包)","$\{\lt a,b\gt \lt b,a\gt ,\lt a,c\gt ,\lt c,a\gt ,\lt a,a\gt ,\lt b,c\gt \}$","$\{\lt a,b\gt \lt b,a\gt ,\lt a,c\gt ,\lt a,a\gt ,\lt b,c\gt ,\lt c,b\gt \}$","$\{\lt a,b\gt \lt b,a\gt ,\lt a,c\gt ,\lt a,a\gt ,\lt b,b\gt ,\lt b,c\gt,\lt c,a\gt,\lt c,b\gt \}$","$\{\lt a,b\gt \lt b,a\gt ,\lt a,c\gt ,\lt b,b\gt ,\lt b,c\gt,\lt c,b\gt,\lt c,a\gt \}$",,,"B
+B
+A",0
+141,141,设函数$g\colon A\rightarrow B$，$f\colon B\rightarrow C$，则下列是正确的____,若$g$ 是满射，$f$是单射，则$f\circ g$ 是单射,若$g$是满射，$f$是单射，则$f\circ g$是满射,若$g$是满射，$f$是单射，则$f\circ g$是双射,若$f\circ g$是单射，且 $g$ 是满射，则$f$是单射。,,,D,0
+142,142,下面的联结词集合不是完备集的是____,$\{\uparrow\}$ ($\uparrow$ 表示与非),"$\{\lnot,\to\}$","$\{\lnot,\leftrightarrow\}$","$\{\neg, \lor \}$",,,B,0
+143,143,一棵高度为h的正则k叉树中，叶结点的个数为____,kh-1,kh,2h-1,2h,,,A,0
+144,144,下面哪一种图不一定是树____,无回路的连通图,有n个结点n-1 条边的连通图,连通但删去一条边则不连通的图,每对结点之间都有通路的图,,,D,0
+145,145,下列数组中，能构成无向图的顶点度数的数组是____,(1，1，2，3),(2，2，2，2),(3，2，3，4，5),(0，1，3，3),,,B,0
+146,146,偏序关系一定不是____,自反的,传递的,反自反的,反对称的,,,C,0
+147,147,"设$N\left(x\right)$：x是自然数；$L\left(x,y\right)$：x大于y。则命题$(\:\forall x)\:\left(N(x)\rightarrow L\:\left(x+1,0\right)\:\right)$表示的自然语言是_____",$x+1>0$,任何自然数的后继数必大于0,每一个自然数都大于0,存在自然数大于0,,,"## 解析：
+
+$N\left(x\right)$：x是自然数，$L\left(x,y\right)$：x大于y，$x+1$表示x的后继数，$\therefore $命题$(\:\forall x)\:\left(N(x)\rightarrow L\:\left(x+1,0\right)\:\right)$表示的自然语言是：任何自然数的后继数必大于0。故选：B。本题考查的知识点是命题的真假判断与应用，属于基础题。
+
+B
+
+## 最终答案：
+
+\(\boxed{B}\)",0
+148,148,无向简单图G是棵树，当且仅当____,G连通且边数比结点数少1,G连通且结点数比边数少1,G的边数比结点数少1,G中没有回路,,,A,0
+149,149,设p：天下雨，q：我开车上班。命题“除非不下雨，否则我开车上班”可符号化为____,p→q,q→p,﹁p→q,q→﹁p,,,"C
+解析：
+根据题意，结合所给的四个选项，利用命题的否定，得到选项．  
+本题考查了命题的否定，属于基础题．  
+命题“除非不下雨，否则我开车上班”可符号化为：p→q，  
+即“不下雨，则我开车上班”．  
+故选：C．",0
+150,150,权序列为（30，25，20，15，10）的最优二叉树的带权路径总长为____,100,225,400,625,,,D,0
+151,151,设〈G，*〉为群，[*]有____,(ab)-1=ab,(ab)-1=ba,(ab)-1=a-1b-1,(ab)-1=b-1a-1,,,D,0
+152,152,下列说法错误的是____,$\mathbf{K_{3}}$是边数最少的非平面图,$\mathsf{K}_{5}$是结点数最少的非平面图,$\mathsf{K}_{6}$中不存在$k^{(1)}$型子图,$\mathbf{K_{3}}$去掉任意一条边所形成的图是可平面图,,,"## 解析：
+
+$\mathbf{K}_{3}$去掉任意一条边所形成的图是平面图.
+
+B
+
+## 最终答案：
+
+\\(\boxed{B}\\)",0
